@@ -20,32 +20,46 @@
   color: #DDF222;
 }
 
-/* Navigation active state - charcoal for readability on light gray */
-.md-nav__item--active > .md-nav__link {
-  color: #282828;
-  font-weight: 600;
-}
-
-/* Hover state - lime accent */
-.md-nav__link:hover {
-  color: #DDF222;
-}
-
 /* Search highlight */
 .md-search-result__article--document {
   border-left-color: #DDF222;
 }
 
-/* Subtle nav background for visual separation */
+/* Dark charcoal nav background */
 .md-sidebar--primary {
-  background-color: #ebebeb !important;
+  background-color: #282828 !important;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #ebebeb !important;
+  background-color: #282828 !important;
 }
 
+/* Light text on dark nav */
+.md-sidebar--primary .md-nav__link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.md-sidebar--primary .md-nav__item--active > .md-nav__link,
+.md-sidebar--primary .md-nav__link:hover {
+  color: #DDF222 !important;
+}
+
+/* Section headers in nav */
+.md-sidebar--primary .md-nav__title {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.md-sidebar--primary .md-nav__title[for] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Nav expand icons */
+.md-sidebar--primary .md-nav__icon {
+  filter: invert(1);
+}
+
+/* Dark mode - keep consistent */
 [data-md-color-scheme="slate"] .md-sidebar--primary,
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #1e1e1e !important;
+  background-color: #1a1a1a !important;
 }
