@@ -29,3 +29,17 @@
 .md-search-result__article--document {
   border-left-color: #DDF222;
 }
+
+/* Subtle nav background for visual separation */
+.md-sidebar--primary {
+  background-color: #fafafa;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #fafafa;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #1e1e1e;
+}

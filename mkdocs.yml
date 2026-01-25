@@ -4,6 +4,7 @@ site_author: James Gray
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/logo.png
   font:
@@ -35,6 +36,15 @@ extra_css:
 
 nav:
   - Home: README.md
+  - Questions:
+    - questions/README.md
+    - Prompting: questions/prompting/README.md
+    - Agents: questions/agents/README.md
+    - Platforms:
+      - questions/platforms/README.md
+      - OpenAI: questions/platforms/openai/README.md
+      - Claude: questions/platforms/claude/README.md
+      - Gemini: questions/platforms/gemini/README.md
   - How-To Guides:
     - how-to/README.md
     - Prompting: how-to/prompting/README.md
