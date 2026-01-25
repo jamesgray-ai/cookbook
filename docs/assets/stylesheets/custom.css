@@ -38,14 +38,14 @@
 
 /* Subtle nav background for visual separation */
 .md-sidebar--primary {
-  background-color: #f3f3f3;
+  background-color: #ebebeb !important;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #f3f3f3;
+  background-color: #ebebeb !important;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary,
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #1e1e1e;
+  background-color: #1e1e1e !important;
 }
