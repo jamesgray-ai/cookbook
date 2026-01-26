@@ -1,3 +1,5 @@
+/* Brand Colors: Dark Charcoal #282828 + Lime Green #DDF222 */
+
 :root {
   --md-primary-fg-color: #282828;
   --md-primary-fg-color--light: #3d3d3d;
@@ -6,75 +8,124 @@
   --md-accent-fg-color--transparent: rgba(221, 242, 34, 0.1);
 }
 
+/* Dark mode (slate scheme) */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #282828;
+  --md-primary-fg-color--light: #3d3d3d;
+  --md-primary-fg-color--dark: #1a1a1a;
   --md-accent-fg-color: #DDF222;
+  --md-default-bg-color: #1e1e1e;
+  --md-default-bg-color--light: #282828;
+  --md-default-bg-color--lighter: #303030;
+  --md-default-bg-color--lightest: #404040;
 }
 
-/* Accent color for links and highlights */
+/* Light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #282828;
+  --md-primary-fg-color--light: #3d3d3d;
+  --md-primary-fg-color--dark: #1a1a1a;
+  --md-accent-fg-color: #b8c900;
+}
+
+/* Header styling */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Navigation accent colors */
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Sidebar active indicator */
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-accent-fg-color);
+}
+
+/* Links */
 .md-typeset a {
-  color: #282828;
+  color: var(--md-accent-fg-color);
 }
 
 .md-typeset a:hover {
-  color: #DDF222;
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+/* Light mode link adjustment for readability */
+[data-md-color-scheme="default"] .md-typeset a {
+  color: #8a9a00;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: #6b7700;
+}
+
+/* Code block styling */
+.md-typeset code {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* Button styling */
+.md-typeset .md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-primary-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: #c4d91e;
+  border-color: #c4d91e;
 }
 
 /* Search highlight */
-.md-search-result__article--document {
-  border-left-color: #DDF222;
+.md-search__form {
+  background-color: var(--md-primary-fg-color--light);
 }
 
-/* Dark charcoal nav background */
-.md-sidebar--primary {
-  background-color: #282828 !important;
+/* Tab styling */
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--md-accent-fg-color);
 }
 
-.md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #282828 !important;
+.md-typeset .tabbed-labels > .tabbed-label--active {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
 }
 
-/* Light text on dark nav */
-.md-sidebar--primary .md-nav__link {
-  color: rgba(255, 255, 255, 0.7) !important;
+/* Footer styling */
+.md-footer {
+  background-color: var(--md-primary-fg-color);
 }
 
-.md-sidebar--primary .md-nav__item--active > .md-nav__link,
-.md-sidebar--primary .md-nav__link:hover {
-  color: #DDF222 !important;
+/* Table of contents active */
+.md-nav__link--passed,
+.md-nav__link:focus {
+  color: var(--md-accent-fg-color);
 }
 
-/* Section headers in nav */
-.md-sidebar--primary .md-nav__title {
-  color: rgba(255, 255, 255, 0.9) !important;
+/* Admonition accent */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-accent-fg-color);
 }
 
-.md-sidebar--primary .md-nav__title[for] {
-  color: rgba(255, 255, 255, 0.9) !important;
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: var(--md-accent-fg-color--transparent);
 }
 
-/* Nav expand icons */
-.md-sidebar--primary .md-nav__icon {
-  filter: invert(1);
+/* Typography - Inter font weight adjustments */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
 }
 
-/* Dark mode - keep consistent */
-[data-md-color-scheme="slate"] .md-sidebar--primary,
-[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
-  background-color: #1a1a1a !important;
-}
-
-/* Remove the scroll shadow/gradient that hides text on dark sidebar */
-.md-sidebar--primary .md-sidebar__scrollwrap::before {
-  background: linear-gradient(to bottom, #282828, transparent) !important;
-}
-
-/* Also handle the inner container */
-.md-sidebar--primary .md-sidebar__inner {
-  background: transparent !important;
-}
-
-/* Fix any scroll indicators */
-.md-sidebar__scrollwrap {
-  scrollbar-color: rgba(255,255,255,0.3) transparent;
+/* Logo sizing in header */
+.md-header__button.md-logo img {
+  height: 1.5rem;
+  width: auto;
 }
