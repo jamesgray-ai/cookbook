@@ -72,10 +72,10 @@ nav:
     - Claude:
       - platforms/claude/index.md
       - Getting Started:
-        - Claude Code Installation: platforms/claude/getting-started/claude-code-install.md
         - Claude Personalization: platforms/claude/getting-started/claude-personalization-setup.md
       - Projects:
         - Claude Projects: platforms/claude/projects/claude-projects-setup.md
+      - Questions: platforms/claude/questions/README.md
       - Subagents:
         - Scheduling (macOS): platforms/claude/subagents/scheduling-subagents-macos.md
         - Scheduling (Windows): platforms/claude/subagents/scheduling-subagents-windows.md
@@ -83,60 +83,60 @@ nav:
       - Topics:
         - Overview: platforms/claude/topics/README.md
         - Resources: platforms/claude/topics/resources.md
-      - Questions: platforms/claude/questions/README.md
-    - OpenAI / ChatGPT:
-      - platforms/openai/index.md
-      - Topics:
-        - Overview: platforms/openai/topics/README.md
-        - Resources: platforms/openai/topics/resources.md
-      - Questions: platforms/openai/questions/README.md
     - Google Gemini:
       - platforms/google-gemini/index.md
+      - Questions: platforms/google-gemini/questions/README.md
       - Topics:
         - Overview: platforms/google-gemini/topics/README.md
         - Resources: platforms/google-gemini/topics/resources.md
-      - Questions: platforms/google-gemini/questions/README.md
     - M365 Copilot:
       - platforms/m365-copilot/index.md
       - Topics:
         - Overview: platforms/m365-copilot/topics/README.md
         - Resources: platforms/m365-copilot/topics/resources.md
+    - OpenAI / ChatGPT:
+      - platforms/openai/index.md
+      - Questions: platforms/openai/questions/README.md
+      - Topics:
+        - Overview: platforms/openai/topics/README.md
+        - Resources: platforms/openai/topics/resources.md
   - Fundamentals:
     - fundamentals/index.md
-    - Builder Setup:
-      - Git Installation: fundamentals/developer-setup/git-install.md
-      - GitHub Setup: fundamentals/developer-setup/github-setup.md
-      - Editor Setup: fundamentals/developer-setup/editor-setup.md
-      - Voice to Text: fundamentals/developer-setup/voice-to-text-setup.md
-      - Notion Registry: fundamentals/developer-setup/notion-registry-setup.md
-    - Prompt Engineering:
-      - Overview: fundamentals/prompt-engineering/README.md
-      - Resources: fundamentals/prompt-engineering/resources.md
     - Agents & Tools:
       - Overview: fundamentals/agents-and-tools/README.md
       - Resources: fundamentals/agents-and-tools/resources.md
+    - Builder Setup:
+      - Claude Code Installation: fundamentals/developer-setup/claude-code-install.md
+      - Editor Setup: fundamentals/developer-setup/editor-setup.md
+      - Git Installation: fundamentals/developer-setup/git-install.md
+      - GitHub Setup: fundamentals/developer-setup/github-setup.md
+      - Notion Registry: fundamentals/developer-setup/notion-registry-setup.md
+      - Voice to Text: fundamentals/developer-setup/voice-to-text-setup.md
     - Patterns: fundamentals/patterns/README.md
+    - Prompt Engineering:
+      - Overview: fundamentals/prompt-engineering/README.md
+      - Resources: fundamentals/prompt-engineering/resources.md
   - How-To Guides:
     - how-to/README.md
-    - Prompting: how-to/prompting/README.md
     - Agents: how-to/agents/README.md
     - Integrations: how-to/integrations/README.md
+    - Prompting: how-to/prompting/README.md
   - Questions:
     - questions/README.md
+    - Agents: questions/agents/README.md
     - Prompting:
       - questions/prompting/README.md
       - What is a system prompt?: questions/prompting/what-is-a-system-prompt.md
-    - Agents: questions/agents/README.md
   - Troubleshooting:
     - troubleshooting/README.md
   - Courses:
     - courses/index.md
+    - Agentic AI for Leaders:
+      - courses/leaders/index.md
     - Claude for Builders:
       - courses/builders/index.md
       - Week 0 - Orientation: courses/builders/week-0.md
       - Week 1 - AI Builder Stack: courses/builders/week-1.md
-    - Agentic AI for Leaders:
-      - courses/leaders/index.md
   - Contributing: CONTRIBUTING.md
 
 extra:

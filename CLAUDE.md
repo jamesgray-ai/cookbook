@@ -37,3 +37,8 @@ When setting up scheduled tasks for subagents:
 - Always include logging to capture stdout/stderr for troubleshooting
 - Store logs in the project's `logs/scheduled/` folder so they're easy to find
 - Include timestamps in log filenames for easy debugging
+
+### Windows-specific
+- **Always write PowerShell to `.ps1` files** rather than running inline commands - `$` variables get stripped when passing PowerShell through Git Bash
+- Create a runner script (e.g., `scripts/run-<agent-name>.ps1`) and a setup script (e.g., `scripts/setup-<agent-name>-schedule.ps1`)
+- Use `Register-ScheduledTask` in the setup script to register with Task Scheduler

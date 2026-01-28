@@ -82,8 +82,17 @@ source ~/.bashrc
 
 The installer should add Claude Code to your PATH automatically. If `claude` isn't recognized:
 
-1. Close and reopen PowerShell or CMD
-2. If still not working, you may need to log out and log back in
+To add it manually:
+1. Press Win + R, type sysdm.cpl, press Enter
+2. Go to Advanced > Environment Variables
+3. Under "User variables", select Path > Edit
+4. Click New and add %USERPROFILE%\.local\bin
+5. Restart your terminal
+
+Other things to note on Windows:
+You need https://git-scm.com/downloads/win installed (provides Git Bash, which Claude Code requires).
+If Git Bash isn't detected, you may also need to set:
+$env:CLAUDE_CODE_GIT_BASH_PATH="C:\Program Files\Git\bin\bash.exe"
 
 ## Log In
 
