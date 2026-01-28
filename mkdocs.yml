@@ -1,6 +1,10 @@
-site_name: James Gray's Hands-On AI Cookbook
-site_description: Practical guides for AI/ML - prompting, agents, and platform integrations
+site_name: Hands-On AI
+site_url: https://handsonai.info/
+site_description: Practical guides, courses, and reference materials for building with AI
 site_author: James Gray
+
+repo_name: jamesgray-ai/cookbook
+repo_url: https://github.com/jamesgray-ai/cookbook
 
 theme:
   name: material
@@ -11,34 +15,73 @@ theme:
     text: Inter
     code: Roboto Mono
   features:
-    - search.highlight
-    - search.suggest
+    - navigation.instant
+    - navigation.tracking
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - search.suggest
+    - search.highlight
     - content.code.copy
+    - content.code.annotate
   palette:
-    - scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
 extra_css:
   - assets/stylesheets/custom.css
 
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
 nav:
-  - Home: README.md
+  - Home: index.md
+  - Getting Started:
+    - getting-started/index.md
+    - Claude Code Installation: getting-started/claude-code-install.md
+    - Claude Projects: getting-started/claude-projects-setup.md
+    - Claude Personalization: getting-started/claude-personalization-setup.md
+    - Editor Setup: getting-started/editor-setup.md
+    - Git Installation: getting-started/git-install.md
+    - GitHub Setup: getting-started/github-setup.md
+    - Notion Registry: getting-started/notion-registry-setup.md
+    - Voice to Text: getting-started/voice-to-text-setup.md
   - Questions:
     - questions/README.md
-    - Prompting: questions/prompting/README.md
+    - Prompting:
+      - questions/prompting/README.md
+      - What is a system prompt?: questions/prompting/what-is-a-system-prompt.md
     - Agents: questions/agents/README.md
     - Platforms:
       - questions/platforms/README.md
@@ -58,6 +101,8 @@ nav:
     - Agents & Tools:
       - Overview: topics/agents-and-tools/README.md
       - Resources: topics/agents-and-tools/resources.md
+      - Scheduling (macOS): topics/agents-and-tools/scheduling-macos.md
+      - Scheduling (Windows): topics/agents-and-tools/scheduling-windows.md
     - Platforms:
       - topics/platforms/README.md
       - Resources: topics/platforms/resources.md
@@ -74,19 +119,25 @@ nav:
         - Overview: topics/platforms/m365-copilot/README.md
         - Resources: topics/platforms/m365-copilot/resources.md
   - Patterns: patterns/README.md
-  - Troubleshooting: troubleshooting/README.md
-
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - admonition
-  - tables
+  - Troubleshooting:
+    - troubleshooting/README.md
+    - Scheduling Issues: troubleshooting/scheduling-issues.md
+  - Courses:
+    - courses/index.md
+    - Claude for Builders:
+      - courses/builders/index.md
+      - Week 0 - Orientation: courses/builders/week-0.md
+      - Week 1 - AI Builder Stack: courses/builders/week-1.md
+    - Agentic AI for Leaders:
+      - courses/leaders/index.md
+  - Contributing: CONTRIBUTING.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/cookbook
+      link: https://github.com/jamesgray-ai
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jamesgray/
+    - icon: fontawesome/solid/graduation-cap
+      link: https://maven.com/james-gray
   generator: false

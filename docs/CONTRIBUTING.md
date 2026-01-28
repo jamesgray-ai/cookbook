@@ -1,16 +1,28 @@
-# Contributing to the Cookbook
+# Contributing to Hands-On AI
 
-Thank you for contributing to the Maven AI/ML Cookbook! This guide explains how to add new content.
+Thank you for contributing to Hands-On AI! This guide explains how to add new content.
 
-## Types of Content
+## Site Structure
 
-| Type | Location | Purpose | Template |
-|------|----------|---------|----------|
-| Question | `questions/` | Answer a specific question (AEO-optimized) | [question-template.md](./_templates/question-template.md) |
-| How-To Guide | `how-to/` | Solve a specific problem | [how-to-template.md](./_templates/how-to-template.md) |
-| Topic | `topics/` | Explain a concept | [topic-template.md](./_templates/topic-template.md) |
-| Pattern | `patterns/` | Document reusable approaches | Use topic template |
-| Troubleshooting | `troubleshooting/` | Fix common errors | Use how-to template |
+| Section | Location | Purpose |
+|---------|----------|---------|
+| Getting Started | `getting-started/` | Tool setup and installation guides |
+| Questions | `questions/` | Answer specific questions (AEO-optimized) |
+| How-To Guides | `how-to/` | Solve specific problems |
+| Topics | `topics/` | Explain concepts in depth |
+| Patterns | `patterns/` | Document reusable approaches |
+| Troubleshooting | `troubleshooting/` | Fix common errors |
+| Courses | `courses/` | Structured learning paths (course-specific) |
+
+## Content Types and Templates
+
+| Type | Template |
+|------|----------|
+| Question (AEO) | [question-template.md](./_templates/question-template.md) |
+| How-To Guide | [how-to-template.md](./_templates/how-to-template.md) |
+| Topic | [topic-template.md](./_templates/topic-template.md) |
+| Pattern | Use topic template |
+| Troubleshooting | Use how-to template |
 
 ## Adding a Question (AEO-Optimized)
 
@@ -139,6 +151,20 @@ When you add a new file, update the README.md in that section to include a link:
 - [How to Handle Rate Limits](./handle-rate-limits.md) - `all`
 ```
 
+## Adding Setup Guides
+
+Setup guides go in `getting-started/` and should:
+
+1. Focus on one tool per guide
+2. Include prerequisites
+3. Provide platform-specific instructions (macOS/Windows)
+4. Link to official documentation
+5. Include troubleshooting tips
+
 ## Questions?
 
 If you're unsure where something belongs or how to structure it, check existing entries for examples.
+
+## About This Site
+
+Hands-On AI is maintained by [James Gray](https://maven.com/james-gray). It consolidates setup guides, course materials, and AI reference content from multiple repositories into one resource.

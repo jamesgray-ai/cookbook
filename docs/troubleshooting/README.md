@@ -4,7 +4,8 @@ Solutions for common problems and errors.
 
 ## Issues
 
-*Issues will be listed here as they are added.*
+### Scheduled Tasks
+- [Scheduled Subagent Troubleshooting](./scheduling-issues.md) - macOS, Windows
 
 <!-- Example format:
 ### API Errors
