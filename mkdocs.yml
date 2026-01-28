@@ -101,7 +101,7 @@ nav:
         - Resources: platforms/m365-copilot/topics/resources.md
   - Fundamentals:
     - fundamentals/index.md
-    - Developer Setup:
+    - Builder Setup:
       - Git Installation: fundamentals/developer-setup/git-install.md
       - GitHub Setup: fundamentals/developer-setup/github-setup.md
       - Editor Setup: fundamentals/developer-setup/editor-setup.md

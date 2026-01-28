@@ -1,15 +1,15 @@
 ---
 title: Fundamentals
-description: Cross-platform concepts, developer setup, and reusable patterns
+description: Cross-platform concepts, builder setup, and reusable patterns
 ---
 
 # Fundamentals
 
 Core concepts and tools that apply across all AI platforms.
 
-## Developer Setup
+## Builder Setup
 
-Essential tools for any AI development workflow:
+Essential tools for your AI builder workflow:
 
 | Guide | Description |
 |-------|-------------|
