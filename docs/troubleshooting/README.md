@@ -5,7 +5,7 @@ Solutions for common problems and errors.
 ## Issues
 
 ### Scheduled Tasks
-- [Scheduled Subagent Troubleshooting](./scheduling-issues.md) - macOS, Windows
+- [Scheduled Subagent Troubleshooting](../platforms/claude/subagents/scheduling-subagent-issues.md) - macOS, Windows
 
 <!-- Example format:
 ### API Errors

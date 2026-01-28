@@ -73,10 +73,13 @@ nav:
       - platforms/claude/index.md
       - Getting Started:
         - Claude Code Installation: platforms/claude/getting-started/claude-code-install.md
-        - Claude Projects: platforms/claude/getting-started/claude-projects-setup.md
         - Claude Personalization: platforms/claude/getting-started/claude-personalization-setup.md
-      - Scheduling (macOS): platforms/claude/scheduling-macos.md
-      - Scheduling (Windows): platforms/claude/scheduling-windows.md
+      - Projects:
+        - Claude Projects: platforms/claude/projects/claude-projects-setup.md
+      - Subagents:
+        - Scheduling (macOS): platforms/claude/subagents/scheduling-subagents-macos.md
+        - Scheduling (Windows): platforms/claude/subagents/scheduling-subagents-windows.md
+        - Troubleshooting: platforms/claude/subagents/scheduling-subagent-issues.md
       - Topics:
         - Overview: platforms/claude/topics/README.md
         - Resources: platforms/claude/topics/resources.md
@@ -88,11 +91,11 @@ nav:
         - Resources: platforms/openai/topics/resources.md
       - Questions: platforms/openai/questions/README.md
     - Google Gemini:
-      - platforms/gemini/index.md
+      - platforms/google-gemini/index.md
       - Topics:
-        - Overview: platforms/gemini/topics/README.md
-        - Resources: platforms/gemini/topics/resources.md
-      - Questions: platforms/gemini/questions/README.md
+        - Overview: platforms/google-gemini/topics/README.md
+        - Resources: platforms/google-gemini/topics/resources.md
+      - Questions: platforms/google-gemini/questions/README.md
     - M365 Copilot:
       - platforms/m365-copilot/index.md
       - Topics:
@@ -126,7 +129,6 @@ nav:
     - Agents: questions/agents/README.md
   - Troubleshooting:
     - troubleshooting/README.md
-    - Scheduling Issues: troubleshooting/scheduling-issues.md
   - Courses:
     - courses/index.md
     - Claude for Builders:

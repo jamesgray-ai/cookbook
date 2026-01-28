@@ -22,7 +22,7 @@ Platform-specific questions are organized under each platform:
 
 - [OpenAI Questions](../platforms/openai/questions/README.md)
 - [Claude Questions](../platforms/claude/questions/README.md)
-- [Gemini Questions](../platforms/gemini/questions/README.md)
+- [Gemini Questions](../platforms/google-gemini/questions/README.md)
 
 ## All Questions
 

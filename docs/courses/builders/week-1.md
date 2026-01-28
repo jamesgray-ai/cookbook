@@ -55,7 +55,7 @@ Configure Claude to work effectively with your context.
 
 **Setup Guides:**
 
-- [Claude Projects Setup](../../platforms/claude/getting-started/claude-projects-setup.md) — Organize your AI work with projects
+- [Claude Projects Setup](../../platforms/claude/projects/claude-projects-setup.md) — Organize your AI work with projects
 - [Claude Personalization Setup](../../platforms/claude/getting-started/claude-personalization-setup.md) — Configure Claude to understand your context
 
 ## Questions?

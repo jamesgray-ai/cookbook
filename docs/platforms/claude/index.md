@@ -14,17 +14,23 @@ Set up your Claude environment:
 | Guide | Description |
 |-------|-------------|
 | [Claude Code Installation](getting-started/claude-code-install.md) | Install the CLI and VS Code extension |
-| [Claude Projects](getting-started/claude-projects-setup.md) | Organize your AI work with projects |
 | [Claude Personalization](getting-started/claude-personalization-setup.md) | Configure Claude to understand your context |
 
-## Scheduling & Automation
+## Projects
+
+| Guide | Description |
+|-------|-------------|
+| [Claude Projects](projects/claude-projects-setup.md) | Organize your AI work with projects |
+
+## Subagents
 
 Run Claude agents on a schedule:
 
 | Guide | Description |
 |-------|-------------|
-| [Scheduling Subagents (macOS)](scheduling-macos.md) | Set up automated agents with launchd |
-| [Scheduling Subagents (Windows)](scheduling-windows.md) | Set up automated agents with Task Scheduler |
+| [Scheduling Subagents (macOS)](subagents/scheduling-subagents-macos.md) | Set up automated agents with launchd |
+| [Scheduling Subagents (Windows)](subagents/scheduling-subagents-windows.md) | Set up automated agents with Task Scheduler |
+| [Troubleshooting](subagents/scheduling-subagent-issues.md) | Common scheduling issues and fixes |
 
 ## Topics
 

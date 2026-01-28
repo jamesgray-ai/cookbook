@@ -1,16 +1,15 @@
-# Scheduling Claude Code Subagents (Windows)
+# Scheduling Claude Code Subagents (macOS)
 
 Set up your Claude Code subagents to run automatically on a schedule—like a research assistant that gathers information while you sleep.
 
-**Key concept:** You already have a subagent defined. Now you're telling Claude Code to run it on a schedule. Claude Code creates the script and sets up Task Scheduler for you.
+**Key concept:** You already have a subagent defined. Now you're telling Claude Code to run it on a schedule. Claude Code creates all the configuration files and activates it for you.
 
 **Official docs:** [Claude Code CLI Reference](https://code.claude.com/docs/en/cli-reference)
 
 ## Prerequisites
 
-- Claude Code installed and authenticated (see [Claude Code Setup Guide](getting-started/claude-code-install.md))
+- Claude Code installed and authenticated (see [Claude Code Setup Guide](../getting-started/claude-code-install.md))
 - **A subagent already created** with its configuration in a markdown file
-- PowerShell access
 
 ## Important: Update Your CLAUDE.md First
 
@@ -23,7 +22,7 @@ Add this section to your CLAUDE.md:
 
 When setting up scheduled tasks for subagents:
 - Use `claude -p "prompt" --dangerously-skip-permissions` to allow headless tool use (required for agents that write files)
-- Use the full path to claude binary (e.g., `%LOCALAPPDATA%\Programs\claude-code\claude.exe`) since Task Scheduler runs with minimal PATH
+- Use the full path to claude binary (e.g., `~/.local/bin/claude`) since launchd runs with minimal PATH
 - Always include logging to capture stdout/stderr for troubleshooting
 - Store logs in the project's `logs/scheduled/` folder so they're easy to find
 - Include timestamps in log filenames for easy debugging
@@ -48,7 +47,7 @@ Let's schedule it to run automatically every weekday morning.
 Open Claude Code in this repo folder, then use a prompt like this:
 
 ```
-Schedule my claude-research-daily subagent to run every weekday at 7:30 AM on Windows.
+Schedule my claude-research-daily subagent to run every weekday at 7:30 AM on macOS.
 ```
 
 Claude Code will automatically set up logging based on the instructions in your CLAUDE.md file.
@@ -56,9 +55,9 @@ Claude Code will automatically set up logging based on the instructions in your 
 ### Step 2: Claude Code Sets Everything Up
 
 Claude Code will create everything for you:
-1. **`scripts/` folder** - Contains the PowerShell script for your subagent
-2. **PowerShell script** - Customized with your project's paths
-3. **Scheduled task** - Registered in Task Scheduler
+1. **`scripts/` folder** - Contains the wrapper script for your subagent
+2. **Wrapper script** - Customized with your project's paths
+3. **Schedule configuration** - Tells macOS when to run it
 4. **Logs folder** - For troubleshooting
 
 You don't need to create or edit any files yourself—Claude Code handles all of it and uses the correct paths for your machine.
@@ -93,12 +92,12 @@ Here are typical schedules for different types of subagents:
 ### Example: Scheduling a Weekly Subagent
 
 ```
-Schedule my competitor-watch subagent to run every Monday at 8:00 AM on Windows.
+Schedule my competitor-watch subagent to run every Monday at 8:00 AM on macOS.
 ```
 
 ## Managing Your Subagents
 
-Ask Claude Code to manage your subagents—no need to navigate Task Scheduler.
+Ask Claude Code to manage your subagents—no need to memorize commands.
 
 | What you want | Ask Claude Code |
 |---------------|-----------------|
@@ -117,7 +116,35 @@ Ask Claude Code to manage your subagents—no need to navigate Task Scheduler.
 Change my claude-research-daily subagent to run at 6:00 AM instead of 7:30 AM.
 ```
 
-Claude Code will update the script and Task Scheduler configuration for you.
+Claude Code will update the configuration and reload it for you.
+
+## First Run: macOS Background Activity Notification
+
+The first time your scheduled subagent runs, macOS will show a notification like this:
+
+![macOS notification about background activity](../images/macos-background-notification.png)
+
+**This is normal and expected.** It's macOS letting you know a new scheduled task is running.
+
+### If You Click the Notification
+
+You'll see the **Login Items & Extensions** panel in System Settings. Your script will appear in the list:
+
+![macOS Login Items showing the scheduled script with toggle ON](../images/macos-login-items.png)
+
+**Important:**
+- ✅ **Keep the toggle ON** (blue) — this allows your scheduled task to run
+- ✅ **"Unidentified developer" is normal** — it's your own script, not from the App Store
+- ❌ **If you turn it OFF**, your scheduled subagent will stop running
+
+### If You Accidentally Turned It Off
+
+1. Open **System Settings** (click Apple menu  → System Settings)
+2. Click **General** in the left sidebar
+3. Click **Login Items & Extensions**
+4. Scroll down to the **App Background Activity** section
+5. Find your script (e.g., `run-claude-research-daily.sh`)
+6. Toggle it back **ON**
 
 ## Quick Troubleshooting
 
@@ -133,20 +160,20 @@ Ask Claude Code: "My claude-research-daily ran but I don't see an output file. W
 
 Ask Claude Code: "Show me the logs from claude-research-daily's last run."
 
-For more detailed troubleshooting, see [Scheduled Subagent Troubleshooting](../../troubleshooting/scheduling-issues.md).
+For more detailed troubleshooting, see [Scheduled Subagent Troubleshooting](./scheduling-subagent-issues.md).
 
 ## How It Works (Behind the Scenes)
 
-When Claude Code schedules a subagent on Windows, it uses **Task Scheduler**—the built-in Windows scheduling system. Claude Code creates:
+When Claude Code schedules a subagent on macOS, it uses **launchd**—the built-in macOS scheduling system. Claude Code creates:
 
-1. **PowerShell script** - Runs your subagent with proper logging
-2. **Scheduled task** - Tells Windows when to run the script
+1. **Wrapper script** - Runs your subagent with proper logging
+2. **Plist file** - Tells macOS when to run the script
 
-The PowerShell script uses special flags for headless operation:
+The wrapper script uses special flags for headless operation:
 - `--dangerously-skip-permissions` - Allows the agent to use tools (like writing files) without prompting for confirmation
-- Full path to claude binary - Since Task Scheduler runs with minimal PATH
+- Full path to claude binary - Since launchd runs with minimal PATH
 
-You can see your scheduled subagents in Task Scheduler if you're curious (press `Win + R`, type `taskschd.msc`), but you don't need to—Claude Code can manage everything for you.
+The nice thing about launchd: if your Mac is asleep at the scheduled time, it runs the subagent when your Mac wakes up. So your 7:30 AM research digest still gets created even if your Mac was closed.
 
 ## Next Steps
 
