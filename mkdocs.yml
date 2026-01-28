@@ -9,7 +9,7 @@ repo_url: https://github.com/jamesgray-ai/handsonai
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: assets/logo.png
+  logo: assets/logo-horizontal.png
   favicon: assets/logo.png
   font:
     text: Inter
@@ -141,10 +141,14 @@ nav:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/jamesgray-ai
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jamesgray/
+    - icon: fontawesome/solid/newspaper
+      link: https://graymatter.jamesgray.ai
+    - icon: fontawesome/solid/globe
+      link: https://jamesgray.ai
+    - icon: fontawesome/brands/github
+      link: https://github.com/jamesgray-ai
     - icon: fontawesome/solid/graduation-cap
       link: https://maven.com/james-gray
   generator: false

@@ -5,9 +5,9 @@ description: Practical guides, courses, and reference materials for people who b
 
 # Hands-on AI for Builders
 
-For business-oriented innovators who turn ideas into real outcomes using cutting-edge AI tools. If you're outcome-driven, curious, and focused on applying what's available — this site is for you.
+*Accelerating AI adoption — from idea to business value.*
 
-**The builder mindset:** systems thinker, leverage-first, fast iterator. Ship something that works, then make it better.
+For curious, outcome-driven innovators who think in systems, move fast, and turn AI tools into real business value.
 
 ## Start Here
 
@@ -61,7 +61,9 @@ For business-oriented innovators who turn ideas into real outcomes using cutting
 
 ## About
 
-Created by [James Gray](https://maven.com/james-gray), who teaches hands-on AI courses on Maven. This site consolidates setup guides, course materials, and practical AI reference content in one place.
+Site content curated by [James Gray](https://jamesgray.ai), who teaches hands-on AI courses on Maven.
+
+[LinkedIn](https://www.linkedin.com/in/jamesgray/) · [Substack](https://graymatter.jamesgray.ai) · [Website](https://jamesgray.ai)
 
 ### Contributing
 
