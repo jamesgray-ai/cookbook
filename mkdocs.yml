@@ -139,6 +139,9 @@ nav:
   - Contributing: CONTRIBUTING.md
 
 extra:
+  analytics:
+    provider: google
+    property: G-4YB89PWFET
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jamesgray/
