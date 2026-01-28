@@ -10,7 +10,7 @@ Set up your Claude Code subagents to run automatically on a schedule—like a re
 
 - Claude Code installed and authenticated (see [Claude Code Setup Guide](../../../fundamentals/developer-setup/claude-code-install.md))
 - **A subagent already created** with its configuration in a markdown file
-- **Windows only:** PowerShell access
+- PowerShell access (Windows)
 
 ## Important: Update Your CLAUDE.md First
 
