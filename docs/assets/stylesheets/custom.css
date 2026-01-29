@@ -136,15 +136,25 @@
   color: var(--md-accent-fg-color);
 }
 
-/* Admonition accent — neutral gray borders and backgrounds */
-.md-typeset .admonition.tip,
-.md-typeset details.tip {
-  border-color: #909090;
+/* Admonitions — brand accent #DDF222 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: #DDF222;
 }
 
-.md-typeset .tip > .admonition-title,
-.md-typeset .tip > summary {
-  background-color: var(--md-accent-fg-color--transparent);
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  background-color: rgba(221, 242, 34, 0.1);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .admonition > .admonition-title::before,
+.md-typeset details > summary::before {
+  background-color: #DDF222;
+}
+
+.md-typeset details > summary::after {
+  background-color: var(--md-default-fg-color);
 }
 
 /* Typography - Inter font weight adjustments */
