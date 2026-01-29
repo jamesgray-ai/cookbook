@@ -142,18 +142,90 @@
 
 /* Admonitions — brand accent #DDF222 */
 .md-typeset .admonition,
-.md-typeset details {
+.md-typeset details,
+.md-typeset .admonition.info,
+.md-typeset details.info,
+.md-typeset .admonition.example,
+.md-typeset details.example,
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.warning,
+.md-typeset details.warning,
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract,
+.md-typeset .admonition.question,
+.md-typeset details.question,
+.md-typeset .admonition.success,
+.md-typeset details.success,
+.md-typeset .admonition.failure,
+.md-typeset details.failure,
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.bug,
+.md-typeset details.bug,
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
   border-color: #DDF222;
 }
 
 .md-typeset .admonition > .admonition-title,
-.md-typeset details > summary {
+.md-typeset details > summary,
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary,
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary,
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary,
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary,
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary,
+.md-typeset .failure > .admonition-title,
+.md-typeset .failure > summary,
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary,
+.md-typeset .quote > .admonition-title,
+.md-typeset .quote > summary {
   background-color: rgba(221, 242, 34, 0.1);
   color: var(--md-default-fg-color);
 }
 
 .md-typeset .admonition > .admonition-title::before,
-.md-typeset details > summary::before {
+.md-typeset details > summary::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before,
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before,
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before,
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before,
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before,
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before,
+.md-typeset .failure > .admonition-title::before,
+.md-typeset .failure > summary::before,
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before,
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .bug > summary::before,
+.md-typeset .quote > .admonition-title::before,
+.md-typeset .quote > summary::before {
   background-color: #DDF222;
 }
 
