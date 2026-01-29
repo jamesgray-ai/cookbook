@@ -19,6 +19,12 @@
       "source": "./plugins/ai-research-agents",
       "description": "AI industry research agents for news, productivity case studies, and daily Claude briefings",
       "version": "1.0.0"
+    },
+    {
+      "name": "ai-operations-registry",
+      "source": "./plugins/ai-operations-registry",
+      "description": "Skills for documenting, naming, registering, and syncing AI operational workflows and skills",
+      "version": "1.0.0"
     }
   ]
 }

@@ -43,6 +43,16 @@ Then install any plugin below with a single command.
     /plugin install ai-research-agents@handsonai
     ```
 
+-   :material-clipboard-text-outline:{ .lg .middle } **AI Operations Registry**
+
+    ---
+
+    Document, name, register, and sync AI operational workflows and skills
+
+    ```bash
+    /plugin install ai-operations-registry@handsonai
+    ```
+
 </div>
 
 ---
@@ -108,11 +118,51 @@ Then install any plugin below with a single command.
 
 ---
 
+## AI Operations Registry
+
+??? info "Skills included"
+
+    | Skill | What it does |
+    |-------|-------------|
+    | `naming-workflows` | Generates consistent, outcome-focused names and descriptions for business workflows. Follows domain-specific naming patterns (Sales, Marketing, Product, etc.) and creates entries in the Notion Workflows database. |
+    | `writing-workflow-sops` | Writes Standard Operating Procedure documentation for workflows. Adapts SOP templates for Manual, Augmented, and Automated workflow types. Saves SOPs to Notion workflow page bodies. |
+    | `writing-process-guides` | Writes Business Process Guide documentation explaining when, why, and how to execute a complete business process with its component workflows. Covers strategic context while linking to individual SOPs for tactical details. |
+    | `registering-skills` | Registers or updates Claude Skills in the Notion AI Assets database. Extracts metadata from SKILL.md frontmatter, generates Quick Start Prompts, and handles duplicate detection. |
+    | `syncing-skills-to-github` | Syncs skills from `~/.claude/skills/` to a GitHub repository. Detects changes, generates semantic commit messages, pushes to remote, and updates Notion AI Assets with GitHub URLs. |
+
+??? example "Recommended workflow"
+
+    1. **Name** — Use `naming-workflows` to create a consistent workflow entry in Notion
+    2. **Document** — Use `writing-workflow-sops` to write the SOP for each workflow
+    3. **Connect** — Use `writing-process-guides` to document how workflows fit together in a business process
+    4. **Register** — Use `registering-skills` to track skills in Notion AI Assets
+    5. **Sync** — Use `syncing-skills-to-github` to version-control everything in GitHub
+
+    ```
+    "Name a workflow for drafting email responses"
+    → naming-workflows generates options and creates a Notion entry
+
+    "Write an SOP for the Email Response Drafting workflow"
+    → writing-workflow-sops produces a complete SOP in Notion
+
+    "Write a process guide for the Email Management business process"
+    → writing-process-guides documents the end-to-end process
+
+    "Register the email-response-drafting skill in Notion"
+    → registering-skills adds it to the AI Assets database
+
+    "Sync all changed skills to GitHub"
+    → syncing-skills-to-github commits and pushes with Notion tracking
+    ```
+
+---
+
 ## Quick Reference
 
 | Plugin | Agents | Skills | Install command |
 |--------|--------|--------|----------------|
 | `hbr-content-suite` | 3 | 1 | `/plugin install hbr-content-suite@handsonai` |
 | `ai-research-agents` | 3 | 0 | `/plugin install ai-research-agents@handsonai` |
+| `ai-operations-registry` | 0 | 5 | `/plugin install ai-operations-registry@handsonai` |
 
 All plugins are maintained in the [handsonai GitHub repository](https://github.com/jamesgray-ai/handsonai).
