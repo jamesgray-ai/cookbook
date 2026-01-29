@@ -9,15 +9,9 @@
   },
   "plugins": [
     {
-      "name": "hbr-content-suite",
-      "source": "./plugins/hbr-content-suite",
-      "description": "Complete HBR-quality content pipeline: write, edit, and publish business articles",
-      "version": "1.0.0"
-    },
-    {
-      "name": "ai-research-agents",
-      "source": "./plugins/ai-research-agents",
-      "description": "AI industry research agents for news, productivity case studies, and daily Claude briefings",
+      "name": "course-examples",
+      "source": "./plugins/course-examples",
+      "description": "Working examples of agents and skills from the Hands-on AI cohort courses",
       "version": "1.0.0"
     },
     {

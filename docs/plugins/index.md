@@ -19,66 +19,32 @@ Then install any plugin below with a single command.
 
 ---
 
-## Available Plugins
+## :material-clipboard-check: Course Examples
 
-<div class="grid cards" markdown>
+Working examples of agents and skills from the Hands-on AI cohort courses.
 
--   :material-pencil-outline:{ .lg .middle } **HBR Content Suite**
-
-    ---
-
-    Write, edit, and publish HBR-quality business articles with a complete content pipeline
-
-    ```bash
-    /plugin install hbr-content-suite@handsonai
-    ```
-
--   :material-newspaper-variant-outline:{ .lg .middle } **AI Research Agents**
-
-    ---
-
-    Stay current on AI news, productivity case studies, and Claude/Anthropic developments
-
-    ```bash
-    /plugin install ai-research-agents@handsonai
-    ```
-
--   :material-clipboard-text-outline:{ .lg .middle } **AI Operations Registry**
-
-    ---
-
-    Document, name, register, and sync AI operational workflows and skills
-
-    ```bash
-    /plugin install ai-operations-registry@handsonai
-    ```
-
-</div>
-
----
-
-## HBR Content Suite
+```bash
+/plugin install course-examples@handsonai
+```
 
 ??? info "Agents included"
 
     | Agent | What it does |
     |-------|-------------|
-    | [`tech-executive-writer`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/hbr-content-suite/agents/tech-executive-writer.md) | Writes business-focused content about AI and technology. LinkedIn posts, magazine articles, executive briefs, and thought leadership pieces. Translates complex technical concepts for non-technical audiences. |
-    | [`hbr-editor`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/hbr-content-suite/agents/hbr-editor.md) | Reviews drafts against HBR editorial standards. Provides prescriptive feedback on structure, evidence quality, voice, and argument strength. |
-    | [`hbr-publisher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/hbr-content-suite/agents/hbr-publisher.md) | Formats finalized articles for web publication and PDF distribution. Handles SEO metadata, social snippets, and professional layout. |
+    | [`tech-executive-writer`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/tech-executive-writer.md) | Writes business-focused content about AI and technology. LinkedIn posts, magazine articles, executive briefs, and thought leadership pieces. Translates complex technical concepts for non-technical audiences. |
+    | [`hbr-editor`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-editor.md) | Reviews drafts against HBR editorial standards. Provides prescriptive feedback on structure, evidence quality, voice, and argument strength. |
+    | [`hbr-publisher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-publisher.md) | Formats finalized articles for web publication and PDF distribution. Handles SEO metadata, social snippets, and professional layout. |
+    | [`ai-news-researcher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/ai-news-researcher.md) | Scans news outlets, blogs, YouTube channels, podcasts, and communities for the latest AI developments. Categorizes findings by product releases, research, company updates, and community highlights. |
+    | [`ai-productivity-researcher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/ai-productivity-researcher.md) | Finds documented case studies of companies using AI for productivity gains. Prioritizes HBR-caliber sources with quantified outcomes. Outputs structured case study briefs. |
+    | [`claude-research-daily`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/claude-research-daily.md) | Produces a daily brief on Anthropic, Claude, Claude Code, and Cowork. Covers official announcements, tech news, video content, tutorials, and community discussions from the last 24 hours. |
 
 ??? info "Skills included"
 
     | Skill | What it does |
     |-------|-------------|
-    | [`editing-hbr-articles`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/hbr-content-suite/skills/editing-hbr-articles/) | Loads HBR editorial criteria for article editing. Used by the `hbr-editor` agent to apply specific standards for openings, evidence, voice, and length. Includes a reference file with cut/replace patterns and source quality hierarchy. |
+    | [`editing-hbr-articles`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/course-examples/skills/editing-hbr-articles/) | Loads HBR editorial criteria for article editing. Used by the `hbr-editor` agent to apply specific standards for openings, evidence, voice, and length. Includes a reference file with cut/replace patterns and source quality hierarchy. |
 
-??? example "Recommended workflow"
-
-    1. **Write** — Use `tech-executive-writer` to draft your article
-    2. **Edit** — Use `hbr-editor` to review against HBR standards (automatically loads the `editing-hbr-articles` skill)
-    3. **Revise** — Apply the editor's prescriptive feedback
-    4. **Publish** — Use `hbr-publisher` to format for web and PDF
+??? example "Example usage"
 
     ```
     "Write a LinkedIn article about how RAG is changing enterprise search"
@@ -89,23 +55,7 @@ Then install any plugin below with a single command.
 
     "Prepare the article for publication"
     → hbr-publisher formats for web + PDF
-    ```
 
----
-
-## AI Research Agents
-
-??? info "Agents included"
-
-    | Agent | What it does |
-    |-------|-------------|
-    | [`ai-news-researcher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/ai-research-agents/agents/ai-news-researcher.md) | Scans news outlets, blogs, YouTube channels, podcasts, and communities for the latest AI developments. Categorizes findings by product releases, research, company updates, and community highlights. |
-    | [`ai-productivity-researcher`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/ai-research-agents/agents/ai-productivity-researcher.md) | Finds documented case studies of companies using AI for productivity gains. Prioritizes HBR-caliber sources with quantified outcomes. Outputs structured case study briefs. |
-    | [`claude-research-daily`](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/ai-research-agents/agents/claude-research-daily.md) | Produces a daily brief on Anthropic, Claude, Claude Code, and Cowork. Covers official announcements, tech news, video content, tutorials, and community discussions from the last 24 hours. |
-
-??? example "Example usage"
-
-    ```
     "What's new in AI today?"
     → ai-news-researcher scans sources and produces a categorized briefing
 
@@ -118,7 +68,13 @@ Then install any plugin below with a single command.
 
 ---
 
-## AI Operations Registry
+## :material-clipboard-text-outline: AI Operations Registry
+
+Document, name, register, and sync AI operational workflows and skills.
+
+```bash
+/plugin install ai-operations-registry@handsonai
+```
 
 ??? info "Skills included"
 
@@ -161,8 +117,7 @@ Then install any plugin below with a single command.
 
 | Plugin | Agents | Skills | Install command |
 |--------|--------|--------|----------------|
-| `hbr-content-suite` | 3 | 1 | `/plugin install hbr-content-suite@handsonai` |
-| `ai-research-agents` | 3 | 0 | `/plugin install ai-research-agents@handsonai` |
+| `course-examples` | 6 | 1 | `/plugin install course-examples@handsonai` |
 | `ai-operations-registry` | 0 | 5 | `/plugin install ai-operations-registry@handsonai` |
 
 All plugins are maintained in the [handsonai GitHub repository](https://github.com/jamesgray-ai/handsonai).
