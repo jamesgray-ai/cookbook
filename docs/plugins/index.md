@@ -11,10 +11,15 @@ Out of the box, Claude is a generalist. It can write, research, and analyze — 
 
 **Plugins solve this.** Each plugin packages domain expertise — writing standards, naming conventions, research processes, editorial criteria — into a format Claude can use automatically. Install a plugin once and Claude gains that expertise across every session.
 
-A plugin bundles two types of components:
+A plugin can bundle several types of components:
 
-- **Agents** — Expert personalities that Claude activates automatically. Ask for a LinkedIn post and Claude brings in a writing specialist. Ask for an AI news briefing and a research specialist takes over. You just describe what you need.
-- **Skills** — Step-by-step workflows that teach Claude specific tasks. A skill might encode your editorial standards, your workflow naming conventions, or your documentation templates. Claude follows these instructions consistently every time.
+- **Agents** — Expert personalities that Claude activates automatically. Ask for a LinkedIn post and Claude brings in a writing specialist. Ask for an AI news briefing and a research specialist takes over.
+- **Skills** — Step-by-step workflows that teach Claude specific tasks. A skill might encode your editorial standards, your workflow naming conventions, or your documentation templates.
+- **Commands** — Slash commands that trigger specific actions (like `/commit` for git workflows).
+- **Hooks** — Automations that run in response to events (e.g., running a linter after every file edit).
+- **MCP servers** — Connections to external tools and services (e.g., Notion, GitHub, Slack).
+
+The plugins in this marketplace currently focus on **agents** and **skills**. For the full plugin format, see the official [Plugin structure overview](https://code.claude.com/docs/en/plugins#plugin-structure-overview).
 
 **The result:** Instead of writing long prompts to explain what you want, you describe your goal in plain language and Claude applies the right expertise automatically.
 
@@ -29,6 +34,8 @@ In your Claude Code session, type this once to register the Hands-on AI marketpl
 ```
 
 Then install any plugin below with a single command. All `/plugin` commands are typed inside Claude Code, not in a regular terminal.
+
+For the full details on how marketplaces and plugin installation work, see the official [Discover and install plugins](https://code.claude.com/docs/en/discover-plugins) documentation.
 
 ---
 

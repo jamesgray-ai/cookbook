@@ -12,12 +12,12 @@ You've installed a plugin — now what? This guide explains what plugins give yo
 
 ## What You Get After Installing a Plugin
 
-Plugins provide two things:
+The [plugin format](https://code.claude.com/docs/en/plugins#plugin-structure-overview) supports agents, skills, commands, hooks, and MCP server connections. The Hands-on AI plugins currently provide:
 
 - **Agents** — Expert personalities that Claude activates automatically based on your request. For example, ask for a LinkedIn post and Claude brings in a writing specialist.
 - **Skills** — Step-by-step workflows (an instruction file plus optional reference material) that teach Claude how to do specific tasks. For example, a skill might teach Claude your company's naming conventions.
 
-You don't need to memorize agent names or skill commands. Describe what you need and Claude picks the right agent or skill.
+As the plugins grow, they may also include commands, hooks, and connectors — but you don't need to worry about that now. Describe what you need and Claude picks the right agent or skill.
 
 ## Agents vs Skills
 
@@ -78,7 +78,7 @@ The format is `/plugin-name:skill-name`.
 /plugin list
 ```
 
-This shows all installed plugins with their agents and skills.
+This shows all installed plugins with their agents and skills. For the full plugin management commands (scopes, updates, disabling), see the official [Discover and install plugins](https://code.claude.com/docs/en/discover-plugins) documentation.
 
 ## Using Skills in Claude.ai (Web)
 
@@ -260,7 +260,7 @@ Both support the same plugin format and skill files. If you're not comfortable w
 
 | Capability | Claude Code | Claude.ai | Cowork | API |
 |------------|:-----------:|:---------:|:------:|:---:|
-| Plugin install | `/plugin install` | Upload skills as ZIP | Sidebar plugin browser | Skills API |
+| Plugin install | `/plugin install` | Upload skills as ZIP | **+** button > **Add plugins...** | Skills API |
 | Agent auto-routing | Yes | No | No | No |
 | Skills (auto-trigger) | Yes | Yes (after upload) | Yes (via plugin) | Yes (Skills API) |
 | Skills (slash command) | `/plugin-name:skill-name` | No | `/` commands | No |

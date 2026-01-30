@@ -24,7 +24,7 @@ In your Claude Code session, type:
 /plugin marketplace add jamesgray-ai/handsonai
 ```
 
-This tells Claude Code where to find the Hands-on AI plugins. It does not install anything yet.
+This tells Claude Code where to find the Hands-on AI plugins. It does not install anything yet. For more on how marketplaces work, see the official [Discover and install plugins](https://code.claude.com/docs/en/discover-plugins) guide.
 
 !!! tip
     You can see which marketplaces you've added with `/plugin marketplace list`.
@@ -45,7 +45,7 @@ For example:
 /plugin install course-examples@handsonai
 ```
 
-After installing, the plugin's agents and skills are available in your Claude Code session.
+After installing, the plugin's agents and skills are available in your Claude Code session. Installed plugins are stored in `~/.claude/plugins/` on your machine.
 
 !!! tip
     You can install as many plugins as you like. They don't conflict with each other.
