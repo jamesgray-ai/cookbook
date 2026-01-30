@@ -15,10 +15,10 @@
       "version": "1.0.0"
     },
     {
-      "name": "ai-operations-registry",
-      "source": "./plugins/ai-operations-registry",
+      "name": "ai-registry",
+      "source": "./plugins/ai-registry",
       "description": "Skills for documenting, naming, registering, and syncing AI operational workflows and skills",
-      "version": "1.0.0"
+      "version": "2.0.0"
     }
   ]
 }

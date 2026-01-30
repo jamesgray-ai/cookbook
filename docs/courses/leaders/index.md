@@ -1,51 +1,54 @@
 ---
 title: Hands-on Agentic AI for Leaders
-description: Learn to evaluate, implement, and lead AI initiatives that drive business value.
+description: From AI user to AI builder in 30 days. A hands-on cohort course on Maven.
 ---
 
 # Hands-on Agentic AI for Leaders
 
-Learn to evaluate, implement, and lead AI initiatives that drive business value through hands-on experience with real AI systems.
+From AI user to AI builder in 30 days. This cohort-based course goes beyond ChatGPT prompting to give you hands-on experience building AI-powered workflows, autonomous agents, and browser automations — the practical skills leaders need to reimagine business processes and communicate credibly with technical teams.
 
 [Enroll on Maven :material-arrow-right:](https://maven.com/james-gray/hands-on-ai-for-leaders){ .md-button .md-button--primary }
 
+## Who This Course Is For
+
+- **Leaders and professionals** committed to learning AI through doing, not just reading
+- **Non-technical executives** who want hands-on understanding of what AI can actually do
+- **Managers** strengthening their collaboration with technical stakeholders
+- No coding experience required
+
 ## What You'll Learn
 
-- Evaluate AI capabilities and limitations firsthand
-- Implement AI workflows that solve real business problems
-- Lead AI initiatives with technical understanding
-- Build an AI strategy grounded in practical experience
-- Communicate effectively with technical teams about AI
+- Systematize AI-powered workflows with version-controlled asset libraries and opportunity catalogs
+- Master agentic frameworks including the autonomy spectrum, six building blocks, and twelve architecture patterns
+- Build prompt workflows and project workspaces with memory systems and custom instructions across platforms
+- Develop agent skills that package your expertise for reusable task execution
+- Create browser automation workflows that execute multi-step web tasks hands-free
+- Deploy autonomous agents across ChatGPT, Claude, M365 Copilot, and Google Workspace
 
-## Course Structure
+## What You'll Build
 
-**Duration:** 4 weeks
-**Format:** Live cohort-based learning
-**Time Commitment:** 4-6 hours per week
-**Community:** Private Slack workspace
+By the end of the course, you'll ship workflows that save 5-10 hours weekly, complete 26 hands-on projects, and have the practical experience to reimagine business processes, identify automation patterns, and communicate credibly with technical teams.
 
-## Who This Is For
+## Course Format
 
-- Business leaders evaluating AI investments
-- Managers implementing AI in their teams
-- Non-technical executives who want hands-on AI understanding
-- Anyone leading AI adoption initiatives
+| | |
+|---|---|
+| **Duration** | 4 weeks |
+| **Commitment** | 5-8 hours per week |
+| **Live Sessions** | Two session options per week (morning/evening US ET) |
+| **Office Hours** | Optional Wednesday and Saturday sessions with 1:1 coaching |
+| **Community** | Private LinkedIn group with bi-weekly updates post-course |
+| **Recordings** | Lifetime access to all session recordings with monthly content updates |
 
 ## Prerequisites
 
-- No coding experience required
-- Claude Pro or Team subscription
+- Paid subscription to ChatGPT, Claude, or Gemini
 - macOS or Windows computer
-- Curiosity about AI capabilities
-
-## Course Materials
-
-*Course content will be published as cohorts progress.*
+- Comfort with small-group learning — no coding required
 
 ## Instructor
 
-**James Gray**
-Building AI-first operations and teaching others to do the same.
+**James Gray** — UC Berkeley AI instructor and former CIO/CPO. Previously spent 10 years at Microsoft building enterprise data platforms. Has trained 5,000+ executives globally in AI strategy.
 
 - [Maven Profile](https://maven.com/james-gray)
 - [Other course: Claude and Claude Code for Builders](../builders/)

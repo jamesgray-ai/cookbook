@@ -68,23 +68,23 @@ Working examples of agents and skills from the Hands-on AI cohort courses.
 
 ---
 
-## :material-clipboard-text-outline: AI Operations Registry
+## :material-clipboard-text-outline: AI Registry
 
 Document, name, register, and sync AI operational workflows and skills.
 
 ```bash
-/plugin install ai-operations-registry@handsonai
+/plugin install ai-registry@handsonai
 ```
 
 ??? skills "Skills included"
 
     | Skill | What it does |
     |-------|-------------|
-    | [`naming-workflows`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-operations-registry/skills/naming-workflows/) | Generates consistent, outcome-focused names and descriptions for business workflows. Follows domain-specific naming patterns (Sales, Marketing, Product, etc.) and creates entries in the Notion Workflows database. |
-    | [`writing-workflow-sops`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-operations-registry/skills/writing-workflow-sops/) | Writes Standard Operating Procedure documentation for workflows. Adapts SOP templates for Manual, Augmented, and Automated workflow types. Saves SOPs to Notion workflow page bodies. |
-    | [`writing-process-guides`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-operations-registry/skills/writing-process-guides/) | Writes Business Process Guide documentation explaining when, why, and how to execute a complete business process with its component workflows. Covers strategic context while linking to individual SOPs for tactical details. |
-    | [`registering-skills`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-operations-registry/skills/registering-skills/) | Registers or updates Claude Skills in the Notion AI Assets database. Extracts metadata from SKILL.md frontmatter, generates Quick Start Prompts, and handles duplicate detection. |
-    | [`syncing-skills-to-github`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-operations-registry/skills/syncing-skills-to-github/) | Syncs skills from `~/.claude/skills/` to a GitHub repository. Detects changes, generates semantic commit messages, pushes to remote, and updates Notion AI Assets with GitHub URLs. |
+    | [`naming-workflows`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-registry/skills/naming-workflows/) | Generates consistent, outcome-focused names and descriptions for business workflows. Follows domain-specific naming patterns (Sales, Marketing, Product, etc.) and creates entries in the Notion Workflows database. |
+    | [`writing-workflow-sops`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-registry/skills/writing-workflow-sops/) | Writes Standard Operating Procedure documentation for workflows. Adapts SOP templates for Manual, Augmented, and Automated workflow types. Saves SOPs to Notion workflow page bodies. |
+    | [`writing-process-guides`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-registry/skills/writing-process-guides/) | Writes Business Process Guide documentation explaining when, why, and how to execute a complete business process with its component workflows. Covers strategic context while linking to individual SOPs for tactical details. |
+    | [`registering-skills`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-registry/skills/registering-skills/) | Registers or updates Claude Skills in the Notion AI Assets database. Extracts metadata from SKILL.md frontmatter, generates Quick Start Prompts, and handles duplicate detection. |
+    | [`syncing-skills-to-github`](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/ai-registry/skills/syncing-skills-to-github/) | Syncs skills from `~/.claude/skills/` to a GitHub repository. Detects changes, generates semantic commit messages, pushes to remote, and updates Notion AI Assets with GitHub URLs. |
 
 ??? workflow "Recommended workflow"
 
@@ -118,6 +118,6 @@ Document, name, register, and sync AI operational workflows and skills.
 | Plugin | Agents | Skills | Install command |
 |--------|--------|--------|----------------|
 | `course-examples` | 6 | 1 | `/plugin install course-examples@handsonai` |
-| `ai-operations-registry` | 0 | 5 | `/plugin install ai-operations-registry@handsonai` |
+| `ai-registry` | 0 | 5 | `/plugin install ai-registry@handsonai` |
 
 All plugins are maintained in the [handsonai GitHub repository](https://github.com/jamesgray-ai/handsonai).

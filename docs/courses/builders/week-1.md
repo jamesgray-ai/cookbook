@@ -33,7 +33,7 @@ Enable voice input for hands-free AI collaboration.
 
 - [Voice-to-Text Setup](../../fundamentals/developer-setup/voice-to-text-setup.md) — Configure Wispr Flow and Claude Desktop Quick Entry
 
-## Lesson: Build Your AI Operations Registry
+## Lesson: Build Your AI Registry
 
 Create your central hub for managing all AI operations across your business.
 

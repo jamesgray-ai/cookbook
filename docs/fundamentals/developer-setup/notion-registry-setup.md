@@ -1,35 +1,69 @@
-# AI Operations Registry Setup
+# AI Registry Setup
 
-Set up your personal AI Operations Registry in Notion to track business processes, workflows, AI assets, and connected applications.
+The AI Registry is a Notion workspace template that gives you a structured system for tracking your business processes, workflows, AI assets, and connected applications. It serves as the central hub for your AI operations — a single place to document what you're building, how it works, and what tools are involved.
+
+This registry is also the foundation for the [AI Registry plugin](../../plugins/index.md#ai-registry), a set of Claude Code skills that can read from and write to your registry automatically. Once your registry is set up and connected, Claude can name workflows, write SOPs, register skills, and keep everything in sync — all without leaving your terminal.
 
 ## Prerequisites
 
-- Notion account (free or paid)
-- Basic familiarity with Notion databases
+- Notion account (free or paid) — [get Notion here](https://www.notion.so/product)
+- Basic familiarity with Notion pages and databases
 
-## Quick Setup (5 minutes)
+## Setup Steps
 
-### Step 1: Open the Template
+### Step 1: Get Notion
 
-Click this link to access the AI Operations Registry template:
+If you don't already have Notion, sign up at [notion.so](https://www.notion.so/product). Notion is available on:
 
-**[AI Operations Registry - Template](https://www.notion.so/2f3edcfdb924813f86f3eacca6b836bb)**
+- **Web** — works in any browser
+- **Desktop** — macOS and Windows apps
+- **Mobile** — iOS and Android
 
-### Step 2: Duplicate to Your Workspace
+A free Notion account is all you need to use the registry.
 
-1. Click the **"Duplicate"** button in the top-right corner
-2. Select your destination workspace
-3. The template will copy to your workspace with all 4 databases and sample entries
+### Step 2: Open the Template
 
-### Step 3: Verify the Copy
+Click this link to view the AI Registry template:
 
-After duplication, confirm you have:
+**[AI Registry - Template](https://www.notion.so/2f3edcfdb924813f86f3eacca6b836bb)**
 
-- [ ] **Business Processes** database with 3 sample entries
-- [ ] **Workflows** database with 3 sample entries
-- [ ] **AI Assets** database with 3 sample entries
-- [ ] **Apps** database with 3 sample entries
-- [ ] Relations between databases are working (click a workflow to see linked items)
+### Step 3: Click Duplicate
+
+In the top-right corner of the template page, click the **"Duplicate"** button. If you're not signed in to Notion, you'll be prompted to log in first.
+
+### Step 4: Copy to Your Workspace
+
+Select the workspace you want to copy the template into. The entire page — including all four databases, sample entries, and relations between them — will be duplicated into your workspace.
+
+### Step 5: Review Sample Entries
+
+The template includes sample entries in each database so you can see how they work together. Explore a few entries to understand the structure:
+
+- Click into a **Business Process** to see its linked workflows
+- Click into a **Workflow** to see its linked AI assets and apps
+- Notice how relations connect everything together
+
+When you're ready, delete the sample entries and start adding your own.
+
+### Step 6: Customize Databases and Properties
+
+Tailor the registry to your business. Each database comes with sensible defaults, but you'll want to adjust them:
+
+- **Business Processes** — Edit the **Domain** select field to match your business areas (Sales, Marketing, Product, Operations, etc.)
+- **Workflows** — Update **Status** and **Type** options to fit your workflow categories
+- **AI Assets** — Customize **Asset Type** options (Skill, Prompt, Agent, Project, Context MD, etc.)
+- **Apps** — Configure **Type** options for your integration patterns (API, MCP Server, Native Integration, Webhook, etc.)
+
+To edit a select field: click any cell with that property, then click **"Edit property"** to add, rename, or remove options.
+
+### Step 7: Connect Your AI Tools
+
+To let your AI tools read and update the registry, connect Notion using the built-in integrations available on each platform:
+
+- **Claude** — Add the Notion connector from your Claude account settings under Connected Apps
+- **ChatGPT** — Add the Notion connection from Connected Apps in your settings
+
+Once connected, your AI tool can search, read, and update your registry databases directly. No custom configuration or API keys required.
 
 ## Understanding the Registry Structure
 
@@ -37,10 +71,10 @@ After duplication, confirm you have:
 
 | Database | Purpose | Key Fields |
 |----------|---------|------------|
-| **Business Processes** | High-level business functions | Domain, LOB, Description |
-| **Workflows** | Specific workflows within processes | Status, Type, Trigger, Process Outcome |
-| **AI Assets** | Skills, prompts, agents, projects | Asset Type, Platform, Status, Dependencies |
-| **Apps** | Connected applications & integrations | Type, Auth Type, Connection Status |
+| **Business Processes** | High-level business functions and their domains | Domain, LOB, Description |
+| **Workflows** | Specific workflows within each process | Status, Type, Trigger, Process Outcome |
+| **AI Assets** | Skills, prompts, agents, and other AI components | Asset Type, Platform, Status, Dependencies |
+| **Apps** | Connected applications and integrations | Type, Auth Type, Connection Status |
 
 ### How Relations Work
 
@@ -48,56 +82,68 @@ The databases are linked to show how your operations connect:
 
 ```
 Business Process → Workflows → AI Assets
-                           ↘ Apps
+                            ↘ Apps
 ```
 
 - Each **Business Process** contains multiple **Workflows**
 - Each **Workflow** can use multiple **AI Assets** and **Apps**
 - Changes propagate automatically through relations
 
-## Customizing Your Registry
+## Using the AI Registry Plugin
 
-### 1. Update Domain Options
+Once your registry is connected via MCP, install the companion plugin to let Claude work with it directly:
 
-Edit the **Domain** select field in Business Processes to match your business areas:
-- Click any Domain cell → "Edit property" → Add/remove options
+```bash
+/plugin install ai-registry@handsonai
+```
 
-### 2. Add Your Asset Types
+The plugin includes five skills that automate common registry tasks:
 
-Customize the **Asset Type** options in AI Assets:
-- Skill, Prompt, Agent, Project, Context MD, etc.
+| Skill | What it does |
+|-------|-------------|
+| `naming-workflows` | Generates consistent, outcome-focused workflow names and creates entries in the Workflows database |
+| `writing-workflow-sops` | Writes Standard Operating Procedure documentation for each workflow |
+| `writing-process-guides` | Documents how workflows fit together within a business process |
+| `registering-skills` | Registers Claude skills in the AI Assets database with metadata |
+| `syncing-skills-to-github` | Commits skills to GitHub and updates Notion with repository URLs |
 
-### 3. Configure App Types
+### Recommended workflow
 
-Update the **Type** field in Apps for your integration patterns:
-- API, MCP Server, Native Integration, Webhook, AI Browser
+1. **Name** — Ask Claude to name a workflow and it creates a Notion entry
+2. **Document** — Ask Claude to write the SOP for that workflow
+3. **Connect** — Ask Claude to write a process guide linking workflows together
+4. **Register** — Ask Claude to register any skills you've built in the AI Assets database
+5. **Sync** — Ask Claude to push skills to GitHub with version tracking
 
-## Next Steps
-
-1. **Clear sample entries** - Delete the example data when ready
-2. **Add your first process** - Start with one business domain
-3. **Document existing workflows** - Capture what you're already doing
-4. **Connect to Claude** - Add the Notion MCP server to give Claude access to your registry
-
-## Connecting to Claude (Optional)
-
-To let Claude read and update your registry:
-
-1. Configure the Notion MCP server (see [Notion MCP documentation](https://www.npmjs.com/package/@modelcontextprotocol/server-notion))
-2. Share your registry page with the Notion integration
-3. Ask Claude to help you document workflows or suggest AI assets
+See the [AI Registry plugin page](../../plugins/index.md#ai-registry) for full details and usage examples.
 
 ## Troubleshooting
 
 **Relations not copying correctly?**
+
 - This is rare with Notion duplicates. Try duplicating again.
 - Ensure you're duplicating the entire page, not individual databases.
 
 **Can't find the template?**
+
 - The template must be shared publicly. Contact the course instructor if the link doesn't work.
 
+**AI tool can't see your registry?**
+
+- Confirm the Notion connector is enabled in your AI tool's settings
+- Make sure you've granted access to the workspace containing your registry
+- Try disconnecting and reconnecting the Notion integration
+
 **Need to start over?**
+
 - Delete your copy and duplicate the template again.
+
+## Next Steps
+
+- **Add your first process** — Start with one business domain you know well
+- **Document existing workflows** — Capture what you're already doing before adding AI
+- **Install the plugin** — Set up the [AI Registry plugin](../../plugins/index.md#ai-registry) to automate registry updates
+- **Explore other setup guides** — Continue with [Claude Code Installation](claude-code-install.md) if you haven't already
 
 ## Questions?
 

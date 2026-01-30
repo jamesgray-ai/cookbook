@@ -134,8 +134,9 @@
   background-color: var(--md-primary-fg-color);
 }
 
-.md-social__link:hover {
+.md-footer .md-social__link:hover {
   color: #DDF222;
+  opacity: 1;
 }
 
 /* Table of contents active */

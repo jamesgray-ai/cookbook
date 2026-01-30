@@ -1,72 +1,56 @@
 ---
 title: Claude and Claude Code for Builders
-description: Transform from a Claude user into a Claude builder through hands-on experience with the complete AI builder stack.
+description: From Claude user to Claude builder in 5 weeks. A hands-on cohort course on Maven.
 ---
 
 # Claude and Claude Code for Builders
 
-Transform from a Claude user into a Claude builder through hands-on experience with the complete AI builder stack—the same tools and infrastructure that power modern AI-first operations.
+From Claude user to Claude builder in 5 weeks. This cohort-based course teaches you to move beyond basic AI usage and build production-grade AI systems — configuring a complete builder infrastructure, creating reusable AI capabilities, developing autonomous workflows, and shipping applications using agentic coding principles.
 
 [Enroll on Maven :material-arrow-right:](https://maven.com/james-gray/claude){ .md-button .md-button--primary }
 
+## Who This Course Is For
+
+- **Operational Leaders** building AI systems for their teams
+- **Builder-Founders** prototyping quickly without engineering resources
+- **AI-First Professionals** establishing AI-centered workflows
+
 ## What You'll Learn
 
-- Build and deploy Claude Skills that extend AI capabilities
-- Design and implement Subagent workflows for complex automation
-- Use Claude Code (CLI) for agentic software development
-- Automate browser tasks with Claude in Chrome
-- Connect AI to your local tools via Model Context Protocol (MCP)
-- Create an Agentic AI Registry to track and scale your AI operations
+- Configure a complete AI builder technology stack
+- Design systematic workflow registries to track your AI operations
+- Build Claude Skills for recurring tasks
+- Create multi-agent systems with subagents
+- Implement browser automation with Claude
+- Write specifications and ship web applications using agentic coding
+- Collaborate with Claude Cowork for knowledge work
 
-## Course Structure
+## What You'll Build
 
-**Duration:** 5 weeks
-**Format:** Live cohort-based learning with 90-minute sessions
-**Time Commitment:** Minimum 5 hours per week
-**Community:** Private Slack workspace for peer collaboration
+By the end of the course, you'll have five production-ready assets: 5+ Skills, 3+ Subagents, browser automations, and a working prototype — plus a capstone project demonstrating systematic AI implementation.
 
-### Weekly Breakdown
+## Course Format
 
-| Week | Topic | Materials |
-|------|-------|-----------|
-| **Week 0** | Course Orientation | [Pre-course prep](week-0.md) |
-| **Week 1** | Configure AI Builder Stack | [Setup & MCP](week-1.md) |
-| **Week 2** | Build and Deploy Claude Skills | Coming soon |
-| **Week 3** | Advanced Workflows with Subagents | Coming soon |
-| **Week 4-5** | Agentic Coding with Claude Code | Coming soon |
+| | |
+|---|---|
+| **Duration** | 5 weeks |
+| **Commitment** | 4-6 hours per week |
+| **Live Sessions** | Two 90-minute sessions per week |
+| **Office Hours** | Optional Saturday sessions plus weekday availability |
+| **Community** | Private Slack workspace for peer collaboration |
+| **Recordings** | Lifetime access to all session recordings |
 
 ## Prerequisites
 
-### Required
+- Claude paid subscription (Pro or higher)
+- GitHub, Cursor or VS Code, Chrome installed
+- macOS or Windows with admin access to install software
 
-- Claude Pro or Team subscription ($20-30/month)
-- macOS or Windows operating system
-- Admin access to install software
-- Basic familiarity with command-line tools (we'll teach what you need)
-
-### Tools You'll Use
-
-Setup guides are available under [Claude](../../platforms/claude/) and [Fundamentals](../../fundamentals/):
-
-- Claude.ai (web + desktop app)
-- GitHub
-- Code editor (Cursor or VS Code)
-- Claude Code CLI
-- Google Chrome + Claude in Chrome extension
-- Notion or alternative (for Agentic AI Registry)
-
-**Total minimum cost:** $20/month (Claude subscription only)
-
-## Getting Started
-
-1. Start with [Week 0: Course Orientation](week-0.md) materials
-2. Complete the [Claude setup guides](../../platforms/claude/) and [developer setup](../../fundamentals/developer-setup/git-install.md)
-3. Join the Maven cohort for live sessions
+Setup guides are available under [Builder Setup](../../fundamentals/developer-setup/claude-code-install.md) in the Fundamentals section.
 
 ## Instructor
 
-**James Gray**
-Building AI-first operations and teaching others to do the same.
+**James Gray** — UC Berkeley AI instructor and former CIO/CPO. Previously spent 10 years at Microsoft building enterprise data platforms. Has trained 5,000+ executives globally in AI strategy.
 
 - [Maven Profile](https://maven.com/james-gray)
 - [Other course: Hands-on Agentic AI for Leaders](../leaders/)

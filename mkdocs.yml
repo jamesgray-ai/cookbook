@@ -137,8 +137,6 @@ nav:
       - courses/leaders/index.md
     - Claude for Builders:
       - courses/builders/index.md
-      - Week 0 - Orientation: courses/builders/week-0.md
-      - Week 1 - AI Builder Stack: courses/builders/week-1.md
   - Contributing: CONTRIBUTING.md
 
 extra:
