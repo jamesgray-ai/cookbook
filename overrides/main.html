@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  {# Inject FAQPage JSON-LD schema for question pages #}
+  {% if page and page.meta and page.meta.question and page.meta.short_answer %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": {{ page.meta.question | tojson }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ page.meta.short_answer | tojson }}
+      }
+    }]
+  }
+  </script>
+  {% endif %}
+{% endblock %}
