@@ -140,10 +140,8 @@ nav:
     - Overview: troubleshooting/README.md
   - Courses:
     - Overview: courses/index.md
-    - Agentic AI for Leaders:
-      - Overview: courses/leaders/index.md
-    - Claude for Builders:
-      - Overview: courses/builders/index.md
+    - Agentic AI for Leaders: courses/leaders/index.md
+    - Claude for Builders: courses/builders/index.md
 
 
 extra:
