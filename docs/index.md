@@ -1,11 +1,11 @@
 ---
 title: The Hands-on AI Cookbook
-description: A practical AI cookbook — guides, patterns, and answers to help you move from experimenting with AI to creating real business value
+description: Curated AI knowledge for builders. Apply AI faster. Accelerate business impact.
 ---
 
 # The Hands-on AI Cookbook
 
-*Your practical reference for turning AI into business value.*
+*Curated AI knowledge for builders. Apply AI faster. Accelerate business impact.*
 
 Guides, patterns, ready-made tools, and direct answers — everything you need to move from experimenting with AI to getting real results. Browse by platform, look up a specific topic, or work through a structured course.
 
