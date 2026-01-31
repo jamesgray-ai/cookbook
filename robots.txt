@@ -1,0 +1,26 @@
+# Hands-on AI Cookbook — https://handsonai.info
+# All crawlers welcome, including AI bots
+
+User-agent: *
+Allow: /
+
+# AI answer-engine bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://handsonai.info/sitemap.xml

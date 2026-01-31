@@ -1,0 +1,54 @@
+# Hands-on AI Cookbook
+> Practical guides, courses, and reference materials for building with AI
+
+## Author
+- James Gray — AI instructor at UC Berkeley, former CIO/CPO, Maven course instructor
+- Website: https://jamesgray.ai
+- LinkedIn: https://www.linkedin.com/in/jamesgray/
+- Newsletter: https://graymatter.jamesgray.ai
+
+## Courses
+- Claude and Claude Code for Builders: https://handsonai.info/courses/builders/
+- Hands-on Agentic AI for Leaders: https://handsonai.info/courses/leaders/
+
+## Platform Guides
+- Claude: https://handsonai.info/platforms/claude/
+- OpenAI / ChatGPT: https://handsonai.info/platforms/openai/
+- Google Gemini: https://handsonai.info/platforms/google-gemini/
+- Microsoft 365 Copilot: https://handsonai.info/platforms/m365-copilot/
+
+## Fundamentals
+- Overview: https://handsonai.info/fundamentals/
+- Prompt Engineering: https://handsonai.info/fundamentals/prompt-engineering/
+- Agents & Tools: https://handsonai.info/fundamentals/agents-and-tools/
+- Patterns: https://handsonai.info/fundamentals/patterns/
+
+## Builder Setup
+- Terminal Basics: https://handsonai.info/fundamentals/developer-setup/terminal-basics/
+- Git Installation: https://handsonai.info/fundamentals/developer-setup/git-install/
+- GitHub Setup: https://handsonai.info/fundamentals/developer-setup/github-setup/
+- Editor Setup: https://handsonai.info/fundamentals/developer-setup/editor-setup/
+- Claude Code Installation: https://handsonai.info/fundamentals/developer-setup/claude-code-install/
+- Notion Registry: https://handsonai.info/fundamentals/developer-setup/notion-registry-setup/
+- Voice to Text: https://handsonai.info/fundamentals/developer-setup/voice-to-text-setup/
+
+## Questions & Answers
+- Overview: https://handsonai.info/questions/
+- What is a system prompt?: https://handsonai.info/questions/prompting/what-is-a-system-prompt/
+
+## How-To Guides
+- Overview: https://handsonai.info/how-to/
+- Agents: https://handsonai.info/how-to/agents/
+- Integrations: https://handsonai.info/how-to/integrations/
+- Prompting: https://handsonai.info/how-to/prompting/
+
+## Plugins
+- Marketplace: https://handsonai.info/plugins/
+- Getting Started: https://handsonai.info/plugins/getting-started/
+- Using Plugins: https://handsonai.info/plugins/using-plugins/
+
+## Troubleshooting
+- Overview: https://handsonai.info/troubleshooting/
+
+## Full Content
+- See llms-full.txt for page summaries: https://handsonai.info/llms-full.txt

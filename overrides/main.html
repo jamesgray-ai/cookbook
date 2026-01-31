@@ -3,12 +3,194 @@
 {% block extrahead %}
   {{ super() }}
 
-  {# Inject FAQPage JSON-LD schema for question pages #}
-  {% if page and page.meta and page.meta.question and page.meta.short_answer %}
+  {% if page %}
+  {# ── Open Graph + Twitter Card Meta Tags ── #}
+  {% set page_title = page.meta.title or page.title or config.site_name %}
+  {% set page_desc = page.meta.description or config.site_description %}
+  {% set page_url = page.canonical_url %}
+  {% set og_image = config.site_url ~ "assets/images/og-default.png" %}
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_desc }}" />
+  <meta property="og:url" content="{{ page_url }}" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="og:image" content="{{ og_image }}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page_title }}" />
+  <meta name="twitter:description" content="{{ page_desc }}" />
+  <meta name="twitter:image" content="{{ og_image }}" />
+
+  {# ── Homepage: Organization + WebSite + Person Schema ── #}
+  {% if page.is_homepage %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}#website",
+        "name": {{ config.site_name | tojson }},
+        "url": {{ config.site_url | tojson }},
+        "description": {{ config.site_description | tojson }},
+        "publisher": { "@id": "{{ config.site_url }}#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ config.site_url }}?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{ config.site_url }}#organization",
+        "name": "JamesGray.AI",
+        "url": "https://jamesgray.ai",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ config.site_url }}assets/logo-horizontal.png"
+        },
+        "founder": { "@id": "{{ config.site_url }}#person" },
+        "sameAs": [
+          "https://www.linkedin.com/in/jamesgray/",
+          "https://github.com/jamesgray-ai",
+          "https://jamesgray.ai",
+          "https://graymatter.jamesgray.ai",
+          "https://maven.com/james-gray"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ config.site_url }}#person",
+        "name": "James Gray",
+        "url": "https://jamesgray.ai",
+        "jobTitle": "Founder & AI Instructor",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "JamesGray.AI",
+          "url": "https://jamesgray.ai"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/jamesgray/",
+          "https://github.com/jamesgray-ai",
+          "https://jamesgray.ai",
+          "https://graymatter.jamesgray.ai",
+          "https://maven.com/james-gray"
+        ]
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+
+  {# ── Course Schema (schema.org/Course) ── #}
+  {% if page.meta.schema_type == "Course" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": {{ page.meta.title | tojson }},
+    "description": {{ page.meta.description | tojson }},
+    "url": {{ page.canonical_url | tojson }},
+    "provider": {
+      "@type": "Organization",
+      "name": {{ page.meta.course_provider | default("Maven") | tojson }},
+      "url": {{ page.meta.course_url | default("https://maven.com/james-gray") | tojson }}
+    },
+    "inLanguage": {{ page.meta.course_language | default("en") | tojson }},
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": {{ page.meta.course_mode | default("Blended") | tojson }},
+      "duration": {{ page.meta.course_duration | default("P5W") | tojson }},
+      "instructor": {
+        "@type": "Person",
+        "name": "James Gray",
+        "url": "https://maven.com/james-gray",
+        "jobTitle": "Founder & AI Instructor"
+      }
+    }
+  }
+  </script>
+  {% endif %}
+
+  {# ── HowTo Schema for Setup Guides ── #}
+  {% if page.meta.schema_type == "HowTo" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": {{ page.meta.title | tojson }},
+    "description": {{ page.meta.description | tojson }},
+    "url": {{ page.canonical_url | tojson }},
+    {% if page.meta.howto_steps %}
+    "step": [
+      {% for step in page.meta.howto_steps %}
+      {
+        "@type": "HowToStep",
+        "position": {{ loop.index }},
+        "name": {{ step.name | tojson }},
+        "text": {{ step.text | tojson }}
+        {% if step.url %},
+        "url": {{ step.url | tojson }}
+        {% endif %}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+    {% endif %}
+  }
+  </script>
+  {% endif %}
+
+  {# ── BreadcrumbList Schema (all non-homepage pages) ── #}
+  {% if not page.is_homepage %}
+  {% set parts = page.url.split("/") | reject("equalto", "") | list %}
+  {% if parts | length > 0 %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ config.site_url | tojson }}
+      }{% if parts | length > 0 %},{% endif %}
+      {% set ns = namespace(path="") %}
+      {% for part in parts %}
+      {% set ns.path = ns.path ~ part ~ "/" %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index + 1 }},
+        "name": {% if loop.last %}{{ page_title | tojson }}{% else %}{{ part | replace("-", " ") | title | tojson }}{% endif %},
+        "item": {{ (config.site_url ~ ns.path) | tojson }}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  {% endif %}
+
+  {# ── Enhanced FAQPage JSON-LD Schema ── #}
+  {% if page.meta.question and page.meta.short_answer %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    {% if page.meta.date %}
+    "dateCreated": {{ page.meta.date | string | tojson }},
+    {% endif %}
+    {% if page.meta.author %}
+    "author": {
+      "@type": "Person",
+      "name": {{ page.meta.author | tojson }},
+      "url": "https://jamesgray.ai"
+    },
+    {% endif %}
     "mainEntity": [{
       "@type": "Question",
       "name": {{ page.meta.question | tojson }},
@@ -20,4 +202,37 @@
   }
   </script>
   {% endif %}
+
+  {# ── Article / TechArticle Schema ── #}
+  {% if page.meta.date and page.meta.author and not page.meta.question and page.meta.schema_type != "Course" and page.meta.schema_type != "HowTo" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": {% if page.meta.schema_type == "TechArticle" %}"TechArticle"{% else %}"Article"{% endif %},
+    "headline": {{ page_title | tojson }},
+    "description": {{ page_desc | tojson }},
+    "url": {{ page.canonical_url | tojson }},
+    "datePublished": {{ page.meta.date | string | tojson }},
+    {% if page.meta.date_modified %}
+    "dateModified": {{ page.meta.date_modified | string | tojson }},
+    {% endif %}
+    "author": {
+      "@type": "Person",
+      "name": {{ page.meta.author | tojson }},
+      "url": "https://jamesgray.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "JamesGray.AI",
+      "url": "https://jamesgray.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ config.site_url }}assets/logo-horizontal.png"
+      }
+    }
+  }
+  </script>
+  {% endif %}
+
+  {% endif %}{# end page guard #}
 {% endblock %}
