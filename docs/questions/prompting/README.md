@@ -1,3 +1,8 @@
+---
+title: Prompting Questions
+description: Questions about writing effective prompts, system messages, and prompt engineering techniques
+---
+
 # Prompting Questions
 
 Questions about writing effective prompts, system messages, and prompt engineering techniques.

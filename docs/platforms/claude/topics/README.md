@@ -1,3 +1,8 @@
+---
+title: Claude Topics
+description: Documentation and key features for Anthropic's Claude models, tool use, and vision
+---
+
 # Claude
 
 Documentation for Anthropic's Claude models.

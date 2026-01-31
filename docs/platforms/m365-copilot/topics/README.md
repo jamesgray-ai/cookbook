@@ -1,3 +1,8 @@
+---
+title: M365 Copilot Topics
+description: Documentation and key features for Microsoft 365 Copilot, Azure OpenAI, and Copilot Studio
+---
+
 # M365 Copilot
 
 Documentation for Microsoft 365 Copilot and Azure OpenAI.

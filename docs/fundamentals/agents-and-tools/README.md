@@ -1,3 +1,8 @@
+---
+title: Agents and Tools
+description: Concepts for building AI agents including function calling, tool use, and agent loops
+---
+
 # Agents and Tools
 
 Concepts for building AI agents and implementing tool use.

@@ -1,3 +1,8 @@
+---
+title: Contributing to Hands-on AI
+description: How to add content — questions, how-to guides, topics, and patterns — to the AI Cookbook
+---
+
 # Contributing to Hands-On AI
 
 Thank you for contributing to Hands-On AI! This guide explains how to add new content.

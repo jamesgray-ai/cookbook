@@ -1,3 +1,8 @@
+---
+title: Platforms Overview
+description: Platform-specific guides and documentation for Claude, OpenAI, Gemini, and M365 Copilot
+---
+
 # Platforms
 
 Platform-specific documentation and guides.

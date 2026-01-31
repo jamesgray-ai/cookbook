@@ -1,6 +1,12 @@
 ---
 title: Hands-on Agentic AI for Leaders
 description: From AI user to AI builder in 30 days. A hands-on cohort course on Maven.
+schema_type: Course
+course_duration: P4W
+course_mode: Blended
+course_url: https://maven.com/james-gray/hands-on-ai-for-leaders
+course_provider: Maven
+course_language: en
 ---
 
 # Hands-on Agentic AI for Leaders

@@ -1,3 +1,8 @@
+---
+title: Claude Resources
+description: Recommended docs, tools, courses, and community links for Anthropic's Claude
+---
+
 # Claude Resources
 
 Recommended articles, docs, and courses for Anthropic's Claude.

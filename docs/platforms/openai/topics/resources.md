@@ -1,3 +1,8 @@
+---
+title: OpenAI Resources
+description: Recommended docs, tools, courses, and community links for OpenAI and ChatGPT
+---
+
 # OpenAI Resources
 
 Recommended articles, docs, and courses for OpenAI and GPT models.

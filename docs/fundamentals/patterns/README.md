@@ -1,3 +1,8 @@
+---
+title: AI Patterns and Best Practices
+description: Reusable patterns for prompting, agents, integrations, and error handling in AI systems
+---
+
 # Patterns
 
 Reusable patterns and best practices for AI/ML development.

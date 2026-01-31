@@ -1,3 +1,8 @@
+---
+title: AI Questions and Answers
+description: Quick answers to common questions about AI prompting, agents, and platform integrations
+---
+
 # Questions
 
 Quick answers to common questions about AI/ML, prompting, agents, and platform integrations.

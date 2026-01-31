@@ -1,6 +1,12 @@
 ---
 title: Claude and Claude Code for Builders
 description: From Claude user to Claude builder in 5 weeks. A hands-on cohort course on Maven.
+schema_type: Course
+course_duration: P5W
+course_mode: Blended
+course_url: https://maven.com/james-gray/claude
+course_provider: Maven
+course_language: en
 ---
 
 # Claude and Claude Code for Builders

@@ -1,3 +1,8 @@
+---
+title: Scheduled Subagent Troubleshooting
+description: Fix common issues with scheduled Claude Code subagents on macOS and Windows
+---
+
 # Scheduled Subagent Troubleshooting
 
 Common issues and solutions when running scheduled Claude Code subagents.

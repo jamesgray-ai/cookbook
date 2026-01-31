@@ -1,3 +1,8 @@
+---
+title: Gemini Questions
+description: Questions specific to Google's Gemini models, Vertex AI, and API features
+---
+
 # Gemini Questions
 
 Questions specific to Google's Gemini models and Vertex AI.

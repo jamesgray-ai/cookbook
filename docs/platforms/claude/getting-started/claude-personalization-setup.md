@@ -1,3 +1,8 @@
+---
+title: Claude Personalization and Memory Setup
+description: Configure Claude's profile preferences, memory, styles, and chat search features
+---
+
 # Claude Personalization and Memory Setup Guide
 
 Quick reference for configuring Claude's personalization features and memory.

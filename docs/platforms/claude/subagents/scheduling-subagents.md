@@ -1,3 +1,8 @@
+---
+title: Scheduling Claude Code Subagents
+description: Set up Claude Code subagents to run automatically on macOS (launchd) or Windows (Task Scheduler)
+---
+
 # Scheduling Claude Code Subagents
 
 Set up your Claude Code subagents to run automatically on a schedule—like a research assistant that gathers information while you sleep.

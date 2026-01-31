@@ -1,3 +1,8 @@
+---
+title: Agent Questions
+description: Questions about building AI agents, function calling, tool use, and multi-step workflows
+---
+
 # Agent Questions
 
 Questions about building AI agents, function calling, tool use, and multi-step workflows.

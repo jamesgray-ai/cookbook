@@ -1,3 +1,20 @@
+---
+title: Claude Code Installation Guide
+description: Install Claude Code extension and CLI on macOS, Linux, or Windows with step-by-step instructions
+schema_type: HowTo
+howto_steps:
+  - name: Install the Claude Code extension
+    text: Open the Extensions panel (Cmd/Ctrl + Shift + X), search for Claude Code, and click Install.
+  - name: Install the CLI
+    text: Run the install command for your OS — curl on macOS/Linux or irm on Windows PowerShell.
+  - name: Set up your PATH
+    text: Ensure the claude command is available from any directory by configuring your shell profile or system PATH.
+  - name: Log in
+    text: Run 'claude' in your terminal and authenticate through the browser with your Claude subscription.
+  - name: Verify installation
+    text: Run 'claude --version' to confirm the CLI is working, then start an interactive session.
+---
+
 # Claude Code Setup Guide
 
 Quick reference for setting up Claude Code in your editor and terminal.

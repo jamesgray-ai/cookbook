@@ -1,3 +1,8 @@
+---
+title: Agents How-To Guides
+description: Guides for building AI agents, tool use, multi-step workflows, and error handling
+---
+
 # Agents How-To Guides
 
 Guides for building and working with AI agents and tool use.

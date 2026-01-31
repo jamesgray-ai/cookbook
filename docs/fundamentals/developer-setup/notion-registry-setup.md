@@ -1,3 +1,22 @@
+---
+title: AI Registry Setup in Notion
+description: Set up the Notion AI Registry template to track business processes, workflows, and AI assets
+schema_type: HowTo
+howto_steps:
+  - name: Get Notion
+    text: Sign up for a free Notion account at notion.so if you don't already have one.
+  - name: Open the template
+    text: Click the AI Registry template link to view the pre-built workspace structure.
+  - name: Duplicate the template
+    text: Click the Duplicate button in the top-right corner to copy the template to your workspace.
+  - name: Review sample entries
+    text: Explore the four databases (Business Processes, Workflows, AI Assets, Apps) to understand the structure.
+  - name: Customize databases
+    text: Edit select fields in each database to match your business areas, workflow categories, and asset types.
+  - name: Connect your AI tools
+    text: Add the Notion connector from your Claude or ChatGPT account settings under Connected Apps.
+---
+
 # AI Registry Setup
 
 The AI Registry is a Notion workspace template that gives you a structured system for tracking your business processes, workflows, AI assets, and connected applications. It serves as the central hub for your AI operations — a single place to document what you're building, how it works, and what tools are involved.

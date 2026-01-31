@@ -1,3 +1,8 @@
+---
+title: Claude Questions
+description: Questions specific to Anthropic's Claude models, Claude Code, and API usage
+---
+
 # Claude Questions
 
 Questions specific to Anthropic's Claude models and API.

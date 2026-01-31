@@ -1,3 +1,8 @@
+---
+title: Claude Projects Setup Guide
+description: Create and configure Claude Projects for persistent context, knowledge, and instructions
+---
+
 # Claude Projects Setup Guide
 
 Quick reference for creating and configuring Claude Projects for persistent context.

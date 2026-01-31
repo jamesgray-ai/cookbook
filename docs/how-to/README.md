@@ -1,3 +1,8 @@
+---
+title: How-To Guides
+description: Step-by-step solutions for AI agents, integrations, and prompting techniques
+---
+
 # How-To Guides
 
 Problem-focused guides that help you accomplish specific tasks.

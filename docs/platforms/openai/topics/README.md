@@ -1,3 +1,8 @@
+---
+title: OpenAI Topics
+description: Documentation and key features for OpenAI GPT models, Assistants API, and function calling
+---
+
 # OpenAI
 
 Documentation for OpenAI's GPT models and APIs.

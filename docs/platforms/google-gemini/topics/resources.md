@@ -1,3 +1,8 @@
+---
+title: Gemini Resources
+description: Recommended docs, tools, courses, and community links for Google Gemini
+---
+
 # Gemini Resources
 
 Recommended articles, docs, and courses for Google's Gemini models.

@@ -1,3 +1,18 @@
+---
+title: Voice-to-Text Setup Guide
+description: Set up Wispr Flow or Claude Desktop Quick Entry for hands-free AI voice input
+schema_type: HowTo
+howto_steps:
+  - name: Choose your voice input tool
+    text: Pick Wispr Flow (Mac/Windows, dictates anywhere) or Claude Desktop Quick Entry (Mac only, speaks directly to Claude).
+  - name: Install the app
+    text: Download Wispr Flow from wisprflow.ai or install Claude Desktop from claude.ai/download.
+  - name: Grant permissions
+    text: Allow microphone access and configure your preferred activation method (keyboard shortcut or push-to-talk).
+  - name: Test dictation
+    text: Activate voice input and speak naturally. Verify transcription accuracy in a text field or Claude chat.
+---
+
 # Voice-to-Text Setup Guide
 
 Quick reference for setting up voice input for hands-free AI collaboration.

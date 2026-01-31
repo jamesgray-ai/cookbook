@@ -1,3 +1,16 @@
+---
+title: Code Editor Setup Guide
+description: Install Cursor or VS Code as your code editor for AI development
+schema_type: HowTo
+howto_steps:
+  - name: Choose your editor
+    text: Pick Cursor (AI-first editing) or VS Code (free, familiar). Both work for course exercises.
+  - name: Download and install
+    text: Go to cursor.com or code.visualstudio.com, download for your OS, and run the installer.
+  - name: Verify installation
+    text: Open your editor, go to File > Open Folder, and confirm you can navigate files and folders.
+---
+
 # Code Editor Setup Guide
 
 Quick reference for installing your code editor.

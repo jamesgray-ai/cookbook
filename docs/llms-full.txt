@@ -1,0 +1,131 @@
+# Hands-on AI Cookbook — Full Content Directory
+> Practical guides, courses, and reference materials for building with AI
+> Author: James Gray — AI instructor at UC Berkeley, former CIO/CPO
+
+---
+
+## Homepage
+- URL: https://handsonai.info/
+- Summary: Central hub for the Hands-on AI Cookbook. Browse platform guides (Claude, ChatGPT, Gemini, Copilot), fundamentals (prompt engineering, agents, patterns), Q&A, how-to guides, plugins, and structured courses. Includes quick-start links for common tasks like installing Claude Code, setting up Git, and scheduling AI agents.
+
+---
+
+## Courses
+
+### Claude and Claude Code for Builders
+- URL: https://handsonai.info/courses/builders/
+- Summary: A 5-week cohort course on Maven that transforms Claude users into Claude builders. Covers the full AI builder stack: Claude Skills, subagents, browser automation, and agentic coding. Students build 5+ Skills, 3+ Subagents, browser automations, and a capstone project. Aimed at operational leaders, builder-founders, and AI-first professionals. Requires Claude Pro/Max subscription and macOS or Windows.
+
+### Hands-on Agentic AI for Leaders
+- URL: https://handsonai.info/courses/leaders/
+- Summary: A 4-week cohort course on Maven for leaders and non-technical professionals. Covers AI-powered workflows, agent building blocks, browser automation, and multi-platform deployment across ChatGPT, Claude, M365 Copilot, and Google Workspace. Students complete 26 hands-on projects and ship workflows saving 5-10 hours weekly. No coding experience required.
+
+---
+
+## Platform Guides
+
+### Claude
+- URL: https://handsonai.info/platforms/claude/
+- Summary: Everything for working with Anthropic's Claude — installation guides, personalization setup, project organization, subagent scheduling, and troubleshooting. Covers Claude Code CLI, VS Code extension, and MCP integrations.
+
+### OpenAI / ChatGPT
+- URL: https://handsonai.info/platforms/openai/
+- Summary: Guides, topics, and Q&A for OpenAI's ChatGPT platform. Covers usage patterns, API concepts, and practical applications.
+
+### Google Gemini
+- URL: https://handsonai.info/platforms/google-gemini/
+- Summary: Guides, topics, and Q&A for Google's Gemini AI platform. Covers workspace integrations and practical applications.
+
+### Microsoft 365 Copilot
+- URL: https://handsonai.info/platforms/m365-copilot/
+- Summary: Guides, topics, and resources for Microsoft 365 Copilot. Covers enterprise AI integration within the Microsoft ecosystem.
+
+---
+
+## Fundamentals
+
+### Overview
+- URL: https://handsonai.info/fundamentals/
+- Summary: Cross-platform concepts and tools that apply across all AI platforms. Includes builder setup guides, prompt engineering, agents & tools, and reusable patterns.
+
+### Prompt Engineering
+- URL: https://handsonai.info/fundamentals/prompt-engineering/
+- Summary: Techniques for effective prompting that work across all AI models. Covers system prompts, structured prompting, and iterative refinement.
+
+### Agents & Tools
+- URL: https://handsonai.info/fundamentals/agents-and-tools/
+- Summary: Concepts and patterns for building autonomous AI systems. Covers agent architectures, tool usage, and multi-agent coordination.
+
+### Patterns
+- URL: https://handsonai.info/fundamentals/patterns/
+- Summary: Reusable AI implementation patterns and best practices. Common approaches for structuring AI workflows and outputs.
+
+---
+
+## Builder Setup Guides
+
+### Terminal Basics
+- URL: https://handsonai.info/fundamentals/developer-setup/terminal-basics/
+- Summary: Introduction to the command line for beginners. Covers opening the terminal on macOS and Windows, essential commands (pwd, ls, cd, mkdir), paths, tab completion, and the integrated terminal in Cursor/VS Code.
+
+### Git Installation
+- URL: https://handsonai.info/fundamentals/developer-setup/git-install/
+- Summary: Step-by-step guide to installing Git on macOS (Xcode tools or Homebrew) and Windows (git-scm.com installer). Covers verification, identity configuration, and troubleshooting.
+
+### GitHub Setup
+- URL: https://handsonai.info/fundamentals/developer-setup/github-setup/
+- Summary: Creating a GitHub account, cloning repositories, and understanding core Git concepts (commit, push, pull, staging). Shows how to use Claude Code for Git operations.
+
+### Editor Setup
+- URL: https://handsonai.info/fundamentals/developer-setup/editor-setup/
+- Summary: Installing Cursor or VS Code as your code editor. Comparison table, download links, and verification steps for both options.
+
+### Claude Code Installation
+- URL: https://handsonai.info/fundamentals/developer-setup/claude-code-install/
+- Summary: Complete setup guide for Claude Code — VS Code extension installation, CLI installation on macOS/Linux/Windows, PATH configuration, authentication, verification, and essential commands reference.
+
+### Notion AI Registry Setup
+- URL: https://handsonai.info/fundamentals/developer-setup/notion-registry-setup/
+- Summary: Setting up the AI Registry Notion template for tracking business processes, workflows, AI assets, and connected apps. Covers template duplication, database customization, AI tool connection, and the companion AI Registry plugin.
+
+### Voice to Text Setup
+- URL: https://handsonai.info/fundamentals/developer-setup/voice-to-text-setup/
+- Summary: Setting up voice input using Wispr Flow (cross-platform) or Claude Desktop Quick Entry (macOS only). Covers installation, configuration, and troubleshooting for hands-free AI collaboration.
+
+---
+
+## Questions & Answers
+
+### What is a system prompt?
+- URL: https://handsonai.info/questions/prompting/what-is-a-system-prompt/
+- Summary: Explains system prompts — instructions given to AI models that define behavior, personality, and constraints for entire conversations. Includes a Python code example using the OpenAI API and covers use cases like personas, constraints, context setting, and rules.
+
+---
+
+## How-To Guides
+
+### Overview
+- URL: https://handsonai.info/how-to/
+- Summary: Problem-focused guides organized by category — agents, integrations, and prompting techniques. Step-by-step solutions to specific AI implementation challenges.
+
+---
+
+## Plugins
+
+### Marketplace
+- URL: https://handsonai.info/plugins/
+- Summary: Browse and install pre-built Claude Code plugins with agents and skills. Explains plugin concepts (agents, skills, commands, hooks, MCP servers) and lists available plugins with installation commands.
+
+### Getting Started with Plugins
+- URL: https://handsonai.info/plugins/getting-started/
+- Summary: Step-by-step walkthrough for installing and using Claude Code plugins from the Hands-on AI marketplace.
+
+### Using Plugins
+- URL: https://handsonai.info/plugins/using-plugins/
+- Summary: Guide to working with installed plugins — invoking agents, using skills, and managing plugin configurations.
+
+---
+
+## Troubleshooting
+- URL: https://handsonai.info/troubleshooting/
+- Summary: Common issues and solutions for AI tools, developer setup, and course-related problems.

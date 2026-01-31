@@ -1,3 +1,8 @@
+---
+title: Gemini Topics
+description: Documentation and key features for Google Gemini models, Vertex AI, and grounding
+---
+
 # Gemini
 
 Documentation for Google's Gemini models and Vertex AI.

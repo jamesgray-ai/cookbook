@@ -1,3 +1,14 @@
+---
+title: GitHub Setup Guide
+description: Create a GitHub account, clone repositories, and learn core Git concepts for AI development
+schema_type: HowTo
+howto_steps:
+  - name: Create a GitHub account
+    text: Go to github.com, click Sign up, follow the prompts, and verify your email address.
+  - name: Clone a repository
+    text: Open the Command Palette (Cmd/Ctrl + Shift + P), type Git Clone, paste the repository URL, and choose a local folder.
+---
+
 # GitHub Setup Guide
 
 Quick reference for setting up GitHub and version control for your AI assets.

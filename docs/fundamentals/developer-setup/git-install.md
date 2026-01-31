@@ -1,3 +1,18 @@
+---
+title: Git Installation Guide
+description: Install Git on macOS or Windows, configure your identity, and verify installation
+schema_type: HowTo
+howto_steps:
+  - name: Check if Git is already installed
+    text: Open your terminal and run 'git --version'. If you see a version number, Git is already installed.
+  - name: Install Git on your operating system
+    text: "macOS: Run 'xcode-select --install' or use Homebrew. Windows: Download from git-scm.com and run the installer."
+  - name: Verify installation
+    text: Open a new terminal window and run 'git --version' to confirm Git is installed.
+  - name: Configure your identity
+    text: Set your name and email for Git commits using 'git config --global user.name' and 'git config --global user.email'.
+---
+
 # Git Installation Guide
 
 Quick reference for installing Git on your local machine.

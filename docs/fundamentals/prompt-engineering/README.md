@@ -1,3 +1,8 @@
+---
+title: Prompt Engineering
+description: Core prompting concepts — context windows, system prompts, few-shot learning, and chain-of-thought
+---
+
 # Prompt Engineering
 
 Concepts and techniques for effective prompting.

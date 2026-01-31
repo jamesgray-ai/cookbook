@@ -1,3 +1,8 @@
+---
+title: Integration How-To Guides
+description: Guides for integrating AI platforms including authentication, rate limits, and streaming
+---
+
 # Integration How-To Guides
 
 Guides for integrating with AI platforms and handling common scenarios.

@@ -1,3 +1,8 @@
+---
+title: Prompting How-To Guides
+description: Guides for prompt engineering techniques including system prompts, few-shot learning, and chain-of-thought
+---
+
 # Prompting How-To Guides
 
 Guides for prompt engineering techniques and best practices.

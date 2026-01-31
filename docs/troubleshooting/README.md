@@ -1,3 +1,8 @@
+---
+title: Troubleshooting
+description: Solutions for common AI tool problems, API errors, and developer setup issues
+---
+
 # Troubleshooting
 
 Solutions for common problems and errors.

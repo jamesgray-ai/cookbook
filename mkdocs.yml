@@ -8,6 +8,7 @@ repo_url: https://github.com/jamesgray-ai/handsonai
 
 theme:
   name: material
+  language: en
   custom_dir: docs/overrides
   logo: assets/logo-horizontal.png
   favicon: assets/logo.png
@@ -45,6 +46,11 @@ plugins:
   - search
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+  - redirects:
+      redirect_maps: {}
 
 markdown_extensions:
   - admonition

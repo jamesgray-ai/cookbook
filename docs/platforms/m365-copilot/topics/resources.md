@@ -1,3 +1,8 @@
+---
+title: M365 Copilot Resources
+description: Recommended docs, tools, courses, and community links for Microsoft 365 Copilot
+---
+
 # M365 Copilot Resources
 
 Recommended articles, docs, and courses for Microsoft 365 Copilot.

@@ -1,3 +1,18 @@
+---
+title: Terminal Basics
+description: Learn essential command-line skills for macOS and Windows — navigation, commands, and paths
+schema_type: HowTo
+howto_steps:
+  - name: Open your terminal
+    text: "macOS: Press Cmd+Space, type Terminal, press Enter. Windows: Click Start, type PowerShell, click Windows PowerShell."
+  - name: Open the terminal in your editor
+    text: In Cursor or VS Code, press Ctrl+` (backtick) to open the integrated terminal panel.
+  - name: Learn essential commands
+    text: Practice pwd (print directory), ls (list files), cd (change directory), mkdir (create folder), and clear (clear screen).
+  - name: Try the practice exercise
+    text: Follow the guided exercise to navigate directories, create folders, and confirm your commands work.
+---
+
 # Terminal Basics
 
 Get comfortable with the command line before diving into developer tools.

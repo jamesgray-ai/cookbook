@@ -1,3 +1,8 @@
+---
+title: OpenAI Questions
+description: Questions specific to OpenAI's GPT models, Assistants API, and platform features
+---
+
 # OpenAI Questions
 
 Questions specific to OpenAI's GPT models, Assistants API, and platform features.

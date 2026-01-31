@@ -1,3 +1,8 @@
+---
+title: Platform Questions
+description: Platform-specific AI questions organized by Claude, OpenAI, and Gemini
+---
+
 # Platform Questions
 
 Platform-specific questions are now organized under each platform:
