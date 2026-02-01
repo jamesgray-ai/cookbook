@@ -132,6 +132,7 @@ nav:
     - Prompting:
       - how-to/prompting/README.md
       - Find AI Workflow Opportunities: how-to/prompting/ai-workflow-opportunity-finder.md
+      - Deconstruct Workflows into AI Building Blocks: how-to/prompting/workflow-deconstruction-meta-prompt.md
   - Questions:
     - Overview: questions/README.md
     - Agents: questions/agents/README.md
