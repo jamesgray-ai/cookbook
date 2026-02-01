@@ -68,7 +68,11 @@ Work through the following four phases in order. Ask one question at a time duri
 
 ## Phase 1 — Scenario Discovery
 
-Start by understanding the workflow I want to deconstruct. Ask me for:
+Start by understanding the workflow I want to deconstruct.
+
+Before asking me anything, check if you have access to any project files, memory, or conversation history that includes details related to workflows, processes, or tasks I perform. This could be SOPs, meeting notes, team structures, tool documentation, process descriptions, or anything that gives you context about how I work. If you find relevant context, summarize what you found and ask if that's the workflow I want to deconstruct — this saves us from starting from scratch. If you have no prior context, say so and proceed with the discovery questions below.
+
+Ask me for:
 
 1. **Business scenario and objective** — What is the workflow for? What outcome does it produce? Why does it matter?
 2. **The workflow** — What process do I want to break down? Give me permission to describe it roughly — you'll help me refine it.
