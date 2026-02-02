@@ -83,7 +83,9 @@ nav:
       - Skills:
         - Discover Your Best Claude Skills: platforms/claude/skills/skills-discovery-meta-prompt.md
         - Resources: platforms/claude/skills/resources.md
-      - Questions: platforms/claude/questions/README.md
+      - Questions:
+        - Overview: platforms/claude/questions/README.md
+        - Best way to name agent skills?: platforms/claude/questions/what-is-the-best-way-to-name-claude-agent-skills.md
       - Subagents:
         - Scheduling Subagents: platforms/claude/subagents/scheduling-subagents.md
         - Troubleshooting: platforms/claude/subagents/scheduling-subagent-issues.md
