@@ -11,7 +11,7 @@ Questions specific to Anthropic's Claude models and API.
 
 | Question | Tags |
 |----------|------|
-| *Questions will be listed here as they are added* | |
+| [What is the best way to name Claude agent skills?](./what-is-the-best-way-to-name-claude-agent-skills.md) | `claude` |
 
 ## Related Resources
 

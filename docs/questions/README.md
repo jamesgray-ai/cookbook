@@ -34,6 +34,7 @@ Platform-specific questions are organized under each platform:
 | Question | Category | Platforms |
 |----------|----------|-----------|
 | [What is a system prompt?](./prompting/what-is-a-system-prompt.md) | Prompting | `openai` `claude` `gemini` |
+| [What is the best way to name Claude agent skills?](../platforms/claude/questions/what-is-the-best-way-to-name-claude-agent-skills.md) | Claude | `claude` |
 
 ## Can't Find Your Answer?
 
