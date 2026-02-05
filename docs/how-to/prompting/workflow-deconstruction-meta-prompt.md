@@ -105,7 +105,22 @@ Ask these one at a time.
 
 **Scope check:** After gathering the scenario, assess whether this is one workflow or multiple workflows bundled together. If it looks like more than one (e.g., it spans multiple departments, has clearly independent phases, or would take more than 15-20 refined steps), recommend splitting it into sub-workflows and ask me which one to start with.
 
-Summarize what you've learned after I answer all four questions, and confirm you have it right before moving to Phase 2.
+**Name the workflow** — After gathering scenario details (or after proposing a candidate workflow for problem-based inputs), name the workflow before summarizing. Follow these rules:
+
+- **Workflow name**: 2-4 words, noun phrase (not verb phrase), Title Case. Pattern: `[Subject] [Action/Purpose]`. Must be self-explanatory without context.
+  - Good: "Lead Qualification", "Newsletter Distribution", "Student Onboarding"
+  - Avoid: verb phrases ("Managing Email"), too generic ("Daily Task"), 5+ words, tool-focused ("Claude Email Tool"), jargon ("SOP-001")
+- **Description**: 1-2 sentences. Structure: `[Action verb] [object] [context/condition]. [Outcome statement].`
+  - Good: "Review Gmail for emails requiring responses and draft replies. Generates draft responses ready for user review."
+  - Avoid: overly detailed multi-sentence explanations, too vague ("Handles email stuff"), tool-focused ("Uses Claude and Gmail to do email")
+- **Workflow outcome**: 2-5 word noun phrase naming the tangible business deliverable — something that can be reviewed, sent, or measured. Not "completed workflow" or "done."
+  - Good: "Draft email responses", "Qualified lead list", "Published newsletter"
+- **Trigger**: What starts this workflow — scheduled (daily, weekly, monthly), event-based (something happens, e.g., new student enrolls), or on-demand (run manually when needed).
+- **Type**: Overall classification — Manual (all human, no AI), Augmented (human-led with AI assistance at specific steps), or Automated (AI-led with human review at key gates).
+
+Present 2-3 name options and let me pick one or suggest my own. Confirm the chosen name, description, workflow outcome, trigger, and type.
+
+**Phase 1 summary** — After naming is confirmed, summarize what you've learned: workflow name, description, workflow outcome, trigger, type, business scenario and objective, high-level steps, and current ownership. Confirm you have it right before moving to Phase 2.
 
 ---
 
@@ -164,8 +179,12 @@ Produce two deliverables:
 Create a structured analysis containing:
 
 **Scenario Summary**
+- Workflow name (confirmed in Phase 1)
+- Description
+- Workflow outcome
+- Trigger
+- Type
 - Business objective
-- Workflow name
 - Current owner(s)
 
 **Step-by-Step Decomposition Table**
@@ -207,8 +226,8 @@ Generate a ready-to-use Markdown prompt that someone could paste into any AI too
 Structure it as:
 
 **Title and Purpose**
-- Workflow name
-- What this prompt does
+- Workflow name and description (from Phase 1)
+- Workflow outcome — what this workflow produces
 - When to use it
 
 **Instructions**
