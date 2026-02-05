@@ -13,7 +13,7 @@ You can't operationalize AI on a process you don't understand. Before you can bu
 
 This meta prompt walks you through that deconstruction interactively. You provide the business scenario and rough steps — the model handles the structured analysis, applies the 4-question framework (discrete steps, decision points, data flows, context needs) plus failure modes, maps each step to AI building blocks, and generates three deliverables:
 
-1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, and a prioritized build sequence
+1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, a context inventory of every resource the workflow needs (documents, files, data sources, system access), and a prioritized build sequence
 2. A **Baseline Workflow Prompt** — a ready-to-use prompt that works on any platform; this is your starting point that will evolve as you build skills
 3. A **Skill Build Recommendations** — actionable specs for reusable skills you can build to automate recurring steps
 
@@ -105,7 +105,22 @@ Ask these one at a time.
 
 **Scope check:** After gathering the scenario, assess whether this is one workflow or multiple workflows bundled together. If it looks like more than one (e.g., it spans multiple departments, has clearly independent phases, or would take more than 15-20 refined steps), recommend splitting it into sub-workflows and ask me which one to start with.
 
-Summarize what you've learned after I answer all four questions, and confirm you have it right before moving to Phase 2.
+**Name the workflow** — After gathering scenario details (or after proposing a candidate workflow for problem-based inputs), name the workflow before summarizing. Follow these rules:
+
+- **Workflow name**: 2-4 words, noun phrase (not verb phrase), Title Case. Pattern: `[Subject] [Action/Purpose]`. Must be self-explanatory without context.
+  - Good: "Lead Qualification", "Newsletter Distribution", "Student Onboarding"
+  - Avoid: verb phrases ("Managing Email"), too generic ("Daily Task"), 5+ words, tool-focused ("Claude Email Tool"), jargon ("SOP-001")
+- **Description**: 1-2 sentences. Structure: `[Action verb] [object] [context/condition]. [Outcome statement].`
+  - Good: "Review Gmail for emails requiring responses and draft replies. Generates draft responses ready for user review."
+  - Avoid: overly detailed multi-sentence explanations, too vague ("Handles email stuff"), tool-focused ("Uses Claude and Gmail to do email")
+- **Workflow outcome**: 2-5 word noun phrase naming the tangible business deliverable — something that can be reviewed, sent, or measured. Not "completed workflow" or "done."
+  - Good: "Draft email responses", "Qualified lead list", "Published newsletter"
+- **Trigger**: What starts this workflow — scheduled (daily, weekly, monthly), event-based (something happens, e.g., new student enrolls), or on-demand (run manually when needed).
+- **Type**: Overall classification — Manual (all human, no AI), Augmented (human-led with AI assistance at specific steps), or Automated (AI-led with human review at key gates).
+
+Present 2-3 name options and let me pick one or suggest my own. Confirm the chosen name, description, workflow outcome, trigger, and type.
+
+**Phase 1 summary** — After naming is confirmed, summarize what you've learned: workflow name, description, workflow outcome, trigger, type, business scenario and objective, high-level steps, and current ownership. Confirm you have it right before moving to Phase 2.
 
 ---
 
@@ -116,16 +131,19 @@ Now systematically work through each step I provided using the 4-question framew
 1. **Discrete steps** — Is this step actually multiple steps bundled together? If so, break it down further. Keep going until each step is a single, concrete action.
 2. **Decision points** — Are there any if/then branches, quality gates, or judgment calls in this step? What triggers each path?
 3. **Data flows** — What are the specific inputs to this step? What does it produce as output? Where does the input come from and where does the output go?
-4. **Context needs** — What domain knowledge, reference files, databases, examples, or information not in your training data does this step require?
+4. **Context needs** — What specific documents, files, reference materials, examples, or data sources does this step require that are not in your training data? For each one, does it already exist or does it need to be created?
 5. **Failure modes** — What happens when this step fails or can't proceed? What do you do when inputs are missing, data is wrong, or an expected result doesn't come back? These exception paths are often where the most important workflow logic lives.
 
 Work through one step at a time. For each step, ask the questions conversationally — not all five at once. Use my answers to probe for missing details and hidden assumptions. Confirm your understanding of each step before moving to the next.
+
+**Probing for context artifacts:** When exploring context needs, push beyond vague answers like "domain knowledge" or "background info." Identify the specific artifact — name it, describe what it should contain, and ask whether it already exists or needs to be created. Common examples: buyer persona documents, style guides, grading rubrics, product catalogs, pricing sheets, email templates, brand voice documents, org charts, decision criteria checklists, sample inputs, and sample outputs. If a step requires the model to match a standard, apply criteria, or follow a style, there is almost certainly a reference document behind it.
 
 After completing all steps:
 
 1. Present the refined step-by-step breakdown.
 2. **Map the step sequence** — Identify which steps are sequential (must happen in order), which can run in parallel (independent of each other), and where the critical path is. Show this as a simple dependency list (e.g., "Step 3 depends on Steps 1 and 2; Steps 4 and 5 can run in parallel").
-3. Ask me to confirm the breakdown and sequence are accurate.
+3. **Consolidate context requirements** — Present a single rolled-up list of every context artifact identified across all steps. For each artifact, state: the artifact name, a one-line description of what it contains, which steps depend on it, and whether it already exists or needs to be created. If it needs to be created, note the key contents it should include so I know what to build. Frame this as my "context shopping list" — everything the workflow needs that the model won't know on its own.
+4. Ask me to confirm the breakdown, sequence, and context shopping list are accurate.
 
 ---
 
@@ -164,8 +182,12 @@ Produce two deliverables:
 Create a structured analysis containing:
 
 **Scenario Summary**
+- Workflow name (confirmed in Phase 1)
+- Description
+- Workflow outcome
+- Trigger
+- Type
 - Business objective
-- Workflow name
 - Current owner(s)
 
 **Step-by-Step Decomposition Table**
@@ -190,6 +212,16 @@ Create a structured analysis containing:
 - What must be in place before this workflow can run?
 - External dependencies (accounts, access, data sources)
 
+**Context Inventory**
+
+List every document, file, or reference material the workflow requires that the model does not have in its training data. For each artifact:
+
+| Artifact | Description | Used By Steps | Status | Format | Key Contents |
+|----------|-------------|---------------|--------|--------|--------------|
+| [Name] | [What it contains and why the workflow needs it] | [Step numbers] | Exists / Needs Creation | [e.g., Markdown doc, spreadsheet, PDF] | [Essential fields, sections, or data points it should include] |
+
+If an artifact needs to be created, the "Key Contents" column should be specific enough that the user knows exactly what to build. For example, a buyer persona document should list: target job titles, company size range, industry verticals, pain points, budget authority indicators, and qualifying criteria — not just "buyer persona info."
+
 **Tools and Connectors Required**
 - All external tools, APIs, and integrations referenced in the mapping
 
@@ -207,8 +239,8 @@ Generate a ready-to-use Markdown prompt that someone could paste into any AI too
 Structure it as:
 
 **Title and Purpose**
-- Workflow name
-- What this prompt does
+- Workflow name and description (from Phase 1)
+- Workflow outcome — what this workflow produces
 - When to use it
 
 **Instructions**
@@ -223,7 +255,7 @@ Structure it as:
 
 **Context Requirements**
 - What reference materials, files, or data should be attached or available
-- Where to find them
+- Where to find them, or what to include if creating them from scratch
 
 **Output Format**
 - Exactly what the prompt should produce
@@ -295,9 +327,9 @@ Present skills in priority order (highest value first). If no steps qualify as g
 After pasting the prompt, here's how the conversation typically unfolds:
 
 1. **Phase 1 — Scenario Discovery** — The model asks about your business scenario, objective, steps, and who's involved. If you can only describe the outcome ("I onboard new clients"), that's fine — the model will propose candidate steps and let you react. It will also check whether your workflow is really one workflow or should be split into smaller pieces.
-2. **Phase 2 — Deep Dive** — The model works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. This is where most of the insight happens — expect the model to find steps you forgot, assumptions you didn't realize you were making, and exception paths you've never documented. At the end, you'll see the step sequence and dependencies mapped out.
+2. **Phase 2 — Deep Dive** — The model works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. This is where most of the insight happens — expect the model to find steps you forgot, assumptions you didn't realize you were making, and exception paths you've never documented. At the end, you'll see the step sequence and dependencies mapped out, plus a consolidated "context shopping list" of every resource the workflow needs — documents, files, data sources, system access, and anything else the model won't have on its own.
 3. **Phase 3 — Building Block Mapping** — The model classifies each refined step on the autonomy spectrum and maps it to AI building blocks. You'll see a table and get a chance to adjust before final output.
-4. **Phase 4 — Output Generation** — You receive three documents: a full workflow analysis (including a recommended implementation order so you know what to build first), a baseline workflow prompt that works on any platform, and skill build recommendations that show you which skills to build and which prompt steps each one replaces.
+4. **Phase 4 — Output Generation** — You receive three documents: a full workflow analysis (including a context inventory and a recommended implementation order so you know what to build first), a baseline workflow prompt that works on any platform, and skill build recommendations that show you which skills to build and which prompt steps each one replaces.
 
 Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep dive. The executable prompt is ready to use immediately — paste it into a new conversation to run the workflow.
 
@@ -307,6 +339,7 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 - **Include the messy details.** "Sometimes I skip this step if the client is a repeat customer" is exactly the kind of decision logic the model needs to capture.
 - **Don't over-prepare your steps.** The model is designed to work with rough, incomplete descriptions. Let it do the work of refining and organizing.
 - **On Claude:** Mention that you're using Claude so the model can identify where Skills are the right building block for reusable routines.
+- **Gather your context resources early.** The model will identify specific resources the workflow needs — documents like buyer personas and style guides, but also spreadsheets, databases, CRM access, application credentials, and sample data. If you already have these, have them ready. If you don't, the analysis will tell you exactly what to create or set up and what each resource should contain.
 - **Save all three outputs.** The workflow analysis is your reference document. The baseline prompt is what you run today — update it as you build skills. The skill recommendations tell you what to build and which prompt steps each skill replaces. Keep them together in version control.
 - **Iterate the executable prompt.** Run it once, see what works and what doesn't, then refine. The first version is a strong draft, not a final product.
 
