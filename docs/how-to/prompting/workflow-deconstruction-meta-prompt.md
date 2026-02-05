@@ -13,7 +13,7 @@ You can't operationalize AI on a process you don't understand. Before you can bu
 
 This meta prompt walks you through that deconstruction interactively. You provide the business scenario and rough steps — the model handles the structured analysis, applies the 4-question framework (discrete steps, decision points, data flows, context needs) plus failure modes, maps each step to AI building blocks, and generates three deliverables:
 
-1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, and a prioritized build sequence
+1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, a context inventory of every resource the workflow needs (documents, files, data sources, system access), and a prioritized build sequence
 2. A **Baseline Workflow Prompt** — a ready-to-use prompt that works on any platform; this is your starting point that will evolve as you build skills
 3. A **Skill Build Recommendations** — actionable specs for reusable skills you can build to automate recurring steps
 
@@ -327,9 +327,9 @@ Present skills in priority order (highest value first). If no steps qualify as g
 After pasting the prompt, here's how the conversation typically unfolds:
 
 1. **Phase 1 — Scenario Discovery** — The model asks about your business scenario, objective, steps, and who's involved. If you can only describe the outcome ("I onboard new clients"), that's fine — the model will propose candidate steps and let you react. It will also check whether your workflow is really one workflow or should be split into smaller pieces.
-2. **Phase 2 — Deep Dive** — The model works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. This is where most of the insight happens — expect the model to find steps you forgot, assumptions you didn't realize you were making, and exception paths you've never documented. At the end, you'll see the step sequence and dependencies mapped out.
+2. **Phase 2 — Deep Dive** — The model works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. This is where most of the insight happens — expect the model to find steps you forgot, assumptions you didn't realize you were making, and exception paths you've never documented. At the end, you'll see the step sequence and dependencies mapped out, plus a consolidated "context shopping list" of every resource the workflow needs — documents, files, data sources, system access, and anything else the model won't have on its own.
 3. **Phase 3 — Building Block Mapping** — The model classifies each refined step on the autonomy spectrum and maps it to AI building blocks. You'll see a table and get a chance to adjust before final output.
-4. **Phase 4 — Output Generation** — You receive three documents: a full workflow analysis (including a recommended implementation order so you know what to build first), a baseline workflow prompt that works on any platform, and skill build recommendations that show you which skills to build and which prompt steps each one replaces.
+4. **Phase 4 — Output Generation** — You receive three documents: a full workflow analysis (including a context inventory and a recommended implementation order so you know what to build first), a baseline workflow prompt that works on any platform, and skill build recommendations that show you which skills to build and which prompt steps each one replaces.
 
 Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep dive. The executable prompt is ready to use immediately — paste it into a new conversation to run the workflow.
 
@@ -339,6 +339,7 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 - **Include the messy details.** "Sometimes I skip this step if the client is a repeat customer" is exactly the kind of decision logic the model needs to capture.
 - **Don't over-prepare your steps.** The model is designed to work with rough, incomplete descriptions. Let it do the work of refining and organizing.
 - **On Claude:** Mention that you're using Claude so the model can identify where Skills are the right building block for reusable routines.
+- **Gather your context resources early.** The model will identify specific resources the workflow needs — documents like buyer personas and style guides, but also spreadsheets, databases, CRM access, application credentials, and sample data. If you already have these, have them ready. If you don't, the analysis will tell you exactly what to create or set up and what each resource should contain.
 - **Save all three outputs.** The workflow analysis is your reference document. The baseline prompt is what you run today — update it as you build skills. The skill recommendations tell you what to build and which prompt steps each skill replaces. Keep them together in version control.
 - **Iterate the executable prompt.** Run it once, see what works and what doesn't, then refine. The first version is a strong draft, not a final product.
 
