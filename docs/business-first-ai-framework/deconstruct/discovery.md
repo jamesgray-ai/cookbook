@@ -24,7 +24,7 @@ There are two ways to run Step 1, depending on which tools you use:
 
 ### Option B: Claude skill
 
-Use the `discovering-workflows` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It runs the same discovery and deep dive process and saves the Blueprint to a file automatically.
+Use the `discovering-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It runs the same discovery and deep dive process and saves the Blueprint to a file automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```

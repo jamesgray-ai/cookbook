@@ -1,17 +1,87 @@
 ---
-title: Business First AI
+title: Business-First AI
 description: The Business-First AI Framework as executable Claude Code skills — discover opportunities, deconstruct workflows, and build with worked examples
 ---
 
-# Business First AI
+# Business-First AI
 
-This plugin implements the [Business-First AI Framework](../business-first-ai-framework/index.md) as executable Claude Code skills. It covers all three phases: discover where AI fits in your workflows, deconstruct those workflows into AI building blocks, and build with worked examples across the autonomy spectrum. Install it to get a complete toolkit for going from "where should I use AI?" to working AI workflows.
+This plugin implements the [Business-First AI Framework](../business-first-ai-framework/index.md) as executable Claude Code agents and skills. It covers all three phases: discover where AI fits in your workflows, deconstruct those workflows into AI building blocks, and build with worked examples across the autonomy spectrum. Install it to get a complete toolkit for going from "where should I use AI?" to working AI workflows.
 
 ## Install
 
 ```bash
 /plugin install business-first-ai@handsonai
 ```
+
+## How to Use This Plugin
+
+How you use this plugin depends on your platform:
+
+=== "Claude Code"
+
+    Install the plugin and everything is available immediately. Agents activate automatically
+    when your prompt matches — just describe what you need and Claude handles the rest.
+
+    ```bash
+    /plugin install business-first-ai@handsonai
+    ```
+
+    **Recommended path:**
+
+    1. Say *"Help me find AI opportunities in my workflows"* → the `finding-ai-opportunities` skill runs Phase 1
+    2. Say *"I want to deconstruct my [workflow] into AI building blocks"* → the `workflow-deconstructor` agent orchestrates all of Phase 2
+    3. Review your outputs in the `outputs/` folder
+
+=== "Cowork"
+
+    Use this if you have Claude Desktop on macOS. Cowork supports the same plugins as Claude Code
+    through a visual interface — no terminal needed.
+
+    1. **Open Cowork** — launch Claude Desktop and click **Cowork** in the sidebar
+    2. **Add the plugin** — click the **+** button, select **Add plugins...**, then upload the plugin ZIP
+    3. **Use the same prompts as Claude Code** — say *"Help me find AI opportunities in my workflows"* for Phase 1, or *"I want to deconstruct my [workflow] into AI building blocks"* for Phase 2. Claude uses the plugin automatically.
+
+    For detailed Cowork setup, see [Using Plugins in Cowork](using-plugins.md#using-plugins-in-claude-cowork).
+
+    !!! note "How to get the plugin ZIP"
+        The Business-First AI plugin isn't in Cowork's built-in directory yet. Download the plugin folder from [GitHub](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/business-first-ai), zip it, and upload to Cowork. Or install via Claude Code first (`/plugin install business-first-ai@handsonai`) and the plugin files are already on your machine.
+
+=== "Claude.ai"
+
+    Individual **skills** (not agents) can be uploaded to Claude.ai as ZIP files. You need
+    Claude Code installed first to access the skill files.
+
+    1. **Install the plugin in Claude Code** — `/plugin install business-first-ai@handsonai`
+    2. **Find the skill folder** — navigate to `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/`
+    3. **Zip the skill** you want (e.g., the `finding-ai-opportunities` folder)
+    4. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
+    5. **Start a new chat** — Claude uses the skill automatically
+
+    For detailed upload instructions, see [Using Skills in Claude.ai](using-plugins.md#using-skills-in-claudeai-web).
+
+    !!! warning "Agents don't work in Claude.ai"
+        The `workflow-deconstructor` agent (which orchestrates all three Phase 2 steps) only works in Claude Code or Cowork. In Claude.ai, upload and run the three Phase 2 skills individually: `discovering-workflows` → `analyzing-workflows` → `generating-workflow-outputs`.
+
+### Platform Compatibility
+
+| Component | Type | Claude Code | Cowork | Claude.ai |
+|-----------|------|:-----------:|:------:|:---------:|
+| `finding-ai-opportunities` | Skill | Yes | Yes | Yes |
+| `workflow-deconstructor` | Agent | Yes | Yes | No |
+| `discovering-workflows` | Skill | Yes | Yes | Yes |
+| `analyzing-workflows` | Skill | Yes | Yes | Yes |
+| `generating-workflow-outputs` | Skill | Yes | Yes | Yes |
+| `tech-executive-writer` | Agent | Yes | Yes | No |
+| `hbr-editor` | Agent | Yes | Yes | No |
+| `hbr-publisher` | Agent | Yes | Yes | No |
+| `ai-productivity-researcher` | Agent | Yes | Yes | No |
+| `meeting-prep-researcher` | Agent | Yes | Yes | No |
+| `ai-news-researcher` | Agent | Yes | Yes | No |
+| `claude-research-daily` | Agent | Yes | Yes | No |
+| `editing-hbr-articles` | Skill | Yes | Yes | No |
+| `preparing-meeting-briefs` | Skill | Yes | Yes | Yes |
+
+Agents activate automatically in Claude Code when your prompt matches. In Cowork, describe your task using the prompts above and Claude activates the right agent. Skills marked "Yes" for Claude.ai can be uploaded as ZIP files.
 
 ## Components
 
@@ -457,4 +527,4 @@ The file-based handoffs mean you can continue in a new conversation. Just invoke
 The categories used during analysis: Prompt (single instruction), Context (reference material), Skill (multi-step workflow), Agent (autonomous personality), MCP (external tool connection), and Project (workspace configuration). Each step gets mapped to one or more of these.
 
 **Do I need Claude Code for all of this?**
-No. The Phase 1 skill and Phase 2 skills work in Claude.ai too. The prompts work in any AI tool. The agents require Claude Code for automatic activation, but you can use the skill workflows manually anywhere.
+No. Skills and agents work differently across platforms — see the [Platform Compatibility](#platform-compatibility) table above. All skills and agents work in both Claude Code and Cowork (Claude Desktop on macOS). Skills marked "Yes" for Claude.ai can also be uploaded as ZIP files. Agents don't work in Claude.ai — use the individual skills instead. The prompt templates on the framework pages work in any AI tool — no plugin required.

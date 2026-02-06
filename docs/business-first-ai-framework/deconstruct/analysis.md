@@ -25,7 +25,7 @@ There are two ways to run Step 2, depending on which tools you use:
 
 ### Option B: Claude skill
 
-Use the `analyzing-workflows` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It reads the Blueprint from Step 1, runs the analysis, and saves the Workflow Analysis Document automatically.
+Use the `analyzing-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It reads the Blueprint from Step 1, runs the analysis, and saves the Workflow Analysis Document automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```

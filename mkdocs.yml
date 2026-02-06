@@ -136,7 +136,7 @@ nav:
     - Marketplace: plugins/index.md
     - Getting Started: plugins/getting-started.md
     - Using Plugins: plugins/using-plugins.md
-    - Business First AI: plugins/business-first-ai.md
+    - Business-First AI: plugins/business-first-ai.md
     - AI Registry: plugins/ai-registry.md
   - Fundamentals:
     - Overview: fundamentals/index.md
