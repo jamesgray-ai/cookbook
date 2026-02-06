@@ -5,6 +5,9 @@ description: Three worked examples showing the spectrum of AI involvement in wor
 
 # Workflow Examples
 
+!!! info "Business-First AI Framework — Phase 3: Build"
+    These examples are **Phase 3** of the [Business-First AI Framework](../../framework.md) — building AI workflows from your deconstruction outputs. More build guides are coming — this section will grow with content on building prompts, skills, agents, and multi-agent workflows.
+
 Not all AI workflows are created equal. The right level of AI involvement depends on the task — some workflows need rigid, repeatable automation; others need AI that can research, reason, and iterate with a human; and some work best when an agent handles everything end-to-end.
 
 These three examples show the spectrum in practice. Each includes a real-world scenario, working building blocks you can install and use, and guidance on when to apply the pattern to your own work.
@@ -33,16 +36,16 @@ These are the working building blocks included across all three examples. Each o
 
 | Building Block | Type | Workflow | Description | Source |
 |-------|------|----------|-------------|--------|
-| `linkedin-prospect-research` | Prompt | Deterministic | Finds and qualifies 5 LinkedIn prospects against a buyer persona | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/prompts/linkedin-prospect-research.md) |
-| `buyer-persona-revenue-leader-rachel` | Prompt | Deterministic | Example buyer persona used as input to the research workflow | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/prompts/buyer-persona-revenue-leader-rachel.md) |
-| `meeting-prep-researcher` | Agent | Collaborative | Researches attendees and companies for meeting prep | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/meeting-prep-researcher.md) |
-| `meeting-prep-research` | Skill | Collaborative | Step-by-step research workflow for the agent | [View](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/course-examples/skills/meeting-prep-research/) |
-| `meeting-prep-quick` | Prompt | Collaborative | Portable one-shot meeting prep prompt | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/prompts/meeting-prep-quick.md) |
-| `ai-productivity-researcher` | Agent | Autonomous | Finds case studies of companies using AI with quantified outcomes | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/ai-productivity-researcher.md) |
-| `tech-executive-writer` | Agent | Autonomous | Writes articles for business leadership audiences | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/tech-executive-writer.md) |
-| `hbr-editor` | Agent | Autonomous | Edits drafts against HBR editorial standards | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-editor.md) |
-| `editing-hbr-articles` | Skill | Autonomous | Editorial criteria and cut/replace patterns for the editor | [View](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/course-examples/skills/editing-hbr-articles/) |
-| `hbr-publisher` | Agent | Autonomous | Formats approved articles as PDF + markdown with SEO metadata | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-publisher.md) |
+| `linkedin-prospect-research` | Prompt | Deterministic | Finds and qualifies 5 LinkedIn prospects against a buyer persona | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/prompts/linkedin-prospect-research.md) |
+| `buyer-persona-revenue-leader-rachel` | Prompt | Deterministic | Example buyer persona used as input to the research workflow | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/prompts/buyer-persona-revenue-leader-rachel.md) |
+| `meeting-prep-researcher` | Agent | Collaborative | Researches attendees and companies for meeting prep | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/meeting-prep-researcher.md) |
+| `preparing-meeting-briefs` | Skill | Collaborative | Step-by-step research workflow for the agent | [View](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/business-first-ai/skills/preparing-meeting-briefs/) |
+| `meeting-prep-quick` | Prompt | Collaborative | Portable one-shot meeting prep prompt | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/prompts/meeting-prep-quick.md) |
+| `ai-productivity-researcher` | Agent | Autonomous | Finds case studies of companies using AI with quantified outcomes | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/ai-productivity-researcher.md) |
+| `tech-executive-writer` | Agent | Autonomous | Writes articles for business leadership audiences | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/tech-executive-writer.md) |
+| `hbr-editor` | Agent | Autonomous | Edits drafts against HBR editorial standards | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/hbr-editor.md) |
+| `editing-hbr-articles` | Skill | Autonomous | Editorial criteria and cut/replace patterns for the editor | [View](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/business-first-ai/skills/editing-hbr-articles/) |
+| `hbr-publisher` | Agent | Autonomous | Formats approved articles as PDF + markdown with SEO metadata | [View](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/hbr-publisher.md) |
 
 ## How to Use These Examples
 
@@ -54,14 +57,14 @@ These are the working building blocks included across all three examples. Each o
 
 === "Claude Code"
 
-    All building blocks — agents, skills, and prompts — are bundled in the `course-examples` plugin. Install it once and the agents activate automatically when you describe a matching task.
+    All building blocks — agents, skills, and prompts — are bundled in the `business-first-ai` plugin. Install it once and the agents activate automatically when you describe a matching task.
 
     ```bash
     # Add the Hands-on AI marketplace (one time)
     /plugin marketplace add jamesgray-ai/handsonai
 
-    # Install the course-examples plugin
-    /plugin install course-examples@handsonai
+    # Install the business-first-ai plugin
+    /plugin install business-first-ai@handsonai
     ```
 
     Then describe what you need in natural language:

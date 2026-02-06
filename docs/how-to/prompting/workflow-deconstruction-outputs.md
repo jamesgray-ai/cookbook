@@ -9,7 +9,11 @@ description: Generate a ready-to-use Baseline Workflow Prompt and Skill Build Re
 
 This is the final prompt in the three-part series. It takes the **Workflow Analysis Document** from [Step 2](workflow-deconstruction-analysis.md) and produces your two remaining deliverables: a **Baseline Workflow Prompt** you can paste into any AI tool to run the workflow, and **Skill Build Recommendations** showing which reusable skills to build and what they replace.
 
-## How to Use
+## How to Use This
+
+There are two ways to run Step 3, depending on which tools you use:
+
+### Option A: Prompt template (any AI tool)
 
 1. **Copy the prompt** from the code block below
 2. **Paste it into a new conversation** in your preferred AI tool
@@ -17,6 +21,18 @@ This is the final prompt in the three-part series. It takes the **Workflow Analy
 4. **Upload or paste your Analysis Document file** (`[workflow-name]-analysis.md`) from Step 2
 5. **Review the outputs** — the model may ask 1-2 clarifying questions, then generates both deliverables
 6. **Download both files** — the Baseline Workflow Prompt and Skill Build Recommendations
+
+### Option B: Claude skill
+
+Use the `generating-workflow-outputs` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It reads the Analysis Document from Step 2 and generates both deliverables automatically.
+
+- **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
+    ```
+    Generate the Baseline Workflow Prompt and Skill Build Recommendations
+    from the analysis in outputs/[workflow-name]-analysis.md.
+    ```
+    Both deliverables are saved to the `outputs/` directory.
+- **Claude.ai** — zip the `generating-workflow-outputs` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with: "Generate a Baseline Workflow Prompt and Skill Build Recommendations from this analysis." Upload or paste your Analysis Document when prompted. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
 
 !!! tip "This step is mostly generative"
     The heavy analytical work is done. The model reads your Analysis Document and produces two structured outputs with minimal interaction. Expect 5-10 minutes.

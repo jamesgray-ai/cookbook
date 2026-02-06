@@ -39,56 +39,66 @@ For the full details on how marketplaces and plugin installation work, see the o
 
 ---
 
-## :material-clipboard-check: Course Examples
+## :material-rocket-launch: Business First AI
 
-Working examples of agents and skills from the Hands-on AI cohort courses.
+The [Business-First AI Framework](../framework.md) as executable Claude Code skills. Discover AI workflow opportunities (Phase 1), deconstruct workflows into AI building blocks (Phase 2), and build with worked examples across the autonomy spectrum (Phase 3).
 
 ```bash
-/plugin install course-examples@handsonai
+/plugin install business-first-ai@handsonai
 ```
 
-???+ agents "Agents included"
+???+ agents "Agents included (8)"
 
-    | Agent | What it does |
-    |-------|-------------|
-    | [`tech-executive-writer`](course-examples.md#tech-executive-writer) | Writes business-focused content about AI and technology. LinkedIn posts, magazine articles, executive briefs, and thought leadership pieces. Translates complex technical concepts for non-technical audiences. |
-    | [`hbr-editor`](course-examples.md#hbr-editor) | Reviews drafts against HBR editorial standards. Provides prescriptive feedback on structure, evidence quality, voice, and argument strength. |
-    | [`hbr-publisher`](course-examples.md#hbr-publisher) | Formats finalized articles for web publication and PDF distribution. Handles SEO metadata, social snippets, and professional layout. |
-    | [`ai-news-researcher`](course-examples.md#ai-news-researcher) | Scans news outlets, blogs, YouTube channels, podcasts, and communities for the latest AI developments. Categorizes findings by product releases, research, company updates, and community highlights. |
-    | [`ai-productivity-researcher`](course-examples.md#ai-productivity-researcher) | Finds documented case studies of companies using AI for productivity gains. Prioritizes HBR-caliber sources with quantified outcomes. Outputs structured case study briefs. |
-    | [`claude-research-daily`](course-examples.md#claude-research-daily) | Produces a daily brief on Anthropic, Claude, Claude Code, and Cowork. Covers official announcements, tech news, video content, tutorials, and community discussions from the last 24 hours. |
-    | [`meeting-prep-researcher`](course-examples.md#meeting-prep-researcher) | Researches meeting attendees and companies, then produces a structured prep brief with profiles, talking points, and suggested questions. |
+    | Agent | Phase | What it does |
+    |-------|-------|-------------|
+    | [`workflow-deconstructor`](business-first-ai.md#workflow-deconstructor) | 2 | Orchestrates the full three-step workflow deconstruction process. Runs discovery, analysis, and output generation sequentially with file-based handoffs between stages. |
+    | [`tech-executive-writer`](business-first-ai.md#tech-executive-writer) | 3 | Writes business-focused content about AI and technology. LinkedIn posts, magazine articles, executive briefs, and thought leadership pieces. |
+    | [`hbr-editor`](business-first-ai.md#hbr-editor) | 3 | Reviews drafts against HBR editorial standards. Provides prescriptive feedback on structure, evidence quality, voice, and argument strength. |
+    | [`hbr-publisher`](business-first-ai.md#hbr-publisher) | 3 | Formats finalized articles for web publication and PDF distribution. Handles SEO metadata, social snippets, and professional layout. |
+    | [`ai-productivity-researcher`](business-first-ai.md#ai-productivity-researcher) | 3 | Finds documented case studies of companies using AI for productivity gains. Prioritizes HBR-caliber sources with quantified outcomes. |
+    | [`meeting-prep-researcher`](business-first-ai.md#meeting-prep-researcher) | 3 | Researches meeting attendees and companies, then produces a structured prep brief with profiles, talking points, and suggested questions. |
+    | [`ai-news-researcher`](business-first-ai.md#ai-news-researcher) | Utility | Scans news outlets, blogs, YouTube channels, podcasts, and communities for the latest AI developments. |
+    | [`claude-research-daily`](business-first-ai.md#claude-research-daily) | Utility | Produces a daily brief on Anthropic, Claude, Claude Code, and Cowork from the last 24 hours. |
 
-???+ skills "Skills included"
+???+ skills "Skills included (6)"
 
-    | Skill | What it does |
-    |-------|-------------|
-    | [`editing-hbr-articles`](course-examples.md#editing-hbr-articles) | Loads HBR editorial criteria for article editing. Used by the `hbr-editor` agent to apply specific standards for openings, evidence, voice, and length. Includes a reference file with cut/replace patterns and source quality hierarchy. |
-    | [`meeting-prep-research`](course-examples.md#meeting-prep-research) | Step-by-step research workflow for meeting preparation. Guides the meeting-prep-researcher agent through attendee research, company analysis, and prep brief generation. |
+    | Skill | Phase | What it does |
+    |-------|-------|-------------|
+    | [`finding-ai-opportunities`](business-first-ai.md#finding-ai-opportunities) | 1 | Structured audit of your workflows to discover where AI can help. Produces a categorized opportunity report. |
+    | [`discovering-workflows`](business-first-ai.md#discovering-workflows) | 2 | Interactively discovers and decomposes a business workflow into a structured Workflow Blueprint. |
+    | [`analyzing-workflows`](business-first-ai.md#analyzing-workflows) | 2 | Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces a Workflow Analysis Document. |
+    | [`generating-workflow-outputs`](business-first-ai.md#generating-workflow-outputs) | 2 | Generates a ready-to-use Baseline Workflow Prompt and Skill Build Recommendations from a Workflow Analysis Document. |
+    | [`editing-hbr-articles`](business-first-ai.md#editing-hbr-articles) | 3 | HBR editorial criteria for article editing. Used by the `hbr-editor` agent. |
+    | [`preparing-meeting-briefs`](business-first-ai.md#preparing-meeting-briefs) | 3 | Structured research workflow for meeting preparation. Used by the `meeting-prep-researcher` agent. |
+
+???+ prompts "Prompts included (3)"
+
+    | Prompt | What it does |
+    |--------|-------------|
+    | [`linkedin-prospect-research`](business-first-ai.md#linkedin-prospect-research) | Deterministic prospecting prompt — finds and qualifies LinkedIn prospects against a buyer persona. |
+    | [`buyer-persona-revenue-leader-rachel`](business-first-ai.md#buyer-persona-revenue-leader-rachel) | Example buyer persona used as input to the prospect research workflow. |
+    | [`meeting-prep-quick`](business-first-ai.md#meeting-prep-quick) | Portable one-shot meeting prep prompt for any AI tool. |
 
 ???+ usage "Example usage"
 
     ```
+    "Help me find where AI can improve my workflows"
+    → finding-ai-opportunities runs a structured audit and produces an opportunity report
+
+    "I want to deconstruct my client onboarding workflow"
+    → workflow-deconstructor walks you through the full deconstruction process
+
     "Write a LinkedIn post about how RAG is transforming enterprise search"
     → tech-executive-writer drafts the article
 
     "Review this article for HBR quality"
     → hbr-editor provides structured editorial feedback
 
-    "Prepare the article for publication"
-    → hbr-publisher formats for web + PDF
+    "I have a meeting with Sarah Chen from Acme Corp tomorrow. Help me prepare."
+    → meeting-prep-researcher researches the attendee and company, produces a prep brief
 
     "What's new in AI today?"
     → ai-news-researcher scans sources and produces a categorized briefing
-
-    "Find case studies of companies using AI agents for customer support"
-    → ai-productivity-researcher gathers quantified examples from tier-1 sources
-
-    "What's the latest news about Claude?"
-    → claude-research-daily produces a 24-hour brief on all things Claude
-
-    "I have a meeting with Sarah Chen from Acme Corp tomorrow. Help me prepare."
-    → meeting-prep-researcher researches the attendee and company, produces a prep brief
     ```
 
 ---
@@ -141,62 +151,11 @@ Document, name, register, and sync AI operational workflows and skills.
 
 ---
 
-## :material-sitemap: Workflow Deconstruction
-
-Deconstruct business workflows into AI building blocks. Includes an orchestrator agent and a three-skill chain that walks you through discovery, analysis, and output generation — producing a Workflow Blueprint, Analysis Document, Baseline Prompt, and Skill Recommendations.
-
-```bash
-/plugin install workflow-deconstruction@handsonai
-```
-
-???+ agents "Agents included"
-
-    | Agent | What it does |
-    |-------|-------------|
-    | [`workflow-deconstructor`](workflow-deconstruction.md#workflow-deconstructor) | Orchestrates the full three-step workflow deconstruction process. Runs discovery, analysis, and output generation sequentially with file-based handoffs between stages. |
-
-???+ skills "Skills included"
-
-    | Skill | What it does |
-    |-------|-------------|
-    | [`workflow-discovery`](workflow-deconstruction.md#workflow-discovery) | Interactively discovers and decomposes a business workflow into a structured Workflow Blueprint using the 4-question framework + failure modes. |
-    | [`workflow-analysis`](workflow-deconstruction.md#workflow-analysis) | Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces a Workflow Analysis Document. |
-    | [`workflow-output-generation`](workflow-deconstruction.md#workflow-output-generation) | Generates a ready-to-use Baseline Workflow Prompt and Skill Build Recommendations from a Workflow Analysis Document. |
-
-???+ usage "Example usage"
-
-    ```
-    "I want to deconstruct my client onboarding workflow"
-    → workflow-deconstructor walks you through the full process
-
-    "Help me figure out which parts of my reporting process could be automated with AI"
-    → workflow-deconstructor decomposes the process and maps AI building blocks
-
-    "People keep dropping off during enrollment. Help me build a workflow for that."
-    → workflow-deconstructor designs a workflow from the problem and produces deliverables
-    ```
-
-    You can also invoke skills individually if you prefer to work step-by-step across separate conversations:
-
-    ```
-    "Use workflow-discovery to break down my expense reporting process"
-    → Produces outputs/expense-reporting-blueprint.md
-
-    "Use workflow-analysis on my blueprint"
-    → Reads the blueprint, produces outputs/expense-reporting-analysis.md
-
-    "Use workflow-output-generation on my analysis"
-    → Produces the baseline prompt and skill recommendations
-    ```
-
----
-
 ## Quick Reference
 
-| Plugin | Agents | Skills | Install command |
-|--------|--------|--------|----------------|
-| `course-examples` | 7 | 2 | `/plugin install course-examples@handsonai` |
-| `ai-registry` | 0 | 5 | `/plugin install ai-registry@handsonai` |
-| `workflow-deconstruction` | 1 | 3 | `/plugin install workflow-deconstruction@handsonai` |
+| Plugin | Agents | Skills | Prompts | Install command |
+|--------|--------|--------|---------|----------------|
+| `business-first-ai` | 8 | 6 | 3 | `/plugin install business-first-ai@handsonai` |
+| `ai-registry` | 0 | 5 | 0 | `/plugin install ai-registry@handsonai` |
 
 All plugins are maintained in the [handsonai GitHub repository](https://github.com/jamesgray-ai/handsonai).

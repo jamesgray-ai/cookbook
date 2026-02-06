@@ -42,7 +42,7 @@ To install a plugin, type the install command shown on the marketplace page in y
 For example:
 
 ```bash
-/plugin install course-examples@handsonai
+/plugin install business-first-ai@handsonai
 ```
 
 After installing, the plugin's agents and skills are available in your Claude Code session. Installed plugins are stored in `~/.claude/plugins/` on your machine.
@@ -127,10 +127,10 @@ Check the plugin name is spelled correctly and includes the `@handsonai` suffix:
 
 ```bash
 # Correct
-/plugin install course-examples@handsonai
+/plugin install business-first-ai@handsonai
 
 # Wrong — missing marketplace suffix
-/plugin install course-examples
+/plugin install business-first-ai
 ```
 
 ### "Permission denied" or authentication errors

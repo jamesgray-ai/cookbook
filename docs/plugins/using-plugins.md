@@ -34,7 +34,7 @@ As the plugins grow, they may also include commands, hooks, and connectors — b
 
 Describe what you need. Claude Code matches your request to the right agent automatically.
 
-**Examples from the `course-examples` plugin:**
+**Examples from the `business-first-ai` plugin:**
 
 ```
 "Write a LinkedIn post about how RAG is transforming enterprise search"
@@ -67,7 +67,7 @@ The format is `/plugin-name:skill-name`.
 |--------|--------------|-------------|
 | `ai-registry` | `/ai-registry:naming-workflows` | Generates consistent workflow names and creates Notion entries |
 | `ai-registry` | `/ai-registry:writing-workflow-sops` | Writes Standard Operating Procedure docs for workflows |
-| `course-examples` | `/course-examples:editing-hbr-articles` | Loads HBR editorial criteria for article editing |
+| `business-first-ai` | `/business-first-ai:editing-hbr-articles` | Loads HBR editorial criteria for article editing |
 
 !!! note
     Skills from the `ai-registry` plugin require the [Notion MCP connector](../fundamentals/developer-setup/notion-registry-setup.md) to be configured. Without it, Claude can follow the naming conventions and draft the output, but cannot read from or write to Notion.
@@ -115,7 +115,7 @@ Each skill is a folder containing `SKILL.md` and optional reference files.
     Concrete example for `editing-hbr-articles`:
 
     ```bash
-    cd ~/.claude/plugins/marketplaces/handsonai/plugins/course-examples/skills && \
+    cd ~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills && \
       zip -r ~/Desktop/editing-hbr-articles.zip editing-hbr-articles/
     ```
 
@@ -129,7 +129,7 @@ Each skill is a folder containing `SKILL.md` and optional reference files.
        ```
        ~/.claude/plugins/marketplaces/handsonai/plugins/
        ```
-    4. Open the plugin folder (e.g., `course-examples`), then `skills`
+    4. Open the plugin folder (e.g., `business-first-ai`), then `skills`
     5. Right-click the skill folder (e.g., `editing-hbr-articles`) and choose **Compress**
 
 !!! warning "Common mistake"
@@ -151,12 +151,12 @@ Open a new chat and describe your need. Claude automatically uses the skill when
 
 The `editing-hbr-articles` skill is the most portable skill in the marketplace — no external dependencies.
 
-- **Plugin:** `course-examples`
-- **Path:** `~/.claude/plugins/marketplaces/handsonai/plugins/course-examples/skills/editing-hbr-articles/`
+- **Plugin:** `business-first-ai`
+- **Path:** `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/editing-hbr-articles/`
 - **Contents:** `SKILL.md` and `references/editorial-criteria.md`
 - **Terminal zip command:**
   ```bash
-  cd ~/.claude/plugins/marketplaces/handsonai/plugins/course-examples/skills && \
+  cd ~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills && \
     zip -r ~/Desktop/editing-hbr-articles.zip editing-hbr-articles/
   ```
 - **Test prompt in Claude.ai:** "Edit this article for HBR quality" — then paste your draft

@@ -1,5 +1,5 @@
 ---
-name: workflow-output-generation
+name: generating-workflow-outputs
 description: >
   Generate a Baseline Workflow Prompt and Skill Build Recommendations from a Workflow Analysis
   Document. Use when the user has a completed Analysis Document and wants the final deliverables.

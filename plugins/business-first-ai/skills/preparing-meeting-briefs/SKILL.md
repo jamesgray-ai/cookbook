@@ -1,5 +1,5 @@
 ---
-name: meeting-prep-research
+name: preparing-meeting-briefs
 description: >
   Research attendees and companies before meetings. Produces a structured meeting prep
   brief with attendee profiles, company snapshots, talking points, and suggested questions.
@@ -7,7 +7,7 @@ description: >
   or needing talking points for an upcoming conversation.
 ---
 
-# Meeting Prep Research
+# Preparing Meeting Briefs
 
 Research meeting attendees and their companies to produce a concise, actionable prep brief.
 
@@ -16,7 +16,7 @@ Research meeting attendees and their companies to produce a concise, actionable 
 1. **Gather meeting details** — Ask for: attendee name(s), company, meeting type, and the user's goal
 2. **Research attendees** — Search for LinkedIn profiles, recent posts, and public activity
 3. **Research company** — Search for recent news, strategic direction, and relevant context
-4. **Synthesize brief** — Produce a formatted Meeting Prep Brief (see format below)
+4. **Synthesize brief** — Produce a formatted Meeting Prep Brief (see format below) and write it to `outputs/meeting-prep-[company-name].md`. Create the `outputs/` directory if it doesn't exist.
 5. **Refine with user** — Ask if any section needs more depth or adjustment
 
 ## Output Format
@@ -58,3 +58,4 @@ Research meeting attendees and their companies to produce a concise, actionable 
 - **Be specific** — "They launched X product in January" beats "They're focused on innovation"
 - **Flag uncertainty** — distinguish verified facts from reasonable inferences
 - **Keep it scannable** — the brief should take under 5 minutes to read
+- After writing the brief, tell the user: "Meeting prep brief saved to `outputs/meeting-prep-[company-name].md`. Review it before your meeting and let me know if any section needs more depth."

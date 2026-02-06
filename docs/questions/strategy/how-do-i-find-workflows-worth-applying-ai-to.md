@@ -13,7 +13,9 @@ author: James Gray
 
 ## The Full Answer
 
-Most people adopt AI reactively — they reach for ChatGPT when stuck on an email or ask Claude to summarize a document. That's useful, but it misses the bigger picture. A proactive, structured audit of your workflows will reveal opportunities you'd never notice in the moment: repetitive tasks that could run on autopilot, decisions that benefit from an AI collaborator, and multi-step processes that could be orchestrated end-to-end.
+Most people adopt AI reactively — they reach for ChatGPT when stuck on an email or ask Claude to summarize a document. That's useful, but it misses the bigger picture. The [Business-First AI Framework](../../framework.md) provides a structured three-phase approach to this question — discover where AI fits, deconstruct those workflows into building blocks, then build.
+
+A proactive, structured audit of your workflows will reveal opportunities you'd never notice in the moment: repetitive tasks that could run on autopilot, decisions that benefit from an AI collaborator, and multi-step processes that could be orchestrated end-to-end.
 
 The key is thinking in three categories. **Collaborative AI** covers tasks where you and AI work together in real time — drafting, brainstorming, reviewing, analyzing. **Deterministic workflows** are repeatable processes with clear inputs and outputs that AI can execute reliably with little supervision — formatting reports, processing forms, generating routine communications. **Multi-agent systems** are complex workflows where multiple AI agents coordinate across steps — research-to-report pipelines, intake-to-triage systems, monitoring-to-response workflows.
 

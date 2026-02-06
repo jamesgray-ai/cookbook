@@ -9,7 +9,7 @@ description: A worked example of multi-agent orchestration — multiple speciali
 
 ## What This Workflow Type Is
 
-An autonomous agent workflow is one where AI handles the entire process — from research to final deliverable — with minimal human intervention. In this example, it goes further: multiple specialized agents each handle one phase of the pipeline, coordinated by Claude Code. The human sets the goal and reviews the draft at one checkpoint. Everything else runs autonomously.
+An autonomous agent workflow is one where AI handles the entire process — from research to final deliverable — with minimal human intervention. This example is built using [Claude Code subagents](https://code.claude.com/docs/en/sub-agents) — specialized AI assistants that each run in their own context with domain expertise, coordinated by Claude Code as the orchestrator. The human sets the goal and reviews the draft at one checkpoint. Everything else runs autonomously.
 
 !!! info "At a Glance"
     - **AI involvement:** Full — multiple agents plan, research, write, edit, and publish
@@ -23,7 +23,7 @@ An autonomous agent workflow is one where AI handles the entire process — from
 - **Pipeline-structured** — output from one agent becomes input to the next
 - **Skill-enhanced** — the editor agent loads the `editing-hbr-articles` skill to apply codified editorial standards during its editing pass
 - **Self-reviewing** — the editor agent applies quality criteria from that skill before the human sees the draft
-- **Gate-controlled** — a SubagentStop hook pauses execution for human review before publishing
+- **Gate-controlled** — a built-in safety mechanism (called a "hook") automatically pauses the pipeline for human review before publishing
 - **End-to-end** — produces a finished deliverable (PDF + markdown) from a single goal statement
 
 ### When to Use
@@ -50,15 +50,15 @@ This single prompt triggers the entire pipeline:
 
 ## Building Blocks
 
-All building blocks are already included in the `course-examples` plugin — no additional installation required.
+All building blocks are already included in the `business-first-ai` plugin — no additional installation required.
 
 | Building Block | Type | Role in Pipeline | Source |
 |-------|------|-----------------|--------|
-| `ai-productivity-researcher` | Agent | Finds documented case studies of companies using AI with quantified outcomes | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/ai-productivity-researcher.md) |
-| `tech-executive-writer` | Agent | Writes the article for a business leadership audience | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/tech-executive-writer.md) |
-| `hbr-editor` | Agent | Edits the draft against HBR editorial standards | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-editor.md) |
-| `editing-hbr-articles` | Skill | Provides editorial criteria and cut/replace patterns for the editor | [View on GitHub](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/course-examples/skills/editing-hbr-articles/) |
-| `hbr-publisher` | Agent | Formats the approved article as PDF and markdown with SEO metadata | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/course-examples/agents/hbr-publisher.md) |
+| `ai-productivity-researcher` | Agent | Finds documented case studies of companies using AI with quantified outcomes | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/ai-productivity-researcher.md) |
+| `tech-executive-writer` | Agent | Writes the article for a business leadership audience | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/tech-executive-writer.md) |
+| `hbr-editor` | Agent | Edits the draft against HBR editorial standards | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/hbr-editor.md) |
+| `editing-hbr-articles` | Skill | Provides editorial criteria and cut/replace patterns for the editor | [View on GitHub](https://github.com/jamesgray-ai/handsonai/tree/main/plugins/business-first-ai/skills/editing-hbr-articles/) |
+| `hbr-publisher` | Agent | Formats the approved article as PDF and markdown with SEO metadata | [View on GitHub](https://github.com/jamesgray-ai/handsonai/blob/main/plugins/business-first-ai/agents/hbr-publisher.md) |
 
 ## How It Works
 
@@ -81,7 +81,7 @@ graph TD
 2. **`ai-productivity-researcher` runs** — searches news outlets, business publications, and analyst reports for documented case studies of companies using AI agents. Prioritizes HBR-caliber sources with quantified outcomes (revenue impact, productivity gains, cost savings).
 3. **`tech-executive-writer` runs** — takes the research output and produces a full-length article. Translates technical AI concepts for a non-technical business audience. Structures the piece with a compelling narrative, specific examples, and executive-level insights.
 4. **`hbr-editor` runs** — reads the `editing-hbr-articles` skill to load editorial criteria, then edits the draft. Checks structure (does the opening hook?), evidence quality (are claims supported by named companies and data?), voice (active, no hedging), and length (2,500-3,500 words for features). Makes direct, prescriptive edits.
-5. **SubagentStop hook fires** — pauses the pipeline and presents the edited draft to the human for review.
+5. **Pipeline pauses for review** — a hook (an automatic rule in Claude Code that triggers at a specific point) stops the pipeline and presents the edited draft to the human.
 6. **Human reviews** — reads the edited article and either approves it to continue or stops the pipeline for manual revision.
 7. **`hbr-publisher` runs** (on approval) — formats the article for web publication (SEO metadata, social snippets) and generates a professional PDF. Produces two files: a markdown version and a PDF.
 
@@ -103,7 +103,7 @@ A single generalist prompt could attempt all of this, but the output quality deg
 
 ### The Human Review Gate
 
-The SubagentStop hook is critical. It fires after the editor finishes and before the publisher starts, giving the human a chance to:
+The human review gate is critical. A "hook" — an automatic rule you configure in Claude Code — fires after the editor finishes and before the publisher starts, giving the human a chance to:
 
 - **Approve** — the article meets standards, continue to publishing
 - **Reject** — the article needs changes the AI can't make (factual corrections, strategic adjustments, tone shifts)
@@ -114,11 +114,11 @@ This is a deliberate design choice. The pipeline is autonomous enough to produce
 
 === "Claude Code (Plugin)"
 
-    All five agents and the editing skill are included in the `course-examples` plugin.
+    All five agents and the editing skill are included in the `business-first-ai` plugin.
 
     ```bash
     # Install the plugin (one time)
-    /plugin install course-examples@handsonai
+    /plugin install business-first-ai@handsonai
     ```
 
     Then provide the goal prompt:
@@ -164,3 +164,4 @@ To adapt: identify the distinct phases of your workflow and the specialist exper
 - [Find AI Workflow Opportunities](../prompting/ai-workflow-opportunity-finder.md) — discover which workflows are candidates for autonomous agents
 - [Deconstruct Workflows into AI Building Blocks](../prompting/workflow-deconstruction-meta-prompt.md) — break down workflows into agent-ready steps
 - [Plugin Marketplace](../../plugins/index.md) — browse all agents and skills used in this pipeline
+- [Claude Code Subagents Documentation](https://code.claude.com/docs/en/sub-agents) — official guide to creating and using subagents in Claude Code

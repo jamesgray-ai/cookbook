@@ -72,6 +72,19 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Business-First AI Framework:
+    - Overview: framework.md
+    - "Phase 1 — Discover": how-to/prompting/ai-workflow-opportunity-finder.md
+    - "Phase 2 — Deconstruct":
+      - Overview: how-to/prompting/workflow-deconstruction-meta-prompt.md
+      - "Step 1 — Discovery & Deep Dive": how-to/prompting/workflow-deconstruction-discovery.md
+      - "Step 2 — Analysis & Mapping": how-to/prompting/workflow-deconstruction-analysis.md
+      - "Step 3 — Output Generation": how-to/prompting/workflow-deconstruction-outputs.md
+    - "Phase 3 — Build":
+      - Overview: how-to/workflow-examples/README.md
+      - Deterministic Automation: how-to/workflow-examples/deterministic-automation.md
+      - AI Collaborative: how-to/workflow-examples/ai-collaborative.md
+      - Autonomous Agent: how-to/workflow-examples/autonomous-agent.md
   - Platforms:
     - Overview: platforms/index.md
     - Claude:
@@ -114,9 +127,8 @@ nav:
     - Marketplace: plugins/index.md
     - Getting Started: plugins/getting-started.md
     - Using Plugins: plugins/using-plugins.md
-    - Course Examples: plugins/course-examples.md
+    - Business First AI: plugins/business-first-ai.md
     - AI Registry: plugins/ai-registry.md
-    - Workflow Deconstruction: plugins/workflow-deconstruction.md
   - Fundamentals:
     - Overview: fundamentals/index.md
     - Agents & Tools:
@@ -140,18 +152,7 @@ nav:
     - Integrations: how-to/integrations/README.md
     - Prompting:
       - how-to/prompting/README.md
-      - Find AI Workflow Opportunities: how-to/prompting/ai-workflow-opportunity-finder.md
-      - Deconstruct Workflows:
-        - Overview: how-to/prompting/workflow-deconstruction-meta-prompt.md
-        - "Step 1 — Discovery & Deep Dive": how-to/prompting/workflow-deconstruction-discovery.md
-        - "Step 2 — Analysis & Mapping": how-to/prompting/workflow-deconstruction-analysis.md
-        - "Step 3 — Output Generation": how-to/prompting/workflow-deconstruction-outputs.md
       - Write Custom Workspace Instructions: how-to/prompting/workspace-instructions-meta-prompt.md
-    - Workflows:
-      - Overview: how-to/workflow-examples/README.md
-      - Deterministic Automation: how-to/workflow-examples/deterministic-automation.md
-      - AI Collaborative: how-to/workflow-examples/ai-collaborative.md
-      - Autonomous Agent: how-to/workflow-examples/autonomous-agent.md
   - Questions:
     - Overview: questions/README.md
     - Strategy:
