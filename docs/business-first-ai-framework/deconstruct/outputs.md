@@ -7,7 +7,21 @@ description: Generate a ready-to-use Baseline Workflow Prompt and Skill Build Re
 
 > **Part of:** [Deconstruct Workflows](index.md)
 
-This is the final prompt in the three-part series. It takes the **Workflow Analysis Document** from [Step 2](analysis.md) and produces your two remaining deliverables: a **Baseline Workflow Prompt** you can paste into any AI tool to run the workflow, and **Skill Build Recommendations** showing which reusable skills to build and what they replace.
+## What This Is
+
+The final step that turns your analysis into action. AI reads your Workflow Analysis Document and generates two ready-to-use deliverables: a prompt you can paste into any AI tool to execute the workflow today, and a roadmap of reusable skills to build over time.
+
+| | |
+|---|---|
+| **What you'll do** | Upload your Analysis Document from Step 2, answer 1–2 clarifying questions, then review the generated outputs |
+| **What you'll get** | A **Baseline Workflow Prompt** (ready to paste and run) and **Skill Build Recommendations** (what to build next and in what order) |
+| **Time** | ~5–10 minutes (mostly generative — the AI does the heavy lifting) |
+
+## Why This Matters
+
+Analysis without action is just documentation. The Baseline Workflow Prompt gives you something you can use immediately — paste it into any AI tool and run your workflow. It works on day one, on any platform.
+
+The Skill Build Recommendations show you how to evolve that prompt over time. Each skill you build replaces a section of the baseline prompt, making the workflow shorter, more reliable, and more reusable. You get a clear path from "working but manual" to "automated and refined" — with specific priorities so you know what to build first.
 
 ## How to Use This
 

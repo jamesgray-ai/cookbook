@@ -7,7 +7,21 @@ description: Classify workflow steps on the autonomy spectrum, map them to AI bu
 
 > **Part of:** [Deconstruct Workflows](index.md)
 
-This is the second of three prompts. It takes the **Workflow Blueprint** file from [Step 1](discovery.md), classifies each step on the autonomy spectrum, maps it to AI building blocks, and produces a complete **Workflow Analysis Document** — the first major deliverable. You'll save that document and use it as input for [Step 3](outputs.md).
+## What This Is
+
+A classification step where AI takes your Workflow Blueprint and determines what level of AI assistance each step needs — from fully human to fully autonomous — and maps each step to the specific AI building blocks required.
+
+| | |
+|---|---|
+| **What you'll do** | Upload your Blueprint from Step 1, review the AI's classification of each step, and adjust anything that doesn't look right |
+| **What you'll get** | A **Workflow Analysis Document** — a complete mapping of steps to autonomy levels and AI building blocks, with a prioritized build sequence |
+| **Time** | ~5–10 minutes (mostly reviewing the AI's analysis) |
+
+## Why This Matters
+
+Not every step in a workflow should be automated. Some require human judgment. Some can run on autopilot. Some need AI to do the heavy lifting with a human checking the result. Getting this classification wrong means either over-automating (risking quality) or under-automating (leaving value on the table).
+
+This analysis also maps each step to specific **AI building blocks** — Prompt, Context, Skill, Agent, MCP, or Project — so you know exactly what to build for each step instead of guessing. The recommended implementation order (quick wins first, complex agent steps last) gives you a practical sequence for rolling out AI incrementally.
 
 ## How to Use This
 

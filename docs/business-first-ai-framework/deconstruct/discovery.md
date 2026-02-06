@@ -7,7 +7,23 @@ description: Interactively discover and decompose a business workflow into a str
 
 > **Part of:** [Deconstruct Workflows](index.md)
 
-This is the first of three prompts that break down a business workflow so you can power it with AI. This prompt handles **scenario discovery** (understanding your workflow) and the **deep dive** (decomposing each step using the 5-question framework). It produces a **Workflow Blueprint** — a Markdown file you'll save and use as input for [Step 2](analysis.md).
+## What This Is
+
+An interactive conversation where AI helps you break down a workflow into its component parts. You describe the process — rough and incomplete is fine — and the AI interviews you to surface every hidden step, decision, data handoff, and failure mode.
+
+| | |
+|---|---|
+| **What you'll do** | Describe your workflow (or problem), then answer focused questions as the AI probes each step for sub-steps, decision points, data flows, context needs, and failure modes |
+| **What you'll get** | A **Workflow Blueprint** — a structured Markdown file that captures everything discovered, ready for [Step 2](analysis.md) |
+| **Time** | ~15–25 minutes of interactive conversation |
+
+## Why This Matters
+
+Most people describe their workflows in 5–8 rough steps. But the real complexity — the decision points, data handoffs, exception paths, and hidden assumptions — lives in the gaps between those steps.
+
+This discovery process typically expands those 5–8 rough steps into 12–20 refined steps. That expansion is where the value is: each hidden detail you surface now is a potential failure point you won't have to debug later when AI is running the workflow.
+
+The prompt uses a **5-question framework** (discrete steps, decision points, data flows, context needs, failure modes) applied systematically to every step. After the first few steps, it switches to a "propose and react" pattern — presenting hypotheses for you to correct — which is faster and surfaces details you wouldn't think to mention unprompted.
 
 ## How to Use This
 
