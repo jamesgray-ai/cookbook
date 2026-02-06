@@ -52,50 +52,73 @@ Splitting into three prompts keeps each conversation comfortably under 15K token
 
 ## How to Use This
 
-There are two ways to run Phase 2, depending on which tools you use:
+There are four ways to run Phase 2, depending on which tools you use:
 
-### Option A: Prompt templates (any AI tool)
+=== "Any AI Tool"
 
-Use this if you're working in Claude, ChatGPT, Gemini, or M365 Copilot. Copy each prompt into a new conversation and work through the three steps sequentially.
+    Use this if you're working in ChatGPT, Gemini, M365 Copilot, or any AI chat tool. Copy each prompt into a new conversation and work through the three steps sequentially.
 
-1. **Go to [Step 1 — Discovery & Deep Dive](discovery.md)** — Copy the prompt, start a new conversation in your AI tool, paste the prompt, and describe your workflow
-2. **Save the Workflow Blueprint** — Download the `.md` file the model produces (or copy the output and save it as `[workflow-name]-blueprint.md`)
-3. **Go to [Step 2 — Analysis & Mapping](analysis.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Blueprint file when the model asks for it
-4. **Save the Workflow Analysis Document** — Download `[workflow-name]-analysis.md`
-5. **Go to [Step 3 — Output Generation](outputs.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Analysis Document when the model asks for it
-6. **Save your final deliverables** — Download `[workflow-name]-prompt.md` and `[workflow-name]-skill-recs.md`
+    1. **Go to [Step 1 — Discovery & Deep Dive](discovery.md)** — Copy the prompt, start a new conversation, paste the prompt, and describe your workflow
+    2. **Save the Workflow Blueprint** — Download the `.md` file the model produces (or copy the output and save it as `[workflow-name]-blueprint.md`)
+    3. **Go to [Step 2 — Analysis & Mapping](analysis.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Blueprint file
+    4. **Save the Workflow Analysis Document** — Download `[workflow-name]-analysis.md`
+    5. **Go to [Step 3 — Output Generation](outputs.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Analysis Document
+    6. **Save your final deliverables** — Download `[workflow-name]-prompt.md` and `[workflow-name]-skill-recs.md`
+
+=== "Claude Code"
+
+    Use this if you have Claude Code installed. The `workflow-deconstructor` **agent** from the [Business-First AI plugin](../../plugins/business-first-ai.md) orchestrates all three steps automatically — running discovery, analysis, and output generation in sequence with file-based handoffs between stages.
+
+    1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
+    2. **Start with this prompt:**
+        ```
+        I want to deconstruct my [workflow name] workflow into AI building
+        blocks. Walk me through the full process.
+        ```
+        The `workflow-deconstructor` agent activates and walks you through all three steps.
+    3. **Review the outputs** — deliverables are saved to the `outputs/` directory
+
+    You can also run individual steps using the skills directly: `discovering-workflows`, `analyzing-workflows`, `generating-workflow-outputs`.
+
+=== "Cowork"
+
+    Use this if you have Claude Desktop on macOS. The `workflow-deconstructor` agent works in Cowork the same way it does in Claude Code — orchestrating all three steps automatically through a visual interface.
+
+    1. **Add the plugin to Cowork** — click the **+** button, select **Add plugins...**, and upload the plugin ZIP
+    2. **Start with this prompt:**
+        ```
+        I want to deconstruct my [workflow name] workflow into AI building
+        blocks. Walk me through the full process.
+        ```
+    3. **Review the outputs** — deliverables are saved to the `outputs/` directory
+
+    You can also run individual steps using the skills directly: `discovering-workflows`, `analyzing-workflows`, `generating-workflow-outputs`.
+
+    For Cowork setup details, see [Using Plugins in Cowork](../../plugins/using-plugins.md#using-plugins-in-claude-cowork).
+
+=== "Claude.ai"
+
+    Use this if you prefer working in the Claude.ai web interface. You'll upload individual skills as ZIP files and run the three steps in separate conversations.
+
+    **Prerequisites:** You need Claude Code installed first to access the skill files. Install the plugin in Claude Code (`/plugin install business-first-ai@handsonai`), then follow these steps:
+
+    1. **Find the skills folder** — `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/`
+    2. **Zip each skill** you want to use (`discovering-workflows`, `analyzing-workflows`, `generating-workflow-outputs`)
+    3. **Upload each skill** in Claude.ai under **Settings > Capabilities > Upload skill**
+    4. **Run each step in a separate conversation**, saving the output file between steps
+
+    For detailed upload instructions, see [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web).
+
+    !!! warning "The orchestrator agent doesn't work in Claude.ai"
+        The `workflow-deconstructor` agent (which orchestrates all three steps in one session) only works in Claude Code or Cowork. In Claude.ai, you run the three skills individually and pass the output files between conversations — same process, just manual handoffs.
+
+All four options follow the same process and produce the same deliverables. Choose whichever fits your setup.
 
 !!! tip "Start with a workflow you actually do"
     Real workflows produce the best results. The model will surface hidden steps and assumptions you've internalized — that's much harder with hypothetical processes. If you don't have an existing workflow but have a clear problem to solve, that works too — the model will help you design one.
 
 !!! tip "Keep your files together"
     By the end you'll have four Markdown files: `[name]-blueprint.md`, `[name]-analysis.md`, `[name]-prompt.md`, and `[name]-skill-recs.md`. Keep them in a single folder — they form a complete record of your workflow deconstruction. You can share any of these files with your instructor for feedback, put them in version control, or hand them to a colleague.
-
-### Option B: Claude skills
-
-Use this if you're on the Claude platform (Claude Code, Claude.ai, or Cowork). The [Business First AI plugin](../../plugins/business-first-ai.md) includes the `workflow-deconstructor` agent (which orchestrates all three steps) and individual skills for each step (`discovering-workflows`, `analyzing-workflows`, `generating-workflow-outputs`).
-
-**Claude Code or Cowork** — install the plugin and everything is available immediately:
-
-1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
-2. **Start with this prompt:**
-    ```
-    I want to deconstruct my [workflow name] workflow into AI building
-    blocks. Walk me through the full process.
-    ```
-    The `workflow-deconstructor` agent activates and walks you through all three steps automatically.
-3. **Review the outputs** — deliverables are saved to the `outputs/` directory
-
-**Claude.ai** — upload individual skills as ZIP files:
-
-1. **Zip the skill folder** you want to use (e.g., `discovering-workflows`) from `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/`
-2. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
-3. **Start a new chat** with the same prompt above — Claude uses the skill automatically
-4. **Repeat** for each step's skill, or upload all three at once
-
-For detailed upload instructions, see [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web).
-
-Both options follow the same process and produce the same deliverables. Choose whichever fits your workflow.
 
 ### Example: What the first exchange looks like
 

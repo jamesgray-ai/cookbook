@@ -24,7 +24,7 @@ There are two ways to run Step 3, depending on which tools you use:
 
 ### Option B: Claude skill
 
-Use the `generating-workflow-outputs` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It reads the Analysis Document from Step 2 and generates both deliverables automatically.
+Use the `generating-workflow-outputs` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It reads the Analysis Document from Step 2 and generates both deliverables automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```

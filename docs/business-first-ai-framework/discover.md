@@ -34,40 +34,57 @@ This prompt template guides an AI through a structured analysis of your work and
 
 ## How to Use This
 
-There are two ways to run Phase 1, depending on which tools you use:
+There are four ways to run Phase 1, depending on which tools you use:
 
-### Option A: Prompt template (any AI tool)
+=== "Any AI Tool"
 
-Use this if you're working in Claude, ChatGPT, Gemini, or M365 Copilot.
+    Use this if you're working in ChatGPT, Gemini, M365 Copilot, or any AI chat tool.
 
-1. **Make sure memory is enabled** in your AI tool of choice — this lets the AI draw on everything it knows about you from past conversations
-2. **Copy the prompt** from the code block below
-3. **Paste it into any conversation** — the AI will automatically scan its memory for context about your role, tasks, and workflows
-4. **Review the output** and pick one or two opportunities to pilot first
+    1. **Make sure memory is enabled** in your AI tool of choice — this lets the AI draw on everything it knows about you from past conversations
+    2. **Copy the prompt** from the [Prompt Template](#the-prompt-template) section below
+    3. **Paste it into any conversation** — the AI will automatically scan its memory for context about your role, tasks, and workflows
+    4. **Review the output** and pick one or two opportunities to pilot first
 
-### Option B: Claude skill
+=== "Claude Code"
 
-Use this if you're on the Claude platform (Claude Code, Claude.ai, or Cowork). The `finding-ai-opportunities` skill from the [Business First AI plugin](../plugins/business-first-ai.md) runs the same process interactively.
+    Use this if you have Claude Code installed. The `finding-ai-opportunities` skill from the [Business-First AI plugin](../plugins/business-first-ai.md) runs the same process interactively.
 
-**Claude Code or Cowork** — install the plugin and the skill is available immediately:
+    1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
+    2. **Start with this prompt:**
+        ```
+        I'd like to find AI opportunities in my workflows. Help me audit
+        what I do and identify where AI could help.
+        ```
+    3. **Review the output** — the report is saved to `outputs/ai-opportunity-report.md`
 
-1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
-2. **Start with this prompt:**
-    ```
-    I'd like to find AI opportunities in my workflows. Help me audit
-    what I do and identify where AI could help.
-    ```
-3. **Review the output** — the report is saved to `outputs/ai-opportunity-report.md`
+=== "Cowork"
 
-**Claude.ai** — upload the skill as a ZIP file:
+    Use this if you have Claude Desktop on macOS. The `finding-ai-opportunities` skill works in Cowork the same way it does in Claude Code — through a visual interface with no terminal required.
 
-1. **Zip the skill folder** from `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/finding-ai-opportunities/`
-2. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
-3. **Start a new chat** with the same prompt above — Claude uses the skill automatically
+    1. **Add the plugin to Cowork** — click the **+** button, select **Add plugins...**, and upload the plugin ZIP
+    2. **Start with this prompt:**
+        ```
+        I'd like to find AI opportunities in my workflows. Help me audit
+        what I do and identify where AI could help.
+        ```
+    3. **Review the output** — the report is saved to `outputs/ai-opportunity-report.md`
 
-For detailed upload instructions, see [Using Skills in Claude.ai](../plugins/using-plugins.md#using-skills-in-claudeai-web).
+    For Cowork setup details, see [Using Plugins in Cowork](../plugins/using-plugins.md#using-plugins-in-claude-cowork).
 
-Both options follow the same three-step process and produce the same structured report. Choose whichever fits your workflow.
+=== "Claude.ai"
+
+    Use this if you prefer working in the Claude.ai web interface. You'll upload the skill as a ZIP file.
+
+    **Prerequisites:** You need Claude Code installed first to access the skill files. Install the plugin in Claude Code (`/plugin install business-first-ai@handsonai`), then follow these steps:
+
+    1. **Find the skill folder** — `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/finding-ai-opportunities/`
+    2. **Zip the folder**
+    3. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
+    4. **Start a new chat** with the same prompt above — Claude uses the skill automatically
+
+    For detailed upload instructions, see [Using Skills in Claude.ai](../plugins/using-plugins.md#using-skills-in-claudeai-web).
+
+All four options follow the same three-step process and produce the same structured report. Choose whichever fits your workflow.
 
 !!! tip "Best results come from rich context"
     The more the AI knows about your actual work, the better the recommendations. If possible, use a tool where you've had many prior conversations or uploaded relevant documents.
