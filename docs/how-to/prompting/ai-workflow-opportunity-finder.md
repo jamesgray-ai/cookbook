@@ -7,6 +7,9 @@ description: Use this prompt template to discover where AI can help automate, au
 
 > **Platforms:** `claude` `openai` `gemini`
 
+!!! info "Business-First AI Framework — Phase 1: Discover"
+    This guide is **Phase 1** of the [Business-First AI Framework](../../framework.md) — discovering where AI fits in your workflows.
+
 ## Why This Matters
 
 Most people adopt AI by reacting to problems — they reach for ChatGPT when they're stuck on an email or ask Claude to summarize a document. That's useful, but it misses the bigger picture.
@@ -19,12 +22,42 @@ This prompt template guides an AI through a structured analysis of your work and
 - **Deterministic Workflows** — Repeatable processes that AI can execute reliably with little or no supervision
 - **Multi-Agent Systems** — Complex workflows where multiple AI agents coordinate to handle different steps
 
-## How to Use This Template
+## How to Use This
 
-1. **Make sure memory is enabled** in your AI tool of choice (Claude, ChatGPT, Gemini) — this lets the AI draw on everything it knows about you from past conversations
+There are two ways to run Phase 1, depending on which tools you use:
+
+### Option A: Prompt template (any AI tool)
+
+Use this if you're working in Claude, ChatGPT, Gemini, or M365 Copilot.
+
+1. **Make sure memory is enabled** in your AI tool of choice — this lets the AI draw on everything it knows about you from past conversations
 2. **Copy the prompt** from the code block below
 3. **Paste it into any conversation** — the AI will automatically scan its memory for context about your role, tasks, and workflows
 4. **Review the output** and pick one or two opportunities to pilot first
+
+### Option B: Claude skill
+
+Use this if you're on the Claude platform (Claude Code, Claude.ai, or Cowork). The `finding-ai-opportunities` skill from the [Business First AI plugin](../../plugins/business-first-ai.md) runs the same process interactively.
+
+**Claude Code or Cowork** — install the plugin and the skill is available immediately:
+
+1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
+2. **Start with this prompt:**
+    ```
+    I'd like to find AI opportunities in my workflows. Help me audit
+    what I do and identify where AI could help.
+    ```
+3. **Review the output** — the report is saved to `outputs/ai-opportunity-report.md`
+
+**Claude.ai** — upload the skill as a ZIP file:
+
+1. **Zip the skill folder** from `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/finding-ai-opportunities/`
+2. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
+3. **Start a new chat** with the same prompt above — Claude uses the skill automatically
+
+For detailed upload instructions, see [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web).
+
+Both options follow the same three-step process and produce the same structured report. Choose whichever fits your workflow.
 
 !!! tip "Best results come from rich context"
     The more the AI knows about your actual work, the better the recommendations. If possible, use a tool where you've had many prior conversations or uploaded relevant documents.
@@ -144,6 +177,7 @@ Most people discover 5–15 opportunities across the three categories. Don't try
 
 ## Related
 
+- **Next step:** Ready to act on an opportunity? Use the [Workflow Deconstruction guide](workflow-deconstruction-meta-prompt.md) (Phase 2) to break it into AI building blocks.
+- [Business-First AI Framework](../../framework.md) — the full three-phase methodology
 - [Prompt Engineering Fundamentals](../../fundamentals/prompt-engineering/README.md)
 - [Agents & Tools Overview](../../fundamentals/agents-and-tools/README.md)
-- [Prompting How-To Guides](./README.md)

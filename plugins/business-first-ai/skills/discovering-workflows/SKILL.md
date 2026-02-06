@@ -1,5 +1,5 @@
 ---
-name: workflow-discovery
+name: discovering-workflows
 description: >
   Interactively discover and decompose a business workflow into a structured Workflow Blueprint.
   Use when the user wants to deconstruct a workflow, break down a business process, or start
@@ -8,14 +8,14 @@ description: >
 
 # Workflow Discovery
 
-Interactively discover a business workflow and decompose every step into a structured Workflow Blueprint using the 4-question framework + failure modes.
+Interactively discover a business workflow and decompose every step into a structured Workflow Blueprint using the 5-question framework.
 
 ## Workflow
 
 1. **Scenario discovery** — Ask about the business scenario, objective, high-level steps, and ownership. One question at a time. If the user describes a problem instead of a workflow, propose a candidate workflow for them to react to.
 2. **Scope check** — Assess whether this is one workflow or multiple bundled together. If multiple, recommend splitting and ask which to start with.
 3. **Name the workflow** — Present 2-3 name options following naming conventions (2-4 word noun phrase, Title Case). Confirm name, description, outcome, trigger, and type.
-4. **Deep dive** — Work through each step using the 4-question framework + failure modes:
+4. **Deep dive** — Work through each step using the 5-question framework:
    - Discrete steps (is this actually multiple steps?)
    - Decision points (if/then branches, quality gates)
    - Data flows (inputs, outputs, sources, destinations)

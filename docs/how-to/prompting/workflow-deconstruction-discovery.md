@@ -7,9 +7,13 @@ description: Interactively discover and decompose a business workflow into a str
 
 > **Part of:** [Deconstruct Workflows into AI Building Blocks](workflow-deconstruction-meta-prompt.md)
 
-This is the first of three prompts that break down a business workflow for AI operationalization. This prompt handles **scenario discovery** (understanding your workflow) and the **deep dive** (decomposing each step using the 4-question framework + failure modes). It produces a **Workflow Blueprint** — a Markdown file you'll save and use as input for [Step 2](workflow-deconstruction-analysis.md).
+This is the first of three prompts that break down a business workflow so you can power it with AI. This prompt handles **scenario discovery** (understanding your workflow) and the **deep dive** (decomposing each step using the 5-question framework). It produces a **Workflow Blueprint** — a Markdown file you'll save and use as input for [Step 2](workflow-deconstruction-analysis.md).
 
-## How to Use
+## How to Use This
+
+There are two ways to run Step 1, depending on which tools you use:
+
+### Option A: Prompt template (any AI tool)
 
 1. **Copy the prompt** from the code block below
 2. **Start a new conversation** in your preferred AI tool (Claude, ChatGPT, Gemini, M365 Copilot) and **paste the prompt**
@@ -18,8 +22,20 @@ This is the first of three prompts that break down a business workflow for AI op
 5. **Download the Workflow Blueprint** the model produces at the end — it will be a Markdown file named `[workflow-name]-blueprint.md` (e.g., `lead-qualification-blueprint.md`)
 6. **Keep this file** — you'll upload or paste it into Step 2, and you can share it with your instructor for feedback
 
+### Option B: Claude skill
+
+Use the `discovering-workflows` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It runs the same discovery and deep dive process and saves the Blueprint to a file automatically.
+
+- **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
+    ```
+    I want to discover and decompose my [workflow name] workflow.
+    Help me build a Workflow Blueprint.
+    ```
+    The Blueprint is saved to `outputs/[workflow-name]-blueprint.md`.
+- **Claude.ai** — zip the `discovering-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with the same prompt above. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
+
 !!! tip "Budget ~15-25 minutes for this conversation"
-    This prompt covers the most interactive part of the process. The model will ask about your scenario, help you refine your steps, then systematically probe each step for sub-steps, decisions, data flows, context needs, and failure modes. The depth here directly determines the quality of everything that follows.
+    This step covers the most interactive part of the process. The model will ask about your scenario, help you refine your steps, then systematically probe each step for sub-steps, decisions, data flows, context needs, and failure modes. The depth here directly determines the quality of everything that follows.
 
 ## The Prompt
 
@@ -70,9 +86,9 @@ Present 2-3 name options and let me pick one or suggest my own. Confirm the chos
 
 ---
 
-## Phase 2 — Deep Dive (4-Question Framework + Failure Modes)
+## Phase 2 — Deep Dive (5-Question Framework)
 
-Now systematically work through each step I provided using the 4-question framework, extended with failure modes. For every step, you need to understand:
+Now systematically work through each step I provided using the 5-question framework. For every step, you need to understand:
 
 1. **Discrete steps** — Is this step actually multiple steps bundled together? If so, break it down further. Keep going until each step is a single, concrete action.
 2. **Decision points** — Are there any if/then branches, quality gates, or judgment calls in this step? What triggers each path?

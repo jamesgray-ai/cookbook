@@ -1,5 +1,5 @@
 ---
-name: workflow-analysis
+name: analyzing-workflows
 description: >
   Classify workflow steps on the autonomy spectrum, map them to AI building blocks, and produce
   a Workflow Analysis Document. Use when the user has a Workflow Blueprint and wants to analyze

@@ -9,7 +9,11 @@ description: Classify workflow steps on the autonomy spectrum, map them to AI bu
 
 This is the second of three prompts. It takes the **Workflow Blueprint** file from [Step 1](workflow-deconstruction-discovery.md), classifies each step on the autonomy spectrum, maps it to AI building blocks, and produces a complete **Workflow Analysis Document** — the first major deliverable. You'll save that document and use it as input for [Step 3](workflow-deconstruction-outputs.md).
 
-## How to Use
+## How to Use This
+
+There are two ways to run Step 2, depending on which tools you use:
+
+### Option A: Prompt template (any AI tool)
 
 1. **Copy the prompt** from the code block below
 2. **Paste it into a new conversation** in your preferred AI tool
@@ -18,6 +22,18 @@ This is the second of three prompts. It takes the **Workflow Blueprint** file fr
 5. **Review the mapping** — the model will present its analysis and ask for adjustments
 6. **Download the Workflow Analysis Document** the model produces at the end — it will be a Markdown file named `[workflow-name]-analysis.md`
 7. **Keep this file** — you'll upload or paste it into Step 3, and you can share it with your instructor for feedback
+
+### Option B: Claude skill
+
+Use the `analyzing-workflows` skill from the [Business First AI plugin](../../plugins/business-first-ai.md). It reads the Blueprint from Step 1, runs the analysis, and saves the Workflow Analysis Document automatically.
+
+- **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
+    ```
+    Analyze the Workflow Blueprint in outputs/[workflow-name]-blueprint.md.
+    Classify each step and map it to AI building blocks.
+    ```
+    The analysis is saved to `outputs/[workflow-name]-analysis.md`.
+- **Claude.ai** — zip the `analyzing-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with: "Analyze this Workflow Blueprint and map each step to AI building blocks." Upload or paste your Blueprint when prompted. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
 
 !!! tip "This step is mostly analytical"
     Unlike Step 1's extended back-and-forth, this conversation is shorter. The model does the heavy lifting — classifying steps, mapping building blocks, and generating the analysis document. Expect 5-10 minutes of light interaction.

@@ -9,22 +9,16 @@
   },
   "plugins": [
     {
-      "name": "course-examples",
-      "source": "./plugins/course-examples",
-      "description": "Working examples of agents and skills from the Hands-on AI cohort courses",
-      "version": "1.1.0"
+      "name": "business-first-ai",
+      "source": "./plugins/business-first-ai",
+      "description": "The Business-First AI Framework — discover AI opportunities, deconstruct workflows, and build with worked examples",
+      "version": "1.0.0"
     },
     {
       "name": "ai-registry",
       "source": "./plugins/ai-registry",
       "description": "Skills for documenting, naming, registering, and syncing AI operational workflows and skills",
       "version": "2.0.0"
-    },
-    {
-      "name": "workflow-deconstruction",
-      "source": "./plugins/workflow-deconstruction",
-      "description": "Deconstruct business workflows into AI building blocks with an orchestrator agent and three-skill chain",
-      "version": "1.0.0"
     }
   ]
 }

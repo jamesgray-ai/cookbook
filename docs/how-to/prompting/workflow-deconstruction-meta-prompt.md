@@ -7,17 +7,20 @@ description: Use this three-prompt series to break down any business workflow in
 
 > **Platforms:** `claude` `openai` `gemini` `m365-copilot`
 
+!!! info "Business-First AI Framework — Phase 2: Deconstruct"
+    This guide is **Phase 2** of the [Business-First AI Framework](../../framework.md) — deconstructing workflows into AI building blocks.
+
 ## Why This Matters
 
 You can't operationalize AI on a process you don't understand. Before you can build an AI-powered workflow, you need to break it down into discrete steps, identify the decision points and data flows, and map each step to the right level of AI assistance.
 
-This series of prompts walks you through that deconstruction interactively. You provide the business scenario and rough steps — the model handles the structured analysis, applies the 4-question framework (discrete steps, decision points, data flows, context needs) plus failure modes, maps each step to AI building blocks, and generates three deliverables:
+This series of prompts walks you through that deconstruction interactively. You provide the business scenario and rough steps — the model handles the structured analysis, applies the 5-question framework (discrete steps, decision points, data flows, context needs, failure modes), maps each step to AI building blocks, and generates three deliverables:
 
 1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, a context inventory of every resource the workflow needs (documents, files, data sources, system access), and a prioritized build sequence
 2. A **Baseline Workflow Prompt** — a ready-to-use prompt that works on any platform; this is your starting point that will evolve as you build skills
 3. **Skill Build Recommendations** — actionable specs for reusable skills you can build to automate recurring steps
 
-This builds directly on the concepts from the course lessons on workflow deconstruction and AI building blocks. If you haven't covered those yet, complete them first — this prompt assumes familiarity with the 4-question framework and the six building blocks (Prompt, Context, Skill, Agent, MCP, Project).
+This builds directly on the concepts from the course lessons on workflow deconstruction and AI building blocks. If terms like the "5-question framework" or "six building blocks" are new to you, review the [Key Concepts section of the Business-First AI Framework](../../framework.md#key-concepts) for quick definitions before starting.
 
 ## The Three-Prompt Approach
 
@@ -37,7 +40,13 @@ The original single-prompt version (preserved below) works well on models with l
 
 Splitting into three prompts keeps each conversation comfortably under 15K tokens total, which works reliably on all platforms. It also improves output quality — the model focuses on one task per conversation instead of trying to hold 20+ turns of context while generating complex deliverables.
 
-## How to Use
+## How to Use This
+
+There are two ways to run Phase 2, depending on which tools you use:
+
+### Option A: Prompt templates (any AI tool)
+
+Use this if you're working in Claude, ChatGPT, Gemini, or M365 Copilot. Copy each prompt into a new conversation and work through the three steps sequentially.
 
 1. **Go to [Step 1 — Discovery & Deep Dive](workflow-deconstruction-discovery.md)** — Copy the prompt, start a new conversation in your AI tool, paste the prompt, and describe your workflow
 2. **Save the Workflow Blueprint** — Download the `.md` file the model produces (or copy the output and save it as `[workflow-name]-blueprint.md`)
@@ -51,6 +60,32 @@ Splitting into three prompts keeps each conversation comfortably under 15K token
 
 !!! tip "Keep your files together"
     By the end you'll have four Markdown files: `[name]-blueprint.md`, `[name]-analysis.md`, `[name]-prompt.md`, and `[name]-skill-recs.md`. Keep them in a single folder — they form a complete record of your workflow deconstruction. You can share any of these files with your instructor for feedback, put them in version control, or hand them to a colleague.
+
+### Option B: Claude skills
+
+Use this if you're on the Claude platform (Claude Code, Claude.ai, or Cowork). The [Business First AI plugin](../../plugins/business-first-ai.md) includes the `workflow-deconstructor` agent (which orchestrates all three steps) and individual skills for each step (`discovering-workflows`, `analyzing-workflows`, `generating-workflow-outputs`).
+
+**Claude Code or Cowork** — install the plugin and everything is available immediately:
+
+1. **Install the plugin** — `/plugin install business-first-ai@handsonai`
+2. **Start with this prompt:**
+    ```
+    I want to deconstruct my [workflow name] workflow into AI building
+    blocks. Walk me through the full process.
+    ```
+    The `workflow-deconstructor` agent activates and walks you through all three steps automatically.
+3. **Review the outputs** — deliverables are saved to the `outputs/` directory
+
+**Claude.ai** — upload individual skills as ZIP files:
+
+1. **Zip the skill folder** you want to use (e.g., `discovering-workflows`) from `~/.claude/plugins/marketplaces/handsonai/plugins/business-first-ai/skills/`
+2. **Upload it** in Claude.ai under **Settings > Capabilities > Upload skill**
+3. **Start a new chat** with the same prompt above — Claude uses the skill automatically
+4. **Repeat** for each step's skill, or upload all three at once
+
+For detailed upload instructions, see [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web).
+
+Both options follow the same process and produce the same deliverables. Choose whichever fits your workflow.
 
 ### Example: What the first exchange looks like
 
@@ -165,9 +200,9 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 
     ---
 
-    ## Phase 2 — Deep Dive (4-Question Framework + Failure Modes)
+    ## Phase 2 — Deep Dive (5-Question Framework)
 
-    Now systematically work through each step I provided using the 4-question framework, extended with failure modes. For every step, ask about:
+    Now systematically work through each step I provided using the 5-question framework. For every step, ask about:
 
     1. **Discrete steps** — Is this step actually multiple steps bundled together? If so, break it down further. Keep going until each step is a single, concrete action.
     2. **Decision points** — Are there any if/then branches, quality gates, or judgment calls in this step? What triggers each path?
@@ -365,6 +400,8 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 
 ## Related
 
-- [Find AI Workflow Opportunities](./ai-workflow-opportunity-finder.md) — Discover which workflows to deconstruct first
+- **Previous step:** Not sure which workflow to deconstruct? Start with the [AI Workflow Opportunity Finder](ai-workflow-opportunity-finder.md) (Phase 1) to identify your best candidates.
+- **Next step:** Ready to build? See the [Workflow Examples](../workflow-examples/README.md) (Phase 3) for worked examples across the autonomy spectrum.
+- [Business-First AI Framework](../../framework.md) — the full three-phase methodology
 - [Prompt Engineering Fundamentals](../../fundamentals/prompt-engineering/README.md)
 - [Agents & Tools Overview](../../fundamentals/agents-and-tools/README.md)
