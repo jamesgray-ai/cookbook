@@ -5,9 +5,11 @@ description: Curated AI knowledge for builders. Apply AI faster. Accelerate busi
 
 # The Hands-on AI Cookbook
 
-*Curated AI knowledge for builders. Apply AI faster. Accelerate business impact.*
+*Curated by [James Gray](https://www.linkedin.com/in/jamesgray/)*
 
-Guides, patterns, ready-made tools, and direct answers — everything you need to move from experimenting with AI to getting real results. Browse by platform, look up a specific topic, or work through a structured course.
+I built this open-source cookbook because I believe AI expertise should be free and open to everyone. The best gift I can give is helping people accelerate to their full potential — bringing the future forward.
+
+Practical guides, patterns, ready-made tools, and direct answers — everything you need to move from experimenting with AI to getting real results. Browse by platform, look up a topic, or work through a structured course.
 
 ## Browse the Cookbook
 
@@ -63,6 +65,14 @@ Guides, patterns, ready-made tools, and direct answers — everything you need t
 
 </div>
 
+---
+
+**If something here saved you time, sparked an idea, or helped you move faster — I'd love to hear about it.** A quick post on LinkedIn means more than you know. Tag me so I see it!
+
+[Share on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/feed/?shareActive=true&text=I%27ve%20been%20using%20the%20Hands-on%20AI%20Cookbook%20by%20%40James%20Gray%20and%20it%20helped%20me%20%5Bshare%20what%20helped%5D.%20Check%20it%20out%20%E2%86%92%20handsonai.info){ .md-button .md-button--primary target="_blank" }
+
+See what others are saying on the [Wall of Love](wall-of-love.md).
+
 ## Quick Links
 
 | I want to... | Go here |
@@ -78,12 +88,12 @@ Guides, patterns, ready-made tools, and direct answers — everything you need t
 
 ## About
 
-Built and maintained by [James Gray](https://jamesgray.ai), who teaches hands-on AI courses on [Maven](https://maven.com/james-gray) and writes about practical AI at [Graymatter](https://graymatter.jamesgray.ai).
+I'm [James Gray](https://jamesgray.ai). I teach hands-on AI courses on [Maven](https://maven.com/james-gray) and write about applied AI at [Graymatter](https://graymatter.jamesgray.ai).
 
-This cookbook is a living resource — new guides, answers, and tools are added regularly. Everything here is designed to help you spend less time figuring out AI and more time using it.
+This is a living resource — new guides, tools, and answers are added regularly.
 
-[LinkedIn](https://www.linkedin.com/in/jamesgray/) · [Substack](https://graymatter.jamesgray.ai) · [Website](https://jamesgray.ai)
+[LinkedIn](https://www.linkedin.com/in/jamesgray/) · [Substack](https://graymatter.jamesgray.ai) · [Website](https://jamesgray.ai) · [GitHub](https://github.com/jamesgray-ai/handsonai)
 
 ### Contributing
 
-This is an open resource. See [Contributing Guidelines](CONTRIBUTING.md) to add content or suggest improvements.
+This is an open-source project. See [Contributing Guidelines](CONTRIBUTING.md) to add content or suggest improvements.
