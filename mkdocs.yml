@@ -230,6 +230,7 @@ nav:
     - Overview: courses/index.md
     - Agentic AI for Leaders: courses/leaders/index.md
     - Claude for Builders: courses/builders/index.md
+  - Wall of Love: wall-of-love.md
 
 
 extra:
