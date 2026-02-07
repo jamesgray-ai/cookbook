@@ -65,9 +65,9 @@ The [Business-First AI Framework](../business-first-ai-framework/index.md) as ex
     | Skill | Phase | What it does |
     |-------|-------|-------------|
     | [`finding-ai-opportunities`](business-first-ai.md#finding-ai-opportunities) | 1 | Structured audit of your workflows to discover where AI can help. Produces a categorized opportunity report. |
-    | [`discovering-workflows`](business-first-ai.md#discovering-workflows) | 2 | Interactively discovers and decomposes a business workflow into a structured Workflow Blueprint. |
-    | [`analyzing-workflows`](business-first-ai.md#analyzing-workflows) | 2 | Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces a Workflow Analysis Document. |
-    | [`generating-workflow-outputs`](business-first-ai.md#generating-workflow-outputs) | 2 | Generates a ready-to-use Baseline Workflow Prompt and Skill Build Recommendations from a Workflow Analysis Document. |
+    | [`discovering-workflows`](business-first-ai.md#discovering-workflows) | 2 | Interactively discovers and decomposes a business workflow into a structured Workflow Definition. |
+    | [`analyzing-workflows`](business-first-ai.md#analyzing-workflows) | 2 | Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces an AI Building Block Map. |
+    | [`generating-workflow-outputs`](business-first-ai.md#generating-workflow-outputs) | 2 | Generates a ready-to-use Baseline Workflow Prompt and Skill Specs from an AI Building Block Map. |
     | [`editing-hbr-articles`](business-first-ai.md#editing-hbr-articles) | 3 | HBR editorial criteria for article editing. Used by the `hbr-editor` agent. |
     | [`preparing-meeting-briefs`](business-first-ai.md#preparing-meeting-briefs) | 3 | Structured research workflow for meeting preparation. Used by the `meeting-prep-researcher` agent. |
 

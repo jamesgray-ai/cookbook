@@ -52,9 +52,12 @@ plugins:
       redirect_maps:
         how-to/prompting/ai-workflow-opportunity-finder.md: business-first-ai-framework/discover.md
         how-to/prompting/workflow-deconstruction-meta-prompt.md: business-first-ai-framework/deconstruct/index.md
-        how-to/prompting/workflow-deconstruction-discovery.md: business-first-ai-framework/deconstruct/discovery.md
-        how-to/prompting/workflow-deconstruction-analysis.md: business-first-ai-framework/deconstruct/analysis.md
-        how-to/prompting/workflow-deconstruction-outputs.md: business-first-ai-framework/deconstruct/outputs.md
+        how-to/prompting/workflow-deconstruction-discovery.md: business-first-ai-framework/deconstruct/workflow-definition.md
+        how-to/prompting/workflow-deconstruction-analysis.md: business-first-ai-framework/deconstruct/building-blocks.md
+        how-to/prompting/workflow-deconstruction-outputs.md: business-first-ai-framework/deconstruct/prompt-skill-specs.md
+        business-first-ai-framework/deconstruct/discovery.md: business-first-ai-framework/deconstruct/workflow-definition.md
+        business-first-ai-framework/deconstruct/analysis.md: business-first-ai-framework/deconstruct/building-blocks.md
+        business-first-ai-framework/deconstruct/outputs.md: business-first-ai-framework/deconstruct/prompt-skill-specs.md
         how-to/workflow-examples/README.md: business-first-ai-framework/build/index.md
         how-to/workflow-examples/deterministic-automation.md: business-first-ai-framework/build/deterministic-automation.md
         how-to/workflow-examples/ai-collaborative.md: business-first-ai-framework/build/ai-collaborative.md
@@ -86,9 +89,9 @@ nav:
     - "Phase 1 — Discover": business-first-ai-framework/discover.md
     - "Phase 2 — Deconstruct":
       - Overview: business-first-ai-framework/deconstruct/index.md
-      - "Step 1 — Discovery & Deep Dive": business-first-ai-framework/deconstruct/discovery.md
-      - "Step 2 — Analysis & Mapping": business-first-ai-framework/deconstruct/analysis.md
-      - "Step 3 — Output Generation": business-first-ai-framework/deconstruct/outputs.md
+      - "Step 1 — Workflow Definition": business-first-ai-framework/deconstruct/workflow-definition.md
+      - "Step 2 — AI Building Blocks": business-first-ai-framework/deconstruct/building-blocks.md
+      - "Step 3 — Prompt & Skill Specs": business-first-ai-framework/deconstruct/prompt-skill-specs.md
     - "Phase 3 — Build":
       - Overview: business-first-ai-framework/build/index.md
       - Deterministic Automation: business-first-ai-framework/build/deterministic-automation.md
