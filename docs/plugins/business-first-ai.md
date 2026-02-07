@@ -135,11 +135,11 @@ Break workflows into AI building blocks.
 
 **How it works:** The agent runs three skills in sequence:
 
-1. **Discovery** (`discovering-workflows`) — Interactive conversation where you describe your workflow. The agent probes for missing steps, decision points, data flows, and failure modes. Produces a Workflow Blueprint.
-2. **Analysis** (`analyzing-workflows`) — Reads the Blueprint, classifies each step on an autonomy spectrum (Human → AI-Deterministic → AI-Semi-Autonomous → AI-Autonomous), and maps to AI building blocks. Produces a Workflow Analysis Document.
-3. **Output Generation** (`generating-workflow-outputs`) — Reads the Analysis Document and generates a ready-to-use prompt plus recommendations for which steps should become dedicated skills. Produces the Baseline Prompt and Skill Recommendations.
+1. **Workflow Definition** (`discovering-workflows`) — Interactive conversation where you describe your workflow. The agent probes for missing steps, decision points, data flows, and failure modes. Produces a Workflow Definition.
+2. **AI Building Blocks** (`analyzing-workflows`) — Reads the Workflow Definition, classifies each step on an autonomy spectrum (Human → AI-Deterministic → AI-Semi-Autonomous → AI-Autonomous), and maps to AI building blocks. Produces the AI Building Block Map.
+3. **Prompt & Skill Specs** (`generating-workflow-outputs`) — Reads the AI Building Block Map and generates a ready-to-use prompt plus specs for which steps should become dedicated skills. Produces the Baseline Prompt and Skill Specs.
 
-Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/lead-qualification-blueprint.md`).
+Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/lead-qualification-definition.md`).
 
 **Example prompts:**
 
@@ -161,16 +161,16 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
 
 **What you'll get:** Four files in `outputs/`:
 
-1. **Workflow Blueprint** — `[name]-blueprint.md` — structured decomposition of every step
-2. **Workflow Analysis Document** — `[name]-analysis.md` — autonomy classification and AI building block mapping
+1. **Workflow Definition** — `[name]-definition.md` — structured decomposition of every step
+2. **AI Building Block Map** — `[name]-building-blocks.md` — autonomy classification and AI building block mapping
 3. **Baseline Workflow Prompt** — `[name]-prompt.md` — ready-to-use prompt with numbered steps
-4. **Skill Build Recommendations** — `[name]-skill-recs.md` — specs for which steps should become dedicated skills
+4. **Skill Specs** — `[name]-skill-specs.md` — specs for which steps should become dedicated skills
 
 ---
 
 #### `discovering-workflows`
 
-**What it does:** Interactively discovers and decomposes a business workflow into a structured Workflow Blueprint. This is Step 1 of 3 in the workflow deconstruction series.
+**What it does:** Interactively discovers and decomposes a business workflow into a structured Workflow Definition. This is Step 1 of 3 in the workflow deconstruction series.
 
 **When to use it:** Use this when you want to thoroughly document a workflow before analyzing it for AI readiness. Also useful standalone when you just need a structured breakdown of a complex process — even without planning to automate it.
 
@@ -188,19 +188,19 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
 5. **Propose and react** — From step 4 onward, Claude proposes a hypothesis across all five dimensions and asks "What's right, what's wrong, what am I missing?"
 6. **Map sequence** — Claude identifies sequential vs. parallel steps and the critical path
 7. **Consolidate context** — Claude presents a rolled-up "context shopping list" of every artifact the workflow needs
-8. **Generate Blueprint** — Claude writes the structured Blueprint to the output file
+8. **Generate Workflow Definition** — Claude writes the structured Workflow Definition to the output file
 
 **Example prompts:**
 
     "Use discovering-workflows to break down my expense reporting process"
     → Interactive discovery session producing
-      outputs/expense-reporting-blueprint.md
+      outputs/expense-reporting-definition.md
 
     "I need to document how our team handles customer escalations"
     → Walks through the discovery process, probing for hidden steps
       and decision points
 
-**What you'll get:** A Workflow Blueprint file (`outputs/[name]-blueprint.md`) containing: scenario metadata, refined steps (with sub-steps, decision points, data flows, context needs, and failure modes for each), step sequence and dependencies, and a context shopping list.
+**What you'll get:** A Workflow Definition file (`outputs/[name]-definition.md`) containing: scenario metadata, refined steps (with sub-steps, decision points, data flows, context needs, and failure modes for each), step sequence and dependencies, and a context shopping list.
 
 **Platform compatibility:** Claude Code &#10003; | Claude.ai &#10003;
 
@@ -208,13 +208,13 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
 
 #### `analyzing-workflows`
 
-**What it does:** Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces a Workflow Analysis Document. This is Step 2 of 3 in the workflow deconstruction series.
+**What it does:** Classifies workflow steps on the autonomy spectrum, maps them to AI building blocks, and produces an AI Building Block Map. This is Step 2 of 3 in the workflow deconstruction series.
 
-**When to use it:** Use this when you have a Workflow Blueprint (from Step 1) and want to analyze which steps can be automated, which need human oversight, and what AI tools are required.
+**When to use it:** Use this when you have a Workflow Definition (from Step 1) and want to analyze which steps can be automated, which need human oversight, and what AI tools are required.
 
 **How it works:**
 
-1. **Load Blueprint** — Claude reads the Blueprint file from `outputs/`
+1. **Load Workflow Definition** — Claude reads the Workflow Definition file from `outputs/`
 2. **Confirm understanding** — Claude summarizes the workflow and asks you to confirm before proceeding
 3. **Classify each step** — For every step, Claude determines:
     - **Autonomy level**: Human / AI-Deterministic / AI-Semi-Autonomous / AI-Autonomous
@@ -222,19 +222,19 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
     - **Tools and connectors**: External tools, APIs, and integrations needed
     - **Human-in-the-loop gates**: Where human review is recommended
 4. **Present mapping** — Claude shows the classification as a table and walks through reasoning for non-obvious decisions. You can adjust classifications.
-5. **Generate Analysis Document** — After your confirmation, Claude produces the complete document
+5. **Generate AI Building Block Map** — After your confirmation, Claude produces the complete AI Building Block Map
 
 **Example prompts:**
 
-    "Use analyzing-workflows on my blueprint"
-    → Reads the most recent Blueprint, classifies each step, presents
-      the mapping table, and generates the Analysis Document
+    "Use analyzing-workflows on my workflow definition"
+    → Reads the most recent Workflow Definition, classifies each step,
+      presents the mapping table, and generates the AI Building Block Map
 
-    "Analyze the lead-qualification blueprint for AI readiness"
-    → Reads outputs/lead-qualification-blueprint.md and produces
-      the analysis
+    "Analyze the lead-qualification workflow for AI readiness"
+    → Reads outputs/lead-qualification-definition.md and produces
+      the AI Building Block Map
 
-**What you'll get:** A Workflow Analysis Document (`outputs/[name]-analysis.md`) containing: scenario summary, step-by-step decomposition table (with autonomy level and AI building blocks for each step), autonomy spectrum summary, step sequence and dependencies, prerequisites, context inventory, tools and connectors required, and recommended implementation order (quick wins first).
+**What you'll get:** An AI Building Block Map (`outputs/[name]-building-blocks.md`) containing: scenario summary, step-by-step decomposition table (with autonomy level and AI building blocks for each step), autonomy spectrum summary, step sequence and dependencies, prerequisites, context inventory, tools and connectors required, and recommended implementation order (quick wins first).
 
 **Platform compatibility:** Claude Code &#10003; | Claude.ai &#10003;
 
@@ -242,13 +242,13 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
 
 #### `generating-workflow-outputs`
 
-**What it does:** Generates a ready-to-use Baseline Workflow Prompt and Skill Build Recommendations from a Workflow Analysis Document. This is Step 3 of 3 in the workflow deconstruction series.
+**What it does:** Generates a ready-to-use Baseline Workflow Prompt and Skill Specs from an AI Building Block Map. This is Step 3 of 3 in the workflow deconstruction series.
 
-**When to use it:** Use this when you have a completed Analysis Document (from Step 2) and want the final, actionable deliverables — a prompt you can run immediately and specs for which steps should become dedicated skills.
+**When to use it:** Use this when you have a completed AI Building Block Map (from Step 2) and want the final, actionable deliverables — a prompt you can run immediately and specs for which steps should become dedicated skills.
 
 **How it works:**
 
-1. **Load Analysis Document** — Claude reads the Analysis Document from `outputs/`
+1. **Load AI Building Block Map** — Claude reads the AI Building Block Map from `outputs/`
 2. **Confirm understanding** — Claude summarizes the workflow, step count, AI-eligible steps, and implementation order. You confirm before proceeding.
 3. **Generate Baseline Workflow Prompt** — A self-contained, ready-to-use prompt with:
     - Title, purpose, and when to use it
@@ -256,7 +256,7 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
     - Input requirements with format specifications
     - Context requirements (what to attach when running the prompt)
     - Output format with structure specifications
-4. **Generate Skill Build Recommendations** — For each step that should become a dedicated skill:
+4. **Generate Skill Specs** — For each step that should become a dedicated skill:
     - Skill name, purpose, inputs, outputs
     - Which baseline prompt steps it replaces
     - Integration points (external tools, APIs, MCP servers)
@@ -265,18 +265,18 @@ Files are saved to `outputs/` using kebab-case workflow names (e.g., `outputs/le
 
 **Example prompts:**
 
-    "Use generating-workflow-outputs on my analysis"
-    → Reads the most recent Analysis Document, generates the prompt
-      and skill recommendations
+    "Use generating-workflow-outputs on my building blocks"
+    → Reads the most recent AI Building Block Map, generates the prompt
+      and skill specs
 
     "Generate the deliverables for expense-reporting"
-    → Reads outputs/expense-reporting-analysis.md and produces both
+    → Reads outputs/expense-reporting-building-blocks.md and produces both
       output files
 
 **What you'll get:** Two files:
 
 1. **Baseline Workflow Prompt** (`outputs/[name]-prompt.md`) — A self-contained prompt you can run immediately. Steps are labeled (AI) or (Human), includes all input/context/output requirements.
-2. **Skill Build Recommendations** (`outputs/[name]-skill-recs.md`) — Specs for each recommended skill, in priority order, with Quick Start Prompts.
+2. **Skill Specs** (`outputs/[name]-skill-specs.md`) — Specs for each recommended skill, in priority order, with Quick Start Prompts.
 
 **Platform compatibility:** Claude Code &#10003; | Claude.ai &#10003;
 
@@ -521,7 +521,7 @@ Start with Phase 1 (Discover) if you're not sure where AI fits in your work. Sta
 Yes. Tell the `workflow-deconstructor` agent about your problem (e.g., "people keep dropping off during enrollment") and it will propose a candidate workflow for you to refine during discovery.
 
 **What if I lose context mid-conversation?**
-The file-based handoffs mean you can continue in a new conversation. Just invoke the next skill and point it at the file from the previous step (e.g., "Use analyzing-workflows on outputs/lead-qualification-blueprint.md").
+The file-based handoffs mean you can continue in a new conversation. Just invoke the next skill and point it at the file from the previous step (e.g., "Use analyzing-workflows on outputs/lead-qualification-definition.md").
 
 **What are AI building blocks?**
 The categories used during analysis: Prompt (single instruction), Context (reference material), Skill (multi-step workflow), Agent (autonomous personality), MCP (external tool connection), and Project (workspace configuration). Each step gets mapped to one or more of these.

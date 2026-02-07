@@ -17,7 +17,7 @@ A three-conversation series that breaks down a business workflow into discrete s
 | | |
 |---|---|
 | **What you'll do** | Work through three focused prompts — discovering and decomposing your workflow, classifying each step and mapping AI capabilities, then generating executable outputs |
-| **What you'll get** | Four Markdown files — a Workflow Blueprint, a Workflow Analysis Document, a Baseline Workflow Prompt (ready to paste and run), and Skill Build Recommendations |
+| **What you'll get** | Four Markdown files — a Workflow Definition, an AI Building Block Map, a Baseline Workflow Prompt (self-contained and ready to paste and run, with guidance on where to execute it), and Skill Specs |
 | **Time** | ~30–45 minutes across three conversations |
 
 ## Why This Matters
@@ -26,9 +26,9 @@ You can't operationalize AI on a process you don't understand. Before you can bu
 
 This series of prompts walks you through that deconstruction interactively. You provide the business scenario and rough steps — the model handles the structured analysis, applies the 5-question framework (discrete steps, decision points, data flows, context needs, failure modes), maps each step to AI building blocks, and generates three deliverables:
 
-1. A **Workflow Analysis Document** — the full decomposition with autonomy classifications, AI building block mapping, a context inventory of every resource the workflow needs (documents, files, data sources, system access), and a prioritized build sequence
+1. An **AI Building Block Map** — the full decomposition with autonomy classifications, AI building block mapping, a context inventory of every resource the workflow needs (documents, files, data sources, system access), and a prioritized build sequence
 2. A **Baseline Workflow Prompt** — a ready-to-use prompt that works on any platform; this is your starting point that will evolve as you build skills
-3. **Skill Build Recommendations** — actionable specs for reusable skills you can build to automate recurring steps
+3. **Skill Specs** — actionable specs for reusable skills you can build to automate recurring steps
 
 This builds directly on the concepts from the course lessons on workflow deconstruction and AI building blocks. If terms like the "5-question framework" or "six building blocks" are new to you, review the [Key Concepts section of the Business-First AI Framework](../index.md#key-concepts) for quick definitions before starting.
 
@@ -38,11 +38,11 @@ The workflow deconstruction is split into three focused prompts. Each prompt pro
 
 | Step | Prompt | What it does | Produces |
 |------|--------|-------------|----------|
-| 1 | [Discovery & Deep Dive](discovery.md) | Discover the workflow, decompose every step | **Workflow Blueprint** |
-| 2 | [Analysis & Mapping](analysis.md) | Classify steps, map AI building blocks | **Workflow Analysis Document** |
-| 3 | [Output Generation](outputs.md) | Generate the executable prompt and skill specs | **Baseline Prompt** + **Skill Recommendations** |
+| 1 | [Workflow Definition](workflow-definition.md) | Discover the workflow, decompose every step | **Workflow Definition** |
+| 2 | [AI Building Blocks](building-blocks.md) | Classify steps, map AI building blocks | **AI Building Block Map** |
+| 3 | [Prompt & Skill Specs](prompt-skill-specs.md) | Generate the self-contained executable prompt (with execution context) and skill specs | **Baseline Prompt** + **Skill Specs** |
 
-**Between each step:** Download (or copy and save) the output artifact as a Markdown file, then upload or paste it into the next conversation. Each prompt starts by asking you to provide the previous step's output. The files use a consistent naming convention: `[workflow-name]-blueprint.md`, `[workflow-name]-analysis.md`, `[workflow-name]-prompt.md`, and `[workflow-name]-skill-recs.md`.
+**Between each step:** Download (or copy and save) the output artifact as a Markdown file, then upload or paste it into the next conversation. Each prompt starts by asking you to provide the previous step's output. The files use a consistent naming convention: `[workflow-name]-definition.md`, `[workflow-name]-building-blocks.md`, `[workflow-name]-prompt.md`, and `[workflow-name]-skill-specs.md`.
 
 ### Why three conversations instead of one?
 
@@ -58,12 +58,12 @@ There are four ways to run Phase 2, depending on which tools you use:
 
     Use this if you're working in ChatGPT, Gemini, M365 Copilot, or any AI chat tool. Copy each prompt into a new conversation and work through the three steps sequentially.
 
-    1. **Go to [Step 1 — Discovery & Deep Dive](discovery.md)** — Copy the prompt, start a new conversation, paste the prompt, and describe your workflow
-    2. **Save the Workflow Blueprint** — Download the `.md` file the model produces (or copy the output and save it as `[workflow-name]-blueprint.md`)
-    3. **Go to [Step 2 — Analysis & Mapping](analysis.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Blueprint file
-    4. **Save the Workflow Analysis Document** — Download `[workflow-name]-analysis.md`
-    5. **Go to [Step 3 — Output Generation](outputs.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Analysis Document
-    6. **Save your final deliverables** — Download `[workflow-name]-prompt.md` and `[workflow-name]-skill-recs.md`
+    1. **Go to [Step 1 — Workflow Definition](workflow-definition.md)** — Copy the prompt, start a new conversation, paste the prompt, and describe your workflow
+    2. **Save the Workflow Definition** — Download the `.md` file the model produces (or copy the output and save it as `[workflow-name]-definition.md`)
+    3. **Go to [Step 2 — AI Building Blocks](building-blocks.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your Workflow Definition file
+    4. **Save the AI Building Block Map** — Download `[workflow-name]-building-blocks.md`
+    5. **Go to [Step 3 — Prompt & Skill Specs](prompt-skill-specs.md)** — Copy that prompt, start a **new** conversation, paste the prompt, then upload or paste your AI Building Block Map
+    6. **Save your final deliverables** — Download `[workflow-name]-prompt.md` and `[workflow-name]-skill-specs.md`
 
 === "Claude Code"
 
@@ -118,7 +118,7 @@ All four options follow the same process and produce the same deliverables. Choo
     Real workflows produce the best results. The model will surface hidden steps and assumptions you've internalized — that's much harder with hypothetical processes. If you don't have an existing workflow but have a clear problem to solve, that works too — the model will help you design one.
 
 !!! tip "Keep your files together"
-    By the end you'll have four Markdown files: `[name]-blueprint.md`, `[name]-analysis.md`, `[name]-prompt.md`, and `[name]-skill-recs.md`. Keep them in a single folder — they form a complete record of your workflow deconstruction. You can share any of these files with your instructor for feedback, put them in version control, or hand them to a colleague.
+    By the end you'll have four Markdown files: `[name]-definition.md`, `[name]-building-blocks.md`, `[name]-prompt.md`, and `[name]-skill-specs.md`. Keep them in a single folder — they form a complete record of your workflow deconstruction. You can share any of these files with your instructor for feedback, put them in version control, or hand them to a colleague.
 
 ### Example: What the first exchange looks like
 
@@ -166,9 +166,9 @@ You don't need to know all the steps before you start — that's what the prompt
 
 ## What to Expect
 
-1. **[Step 1 — Discovery & Deep Dive](discovery.md)** (~15-25 minutes) — The model asks about your business scenario, objective, steps, and who's involved. Then it works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. For later steps, it switches to a "propose and react" pattern — presenting hypotheses for you to correct, which is faster and surfaces more detail. Produces a **Workflow Blueprint**.
-2. **[Step 2 — Analysis & Mapping](analysis.md)** (~5-10 minutes) — The model classifies each refined step on the autonomy spectrum and maps it to AI building blocks. You review the mapping table and adjust. Produces a **Workflow Analysis Document**.
-3. **[Step 3 — Output Generation](outputs.md)** (~5-10 minutes) — The model generates your baseline workflow prompt and skill build recommendations. Mostly generative — 1-2 clarifying questions at most. Produces the **Baseline Workflow Prompt** and **Skill Build Recommendations**.
+1. **[Step 1 — Workflow Definition](workflow-definition.md)** (~15-25 minutes) — The model asks about your business scenario, objective, steps, and who's involved. Then it works through each step one by one, asking about sub-steps, decision points, data flows, context needs, and failure modes. For later steps, it switches to a "propose and react" pattern — presenting hypotheses for you to correct, which is faster and surfaces more detail. Produces a **Workflow Definition**.
+2. **[Step 2 — AI Building Blocks](building-blocks.md)** (~5-10 minutes) — The model classifies each refined step on the autonomy spectrum and maps it to AI building blocks. You review the mapping table and adjust. Produces an **AI Building Block Map**.
+3. **[Step 3 — Prompt & Skill Specs](prompt-skill-specs.md)** (~5-10 minutes) — The model generates your Baseline Workflow Prompt and Skill Specs. Mostly generative — 1-2 clarifying questions at most. Produces the **Baseline Workflow Prompt** and **Skill Specs**.
 
 Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep dive. The baseline prompt is ready to use immediately — paste it into a new conversation to run the workflow.
 
@@ -179,7 +179,7 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 - **Don't over-prepare your steps.** The model is designed to work with rough, incomplete descriptions. Let it do the work of refining and organizing.
 - **On Claude:** Mention that you're using Claude so the model can identify where Skills are the right building block for reusable routines.
 - **Gather your context resources early.** The model will identify specific resources the workflow needs — documents like buyer personas and style guides, but also spreadsheets, databases, CRM access, application credentials, and sample data. If you already have these, have them ready. If you don't, the analysis will tell you exactly what to create or set up and what each resource should contain.
-- **Save all four files.** The Blueprint and Analysis Document are your reference material. The baseline prompt is what you run today — update it as you build skills. The skill recommendations tell you what to build and which prompt steps each skill replaces. Keep them together in a folder or version control.
+- **Save all four files.** The Workflow Definition and AI Building Block Map are your reference material. The baseline prompt is what you run today — update it as you build skills. The Skill Specs tell you what to build and which prompt steps each skill replaces. Keep them together in a folder or version control.
 - **Iterate the executable prompt.** Run it once, see what works and what doesn't, then refine. The first version is a strong draft, not a final product.
 
 ??? note "Original single-prompt version"
@@ -187,7 +187,7 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
     If you're using a model with a large context window (Claude Pro, ChatGPT Plus, Gemini Advanced), you can use the original single-prompt version that runs the entire workflow deconstruction in one conversation. This is more convenient but may hit context limits on free-tier models.
 
     ```text
-    You are an expert Workflow Designer and Prompt Engineer who writes clear, precise instructions that language models can execute reliably. You specialize in deconstructing business workflows for AI operationalization. Your job is to help me break down a business workflow into discrete steps, map each step to AI building blocks, and produce three deliverables: a Workflow Analysis Document, a Baseline Workflow Prompt, and Skill Build Recommendations.
+    You are an expert Workflow Designer and Prompt Engineer who writes clear, precise instructions that language models can execute reliably. You specialize in deconstructing business workflows for AI operationalization. Your job is to help me break down a business workflow into discrete steps, map each step to AI building blocks, and produce three deliverables: an AI Building Block Map, a Baseline Workflow Prompt, and Skill Specs.
 
     Work through the following four parts in order. Ask one question at a time during interactive parts. Wait for my response before moving on.
 
@@ -247,11 +247,17 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 
     **Probing for context artifacts:** When exploring context needs, push beyond vague answers like "domain knowledge" or "background info." Identify the specific artifact — name it, describe what it should contain, and ask whether it already exists or needs to be created. Common examples: buyer persona documents, style guides, grading rubrics, product catalogs, pricing sheets, email templates, brand voice documents, org charts, decision criteria checklists, sample inputs, and sample outputs. If a step requires the model to match a standard, apply criteria, or follow a style, there is almost certainly a reference document behind it.
 
+    **Probing for executable instructions:** For any step where AI is already being used, ask specifically: "Do you have existing prompt instructions, project instructions, custom assistant configurations, or system prompts that tell the AI what to do at this step? If so, I'll need to see those — they contain the workflow logic that belongs in your Baseline Prompt." Distinguish between:
+    - **Reference materials** — documents, files, data, or examples the model reads to inform its work (PDFs, CSVs, spreadsheets, style guides)
+    - **Executable instructions** — prompts, project instructions, system prompts, or custom assistant configurations that tell the model what to do and how to do it
+
+    Reference materials are context the model consumes. Executable instructions are logic the model follows. Both matter, but they serve different purposes in the final prompt.
+
     After completing all steps:
 
     1. Present the refined step-by-step breakdown.
     2. **Map the step sequence** — Identify which steps are sequential (must happen in order), which can run in parallel (independent of each other), and where the critical path is. Show this as a simple dependency list (e.g., "Step 3 depends on Steps 1 and 2; Steps 4 and 5 can run in parallel").
-    3. **Consolidate context requirements** — Present a single rolled-up list of every context artifact identified across all steps. For each artifact, state: the artifact name, a one-line description of what it contains, which steps depend on it, and whether it already exists or needs to be created. If it needs to be created, note the key contents it should include so I know what to build. Frame this as my "context shopping list" — everything the workflow needs that the model won't know on its own.
+    3. **Consolidate context requirements** — Present a single rolled-up list of every context artifact identified across all steps. For each artifact, state: the artifact name, its type (Reference Material or Executable Instructions), a one-line description of what it contains, which steps depend on it, and whether it already exists or needs to be created. If it needs to be created, note the key contents it should include so I know what to build. Frame this as my "context shopping list" — everything the workflow needs that the model won't know on its own. Artifacts typed as "Executable Instructions" contain workflow logic that must be included in the Baseline Workflow Prompt. Artifacts typed as "Reference Material" are context files the model reads.
     4. Ask me to confirm the breakdown, sequence, and context shopping list are accurate.
 
     ---
@@ -282,11 +288,11 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 
     ---
 
-    ## Part 4 — Output Generation
+    ## Part 4 — Prompt & Skill Specs
 
     Produce three deliverables:
 
-    ### Deliverable 1: Workflow Analysis Document
+    ### Deliverable 1: AI Building Block Map
 
     Create a structured analysis containing:
 
@@ -323,11 +329,11 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
 
     **Context Inventory**
 
-    List every document, file, or reference material the workflow requires that the model does not have in its training data. For each artifact:
+    List every document, file, reference material, or executable instruction the workflow requires that the model does not have in its training data. For each artifact:
 
-    | Artifact | Description | Used By Steps | Status | Format | Key Contents |
-    |----------|-------------|---------------|--------|--------|--------------|
-    | [Name] | [What it contains and why the workflow needs it] | [Step numbers] | Exists / Needs Creation | [e.g., Markdown doc, spreadsheet, PDF] | [Essential fields, sections, or data points it should include] |
+    | Artifact | Type | Description | Used By Steps | Status | Format | Key Contents |
+    |----------|------|-------------|---------------|--------|--------|--------------|
+    | [Name] | Reference Material / Executable Instructions | [What it contains and why the workflow needs it] | [Step numbers] | Exists / Needs Creation | [e.g., Markdown doc, spreadsheet, PDF] | [Essential fields, sections, or data points it should include] |
 
     If an artifact needs to be created, the "Key Contents" column should be specific enough that the user knows exactly what to build. For example, a buyer persona document should list: target job titles, company size range, industry verticals, pain points, budget authority indicators, and qualifying criteria — not just "buyer persona info."
 
@@ -341,9 +347,32 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
     3. **Complex agent steps** — Fully autonomous steps requiring Agents, MCP connectors, or multi-tool orchestration. Tackle these last.
     For each priority tier, list the specific steps and what the student needs to build (e.g., "Write a prompt for Step 3," "Set up an MCP connector for Step 7").
 
+    **Execution Context**
+
+    Recommend where the Baseline Workflow Prompt should be run:
+
+    **Normal chat** — recommended when:
+    - The workflow runs infrequently (monthly or less)
+    - Few or no context files are needed (0-2 files)
+    - All context can be provided inline each time
+    - The workflow is a one-off or experimental process
+
+    **Project workspace** — recommended when:
+    - The workflow runs frequently (weekly or more)
+    - Multiple context files are needed (3+ files)
+    - The same reference materials are used every run
+    - Conversation memory across runs would be valuable
+    - Multiple people will run the same workflow
+
+    State the recommendation, the reasoning, and list the specific context files to attach (chat) or pre-load in the project.
+
+    **Important:** The Baseline Workflow Prompt is always self-contained — it contains all executable instructions regardless of execution context. A project provides file staging and general domain context, but never contains the workflow logic. The prompt IS the workflow.
+
     ### Deliverable 2: Baseline Workflow Prompt
 
     Generate a ready-to-use Markdown prompt that someone could paste into any AI tool to execute this workflow. This is the **baseline version** — it spells out every step in full so it works on any platform (Claude, ChatGPT, Gemini, M365 Copilot). As the user builds skills from Deliverable 3, they'll update this prompt to invoke those skills instead of repeating the logic inline.
+
+    **Before generating the prompt, check the Context Inventory for any artifacts typed as "Executable Instructions."** These contain workflow logic that must be included in the Baseline Prompt — not referenced, but actually included. If the analysis indicates executable instructions exist (e.g., existing project instructions, system prompts, or custom assistant configurations) but their content was not provided, ask the user to paste or upload those instructions now. The Baseline Prompt cannot reference external systems for its core logic — it must be self-contained.
 
     Structure it as:
 
@@ -376,7 +405,17 @@ Most workflows expand from 5-8 rough steps to 12-20 refined steps after the deep
     - Ready for version control (clean Markdown, no ambiguity)
     - Ready for team adoption (clear enough that a colleague could run it)
 
-    ### Deliverable 3: Skill Build Recommendations
+    **Self-contained means:** The prompt contains every instruction the model needs to execute the workflow. It never says "open this project" or "follow those instructions" or "refer to the project instructions." If existing AI instructions drive a step, those instructions are written into the prompt. A reader who has never seen the AI Building Block Map can execute this prompt successfully.
+
+    **Execution Context**
+    - Where to run this prompt (normal chat vs. project)
+    - If normal chat: which files to attach when pasting the prompt
+    - If project: how to set up the project (name, which files to pre-load, any general project-level settings), then paste this prompt into a conversation within the project
+    - Decision criteria summary so the user understands why this recommendation was made
+
+    Note: The prompt instructions above are the same regardless of execution context. The project provides file staging convenience — the prompt provides the workflow logic.
+
+    ### Deliverable 3: Skill Specs
 
     Based on the workflow analysis, recommend which reusable skills the user should build. Focus on steps that are:
     - Repeatable (executed frequently with similar patterns)

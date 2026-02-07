@@ -38,9 +38,9 @@ Give your workflow clear structure — then identify the building blocks to turn
 
 Once you've identified a workflow worth automating, Phase 2 deconstructs it so you understand every step, decision point, and dependency. With that structure in place, you map each step to the right AI building blocks. The three-step pipeline:
 
-1. **Discovery & Deep Dive** — Interactively decompose the workflow into refined steps, surfacing hidden sub-steps, decision points, data flows, context needs, and failure modes
-2. **Analysis & Mapping** — Classify each step on the autonomy spectrum (Human → Deterministic → Semi-Autonomous → Autonomous) and map to AI building blocks
-3. **Output Generation** — Generate a ready-to-use Baseline Workflow Prompt (a prompt you can paste into any AI tool to run the workflow) and Skill Build Recommendations
+1. **Workflow Definition** — Interactively decompose the workflow into refined steps, surfacing hidden sub-steps, decision points, data flows, context needs, and failure modes
+2. **AI Building Blocks** — Classify each step on the autonomy spectrum (Human → Deterministic → Semi-Autonomous → Autonomous) and map to AI building blocks
+3. **Prompt & Skill Specs** — Generate a ready-to-use Baseline Workflow Prompt (a prompt you can paste into any AI tool to run the workflow) and Skill Specs
 
 The deconstruction uses the **five-question framework** to break down each step:
 
@@ -63,7 +63,7 @@ Each step gets mapped to one or more of the **six AI building blocks**: Prompt, 
 
 Turn your deconstruction outputs into working AI workflows.
 
-Phase 2 produces two actionable deliverables: a Baseline Workflow Prompt you can run immediately, and Skill Build Recommendations that tell you what to build next. Phase 3 is where those become real.
+Phase 2 produces two actionable deliverables: a Baseline Workflow Prompt you can run immediately, and Skill Specs that tell you what to build next. Phase 3 is where those become real.
 
 The [Build Workflows](build/index.md) examples show three worked examples across the autonomy spectrum — from deterministic automation to collaborative workflows to fully autonomous multi-agent pipelines. Each includes working building blocks you can install and study.
 
@@ -121,7 +121,7 @@ Used to decompose each workflow step:
 2. **Pick your highest-impact opportunity** — don't try to pursue everything at once
 3. **Run it through the [Deconstruction process](deconstruct/index.md)** to break it into AI building blocks
 4. **Test the Baseline Prompt** on a real scenario — paste the generated prompt into any AI tool and run the workflow
-5. **Build skills in priority order** from the Skill Build Recommendations — each skill you build replaces steps in the baseline prompt, making the workflow progressively more automated
+5. **Build skills in priority order** from the Skill Specs — each skill you build replaces steps in the baseline prompt, making the workflow progressively more automated
 
 ## Tools
 

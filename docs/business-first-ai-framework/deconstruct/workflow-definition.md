@@ -1,9 +1,9 @@
 ---
-title: "Step 1 — Discovery & Deep Dive"
-description: Interactively discover and decompose a business workflow into a structured Workflow Blueprint ready for AI building block analysis.
+title: "Step 1 — Workflow Definition"
+description: Interactively discover and decompose a business workflow into a structured Workflow Definition ready for AI building block analysis.
 ---
 
-# Step 1 — Discovery & Deep Dive
+# Step 1 — Workflow Definition
 
 > **Part of:** [Deconstruct Workflows](index.md)
 
@@ -14,7 +14,7 @@ An interactive conversation where AI helps you break down a workflow into its co
 | | |
 |---|---|
 | **What you'll do** | Describe your workflow (or problem), then answer focused questions as the AI probes each step for sub-steps, decision points, data flows, context needs, and failure modes |
-| **What you'll get** | A **Workflow Blueprint** — a structured Markdown file that captures everything discovered, ready for [Step 2](analysis.md) |
+| **What you'll get** | A **Workflow Definition** — a structured Markdown file that captures everything discovered, ready for [Step 2](building-blocks.md) |
 | **Time** | ~15–25 minutes of interactive conversation |
 
 ## Why This Matters
@@ -35,19 +35,19 @@ There are two ways to run Step 1, depending on which tools you use:
 2. **Start a new conversation** in your preferred AI tool (Claude, ChatGPT, Gemini, M365 Copilot) and **paste the prompt**
 3. **Press Enter** — the model will read the instructions and ask about your business scenario
 4. **Answer the questions** — describe your workflow or problem, then work through the deep dive
-5. **Download the Workflow Blueprint** the model produces at the end — it will be a Markdown file named `[workflow-name]-blueprint.md` (e.g., `lead-qualification-blueprint.md`)
+5. **Download the Workflow Definition** the model produces at the end — it will be a Markdown file named `[workflow-name]-definition.md` (e.g., `lead-qualification-definition.md`)
 6. **Keep this file** — you'll upload or paste it into Step 2, and you can share it with your instructor for feedback
 
 ### Option B: Claude skill
 
-Use the `discovering-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It runs the same discovery and deep dive process and saves the Blueprint to a file automatically.
+Use the `discovering-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It runs the same discovery and deep dive process and saves the Workflow Definition to a file automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```
     I want to discover and decompose my [workflow name] workflow.
-    Help me build a Workflow Blueprint.
+    Help me build a Workflow Definition.
     ```
-    The Blueprint is saved to `outputs/[workflow-name]-blueprint.md`.
+    The Workflow Definition is saved to `outputs/[workflow-name]-definition.md`.
 - **Claude.ai** — zip the `discovering-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with the same prompt above. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
 
 !!! tip "Budget ~15-25 minutes for this conversation"
@@ -56,7 +56,7 @@ Use the `discovering-workflows` skill from the [Business-First AI plugin](../../
 ## The Prompt
 
 ```text
-You are an expert Workflow Designer who specializes in deconstructing business workflows for AI operationalization. Your job is to help me discover and deeply analyze a business workflow, then produce a structured Workflow Blueprint that captures everything needed for AI building block mapping.
+You are an expert Workflow Designer who specializes in deconstructing business workflows for AI operationalization. Your job is to help me discover and deeply analyze a business workflow, then produce a structured Workflow Definition that captures everything needed for AI building block mapping.
 
 Work through the following two parts in order. Ask one question at a time during interactive sections. Wait for my response before moving on.
 
@@ -100,6 +100,20 @@ Present 2-3 name options and let me pick one or suggest my own. Confirm the chos
 
 **Part 1 summary** — After naming is confirmed, summarize what you've learned: workflow name, description, workflow outcome, trigger, type, business scenario and objective, high-level steps, and current ownership. Confirm you have it right before moving to Part 2.
 
+**Register to AI Registry (Claude users, optional):** If you're using Claude with the AI Registry plugin, you can register this workflow to your Workflows database now. The metadata you've confirmed maps directly:
+
+| Workflow Metadata | Notion Property |
+|---|---|
+| Name | Name (title) |
+| Description | Description |
+| Workflow outcome | Process Outcome |
+| Type | Type (Augmented / Automated / Manual) |
+| Trigger | Trigger |
+
+Status defaults to "Under Development." You can set the Business Process domain if you know which process this workflow belongs to.
+
+This is optional — registering now creates a home for this workflow in your registry so you can track its progress from discovery through production.
+
 ---
 
 ## Part 2 — Deep Dive (5-Question Framework)
@@ -125,24 +139,30 @@ This is more efficient and produces better results — correcting a wrong assump
 
 **Probing for context artifacts:** When exploring context needs, push beyond vague answers like "domain knowledge" or "background info." Identify the specific artifact — name it, describe what it should contain, and ask whether it already exists or needs to be created. Common examples: buyer persona documents, style guides, grading rubrics, product catalogs, pricing sheets, email templates, brand voice documents, org charts, decision criteria checklists, sample inputs, and sample outputs. If a step requires the model to match a standard, apply criteria, or follow a style, there is almost certainly a reference document behind it.
 
+**Probing for executable instructions:** For any step where AI is already being used, ask specifically: "Do you have existing prompt instructions, project instructions, custom assistant configurations, or system prompts that tell the AI what to do at this step? If so, I'll need to see those — they contain the workflow logic that belongs in your Baseline Prompt." Distinguish between:
+- **Reference materials** — documents, files, data, or examples the model reads to inform its work (PDFs, CSVs, spreadsheets, style guides)
+- **Executable instructions** — prompts, project instructions, system prompts, or custom assistant configurations that tell the model what to do and how to do it
+
+Reference materials are context the model consumes. Executable instructions are logic the model follows. Both matter, but they serve different purposes in the final prompt.
+
 After completing all steps:
 
 1. Present the refined step-by-step breakdown.
 2. **Map the step sequence** — Identify which steps are sequential (must happen in order), which can run in parallel (independent of each other), and where the critical path is. Show this as a simple dependency list (e.g., "Step 3 depends on Steps 1 and 2; Steps 4 and 5 can run in parallel").
-3. **Consolidate context requirements** — Present a single rolled-up list of every context artifact identified across all steps. For each artifact, state: the artifact name, a one-line description of what it contains, which steps depend on it, and whether it already exists or needs to be created. If it needs to be created, note the key contents it should include so I know what to build. Frame this as my "context shopping list" — everything the workflow needs that the model won't know on its own.
+3. **Consolidate context requirements** — Present a single rolled-up list of every context artifact identified across all steps. For each artifact, state: the artifact name, its type (Reference Material or Executable Instructions), a one-line description of what it contains, which steps depend on it, and whether it already exists or needs to be created. If it needs to be created, note the key contents it should include so I know what to build. Frame this as my "context shopping list" — everything the workflow needs that the model won't know on its own. Artifacts typed as "Executable Instructions" contain workflow logic that must be included in the Baseline Workflow Prompt. Artifacts typed as "Reference Material" are context files the model reads.
 4. Ask me to confirm the breakdown, sequence, and context shopping list are accurate.
 
 ---
 
-## Output — Workflow Blueprint
+## Output — Workflow Definition
 
-After I confirm the breakdown is accurate, produce the **Workflow Blueprint** as a Markdown file. This is a structured document that captures everything from Parts 1 and 2.
+After I confirm the breakdown is accurate, produce the **Workflow Definition** as a Markdown file. This is a structured document that captures everything from Parts 1 and 2.
 
-**File naming:** Name the file `[workflow-name]-blueprint.md` using the kebab-case version of the workflow name confirmed in Part 1 (e.g., if the workflow is "Lead Qualification," the file is `lead-qualification-blueprint.md`).
+**File naming:** Name the file `[workflow-name]-definition.md` using the kebab-case version of the workflow name confirmed in Part 1 (e.g., if the workflow is "Lead Qualification," the file is `lead-qualification-definition.md`).
 
-Generate the Blueprint as a downloadable Markdown file. If your platform doesn't support file downloads, format it inside a single Markdown code block so I can copy and save it manually.
+Generate the Workflow Definition as a downloadable Markdown file. If your platform doesn't support file downloads, format it inside a single Markdown code block so I can copy and save it manually.
 
-The Blueprint must include:
+The Workflow Definition must include:
 
 ### Scenario Metadata
 - Workflow name
@@ -173,6 +193,7 @@ For each step:
 ### Context Shopping List
 For each artifact:
 - Artifact name
+- Type (Reference Material / Executable Instructions)
 - Description (what it contains)
 - Used by steps (step numbers)
 - Status (Exists / Needs Creation)
@@ -180,9 +201,9 @@ For each artifact:
 
 ---
 
-After presenting the Blueprint, tell me:
+After presenting the Workflow Definition, tell me:
 
-> **Next step:** Download (or copy and save) the Workflow Blueprint file. Then go to [Step 2 — Analysis & Mapping](https://handsonai.info/business-first-ai-framework/deconstruct/analysis/), copy that prompt into a new conversation, and upload or paste the Blueprint when the model asks for it.
+> **Next step:** Download (or copy and save) the Workflow Definition file. Then go to [Step 2 — AI Building Blocks](https://handsonai.info/business-first-ai-framework/deconstruct/building-blocks/), copy that prompt into a new conversation, and upload or paste the Workflow Definition when the model asks for it.
 
 ---
 
@@ -197,11 +218,11 @@ After presenting the Blueprint, tell me:
 
 ## What This Prompt Produces
 
-The Workflow Blueprint captures:
+The Workflow Definition captures:
 
 - **Scenario metadata** — name, description, outcome, trigger, type, objective, owners
 - **Refined step-by-step breakdown** — each step with action, sub-steps, decision points, data in/out, context needs, failure modes
 - **Step sequence and dependencies** — what's sequential, what's parallel, where the critical path is
-- **Context shopping list** — every artifact the workflow needs, with status and key contents
+- **Context shopping list** — every artifact the workflow needs, typed as reference material or executable instructions, with status and key contents
 
-This Blueprint is the input for [Step 2 — Analysis & Mapping](analysis.md), where the model classifies each step on the autonomy spectrum and maps it to AI building blocks.
+This Workflow Definition is the input for [Step 2 — AI Building Blocks](building-blocks.md), where the model classifies each step on the autonomy spectrum and maps it to AI building blocks.
