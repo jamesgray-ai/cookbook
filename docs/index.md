@@ -69,11 +69,12 @@ Master AI. Master yourself. Build what matters. That's what [Graymatter](https:/
 
 ---
 
-**If something here saved you time, sparked an idea, or helped you move faster — I'd love to hear about it.** A quick post on LinkedIn means more than you know. Tag me so I see it!
+**If something here saved you time, sparked an idea, or helped you move faster — I'd love to hear about it.**
 
-[Share on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/feed/?shareActive=true&text=I%27ve%20been%20using%20the%20Hands-on%20AI%20Cookbook%20by%20%40James%20Gray%20and%20it%20helped%20me%20%5Bshare%20what%20helped%5D.%20Check%20it%20out%20%E2%86%92%20handsonai.info){ .md-button .md-button--primary target="_blank" }
+[Share what you built](what-people-built.md#share-what-you-built){ .md-button .md-button--primary }
+[Share on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/feed/?shareActive=true&text=I%27ve%20been%20using%20the%20Hands-on%20AI%20Cookbook%20by%20%40James%20Gray%20and%20it%20helped%20me%20%5Bshare%20what%20helped%5D.%20Check%20it%20out%20%E2%86%92%20handsonai.info){ .md-button target="_blank" }
 
-See what others are saying on the [Wall of Love](wall-of-love.md).
+See [What People Built](what-people-built.md) with the cookbook.
 
 ## Quick Links
 

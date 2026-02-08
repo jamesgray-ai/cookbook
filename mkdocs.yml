@@ -110,6 +110,7 @@ plugins:
         how-to/prompting/README.md: agentic-building-blocks/prompts/index.md
         troubleshooting/README.md: platforms/claude/subagents/scheduling-subagent-issues.md
         ask.md: index.md
+        wall-of-love.md: what-people-built.md
 
 markdown_extensions:
   - admonition
@@ -235,7 +236,7 @@ nav:
     - Overview: courses/index.md
     - Agentic AI for Leaders: courses/leaders/index.md
     - Claude for Builders: courses/builders/index.md
-  - Wall of Love: wall-of-love.md
+  - What People Built: what-people-built.md
 
 
 extra:
