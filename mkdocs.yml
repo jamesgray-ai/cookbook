@@ -43,6 +43,14 @@ extra_css:
 
 plugins:
   - search
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts
+      post_date_format: full
+      post_readtime: true
+      archive: true
+      draft_on_serve: true
+      draft_if_future_date: true
   - minify:
       minify_html: true
   - git-revision-date-localized:
@@ -137,6 +145,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - "What's New": whats-new.md
+  - Blog: blog/index.md
   - Business-First AI Framework:
     - Overview: business-first-ai-framework/index.md
     - Discover Workflows: business-first-ai-framework/discover.md

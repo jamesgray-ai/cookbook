@@ -88,6 +88,7 @@ See [What People Built](what-people-built.md) with the cookbook.
 | Explore AI use cases by type | [Use Case Primitives](use-cases/) |
 | Install Claude Code plugins | [Plugin Marketplace](plugins/) |
 | Take a structured course | [Courses](courses/) |
+| Read the latest blog posts | [Blog](blog/index.md) |
 | See recent updates | [What's New](whats-new.md) |
 
 ## About
