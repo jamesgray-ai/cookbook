@@ -33,6 +33,14 @@ Master AI. Master yourself. Build what matters. That's what [Graymatter](https:/
 
     [:octicons-arrow-right-24: Building blocks](agentic-building-blocks/)
 
+-   :material-cog:{ .lg .middle } **AI Engineering**
+
+    ---
+
+    Practices for designing and optimizing AI systems — starting with context engineering
+
+    [:octicons-arrow-right-24: Explore practices](ai-engineering/)
+
 -   :material-target:{ .lg .middle } **Use Cases**
 
     ---
