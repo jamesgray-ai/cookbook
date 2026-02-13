@@ -269,6 +269,7 @@ A project is an active workspace — it provides standing instructions, persiste
 - [Skills](skills/index.md) — reusable routines the AI invokes when relevant
 - [Agents](agents/index.md) — concepts for the Agent building block
 - [MCP](mcp/index.md) — connecting AI to external systems
+- [AI Engineering](../ai-engineering/index.md) — practices for designing and optimizing AI systems, including context engineering
 - [Patterns](../patterns/index.md) — reusable approaches across building blocks
 
 **Use cases:**

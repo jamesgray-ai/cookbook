@@ -185,7 +185,9 @@ nav:
         - Resources: agentic-building-blocks/prompts/prompt-engineering/resources.md
       - Questions:
         - What is a system prompt?: agentic-building-blocks/prompts/questions/what-is-a-system-prompt.md
-    - Context: agentic-building-blocks/context/index.md
+    - Context:
+      - Overview: agentic-building-blocks/context/index.md
+      - Context Graphs: agentic-building-blocks/context/context-graphs.md
     - Projects:
       - Overview: agentic-building-blocks/projects/index.md
       - Project Instructions: agentic-building-blocks/projects/workspace-instructions-meta-prompt.md
@@ -198,6 +200,9 @@ nav:
       - Overview: agentic-building-blocks/agents/index.md
       - Resources: agentic-building-blocks/agents/resources.md
     - MCP: agentic-building-blocks/mcp/index.md
+  - AI Engineering:
+    - Overview: ai-engineering/index.md
+    - Context Engineering: ai-engineering/context-engineering.md
   - Use Cases:
     - Overview: use-cases/index.md
     - Content Creation: use-cases/content-creation.md
