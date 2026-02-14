@@ -5,13 +5,11 @@ description: Curated AI knowledge for builders. Apply AI faster. Accelerate busi
 
 # The Hands-on AI Cookbook
 
-*Curated by [James Gray](https://www.linkedin.com/in/jamesgray/)*
+*Curated by [James Gray](about.md)*
 
-I built this open-source cookbook because I believe AI knowledge should be free and open to everyone. The best gift I can give is helping people accelerate to their full potential — bringing the future forward.
+This cookbook lives at the intersection of **people, business, and technology** — because real innovation happens when all three move together. It's not just about AI tools. It's about accelerating how you think, how you work, and what you build.
 
 Practical guides, patterns, ready-made tools, and direct answers — everything you need to move from experimenting with AI to getting real results. Browse by platform, look up a topic, or work through a structured course.
-
-Master AI. Master yourself. Build what matters. That's what [Graymatter](https://graymatter.jamesgray.ai) is about — a free weekly newsletter with how-to videos, hands-on walkthroughs, and lessons from building in the open.
 
 ## Browse the Cookbook
 
