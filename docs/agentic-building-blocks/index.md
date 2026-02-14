@@ -224,9 +224,6 @@ An open standard for connecting AI assistants to external systems where data liv
 | Gemini | Extensions and function calling |
 | M365 Copilot | Connectors, plugins, Power Platform integrations |
 
-!!! note "MCP is not Claude-only"
-    While Anthropic created the MCP standard, it's an open protocol. OpenAI, Google, and Microsoft are adopting or building compatible approaches. The concept — giving AI standardized access to external tools — exists on every platform, even when the implementation differs.
-
 **Relationship to other blocks:** MCP extends what agents and skills can do by connecting them to external systems. Without MCP, the AI is limited to what's in the conversation.
 
 ## How the Blocks Fit Together
@@ -264,7 +261,7 @@ All seven building blocks across all four platforms in one view:
 | **Prompt** | Conversation messages, system prompts | Conversation messages, system prompts | Conversation messages | Chat messages |
 | **Context** | File attachments, project knowledge | File uploads, GPT knowledge files | File uploads, Drive, NotebookLM | Microsoft Graph, documents |
 | **Project** | Claude Projects | Custom GPTs, ChatGPT Projects | Gems | Copilot agents |
-| **Skill** | Claude Code Skills | Custom GPTs, Actions | Gems with instructions | Agent actions, Power Automate |
+| **Skill** | Claude Code Skills | Not yet available | Not yet available | Not yet available |
 | **Agent** | Claude Code agents, Cowork | Assistants API, GPTs with Actions | Extensions | Copilot agents with plugins |
 | **MCP** | MCP servers | Function calling, Actions | Extensions, function calling | Connectors, plugins |
 
@@ -275,9 +272,6 @@ Skills are routines — they do one specific thing when invoked. Agents are auto
 
 **"You need all seven blocks for every workflow."**
 Most workflows need two or three blocks. A well-written prompt with good context handles many tasks. Only add blocks when the workflow genuinely requires them.
-
-**"MCP is a Claude-only technology."**
-MCP is an open protocol created by Anthropic, but the concept of connecting AI to external tools exists on every platform. OpenAI uses function calling and Actions, Gemini uses extensions, and M365 Copilot uses connectors and plugins.
 
 **"A project is just a folder."**
 A project is an active workspace — it provides standing instructions, persistent context, and conversation continuity. It shapes how the AI behaves for every conversation within it, not just where files are stored.
