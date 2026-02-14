@@ -15,11 +15,15 @@
 
 ## Agentic Building Blocks
 - Overview: https://handsonai.info/agentic-building-blocks/
+- Model: https://handsonai.info/agentic-building-blocks/models/
 - Prompts: https://handsonai.info/agentic-building-blocks/prompts/
+- Prompt Engineering: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/
 - Context: https://handsonai.info/agentic-building-blocks/context/
+- Context Graphs: https://handsonai.info/agentic-building-blocks/context/context-graphs/
 - Projects: https://handsonai.info/agentic-building-blocks/projects/
 - Skills: https://handsonai.info/agentic-building-blocks/skills/
 - Agents: https://handsonai.info/agentic-building-blocks/agents/
+- Agent Capability Patterns: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/
 - MCP: https://handsonai.info/agentic-building-blocks/mcp/
 
 ## Use Cases
@@ -56,6 +60,11 @@
 
 ## Patterns
 - Overview: https://handsonai.info/patterns/
+- Workflow Architecture: https://handsonai.info/patterns/workflow-architecture/
+
+## AI Engineering
+- Overview: https://handsonai.info/ai-engineering/
+- Context Engineering: https://handsonai.info/ai-engineering/context-engineering/
 
 ## Courses
 - Overview: https://handsonai.info/courses/
