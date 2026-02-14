@@ -98,3 +98,4 @@ Coding is the primitive where AI agents are most mature. Modern AI coding agents
 - [Context](../agentic-building-blocks/context/index.md) — providing codebases, documentation, and examples
 - [Data Analysis](data-analysis.md) — when the insight is the goal, not the code
 - [Automation](automation.md) — when code runs as part of an unattended pipeline
+- [Coding Resources](coding-resources.md) — curated reports, guides, and references
