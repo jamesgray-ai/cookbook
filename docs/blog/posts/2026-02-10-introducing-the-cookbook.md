@@ -67,7 +67,7 @@ This is the vocabulary that makes AI adoption repeatable. Once you understand bu
 
 As I learn, I codify that knowledge into AI agents and skills — pre-built tools you can install in one command to accelerate your own learning and implementation. This is an evolving library, not a finished product.
 
-The cookbook's [Plugin Marketplace](../../plugins/index.md) is where these live. The Business-First AI plugin alone packages 8 agents, 6 skills, and 3 prompts that implement the entire [Business-First AI Framework](../../business-first-ai-framework/index.md) as executable tools. Tell it "help me find where AI can improve my workflows" and it runs a structured audit. Tell it "deconstruct my client onboarding process" and it walks you through the full analysis.
+The cookbook's [Plugin Marketplace](../../use-the-cookbook/build/index.md) is where these live. The Business-First AI plugin alone packages 8 agents, 6 skills, and 3 prompts that implement the entire [Business-First AI Framework](../../business-first-ai-framework/index.md) as executable tools. Tell it "help me find where AI can improve my workflows" and it runs a structured audit. Tell it "deconstruct my client onboarding process" and it walks you through the full analysis.
 
 There's also a [Builder Stack Setup Guide](../../builder-setup/index.md). This is where I see people get stuck — the tools that let you build and run real AI workflows are unfamiliar to most people. Terminal, Git, AI coding CLIs — many of these will be new. But they're what unlock the ability to go from idea to production. The guide walks you through 7 steps, roughly 75 minutes, with checkboxes to track your progress. One VP of Product used it to go from zero terminal experience to a fully configured AI builder stack in a single afternoon.
 
@@ -96,7 +96,7 @@ Or jump to what interests you:
 - [Business-First AI Framework](../../business-first-ai-framework/index.md)
 - [Use Cases](../../use-cases/index.md)
 - [Agentic Building Blocks](../../agentic-building-blocks/index.md)
-- [Plugin Marketplace](../../plugins/index.md)
+- [Plugin Marketplace](../../use-the-cookbook/build/index.md)
 - [Builder Stack Setup Guide](../../builder-setup/index.md)
 
 *Originally published on [Graymatter](https://graymatter.jamesgray.ai).*

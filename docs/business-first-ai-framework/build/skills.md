@@ -72,7 +72,7 @@ Your deliverables from Deconstruct and Design already contain everything a skill
     | External tools or connections | Tools and Connectors Required section |
 
 5. **Test with real data** — run the skill on actual inputs from your workflow and compare to what you'd produce manually. Refine until the output matches your standards.
-6. **Register and commit** — add the skill to your [AI Registry](../../plugins/ai-registry.md) Notion database (name, type, description, workflow) and commit the `SKILL.md` file to your GitHub repository. This keeps your building block inventory current and your source files versioned.
+6. **Register and commit** — add the skill to your [AI Registry](../../use-the-cookbook/build/ai-registry.md) Notion database (name, type, description, workflow) and commit the `SKILL.md` file to your GitHub repository. This keeps your building block inventory current and your source files versioned.
 7. **Repeat** for additional skill candidates — focus on the top 1-3. You can always build more later.
 
 !!! tip "Paste the whole file"

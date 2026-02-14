@@ -121,6 +121,14 @@ plugins:
         troubleshooting/README.md: platforms/claude/subagents/scheduling-subagent-issues.md
         ask.md: index.md
         wall-of-love.md: what-people-built.md
+        # Plugins → Use the Cookbook / Build
+        plugins/index.md: use-the-cookbook/build/index.md
+        plugins/getting-started.md: use-the-cookbook/build/getting-started.md
+        plugins/using-plugins.md: use-the-cookbook/build/using-plugins.md
+        plugins/business-first-ai.md: use-the-cookbook/build/business-first-ai.md
+        plugins/ai-registry.md: use-the-cookbook/build/ai-registry.md
+        # MCP Server → Use the Cookbook / Ask
+        mcp-server.md: use-the-cookbook/ask/index.md
 
 markdown_extensions:
   - admonition
@@ -145,6 +153,16 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Use the Cookbook:
+    - Overview: use-the-cookbook/index.md
+    - Ask (MCP Server): use-the-cookbook/ask/index.md
+    - Build (Plugins):
+      - Marketplace: use-the-cookbook/build/index.md
+      - Getting Started: use-the-cookbook/build/getting-started.md
+      - Using Plugins: use-the-cookbook/build/using-plugins.md
+      - Business-First AI: use-the-cookbook/build/business-first-ai.md
+      - AI Registry: use-the-cookbook/build/ai-registry.md
+    - Learn (Courses): courses/index.md
   - "What's New": whats-new.md
   - Blog: blog/index.md
   - Business-First AI Framework:
@@ -286,12 +304,6 @@ nav:
       - Topics:
         - Overview: platforms/openai/topics/README.md
       - Resources: platforms/openai/topics/resources.md
-  - Plugins:
-    - Marketplace: plugins/index.md
-    - Getting Started: plugins/getting-started.md
-    - Using Plugins: plugins/using-plugins.md
-    - Business-First AI: plugins/business-first-ai.md
-    - AI Registry: plugins/ai-registry.md
   - Builder Stack Setup:
     - builder-setup/index.md
     - "Step 1 — Terminal Basics": builder-setup/terminal-basics.md
@@ -320,7 +332,6 @@ nav:
     - Claude for Builders:
       - Overview: courses/builders/index.md
       - Syllabus: courses/builders/syllabus.md
-  - MCP Server: mcp-server.md
   - What People Built: what-people-built.md
 
 

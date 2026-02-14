@@ -12,6 +12,9 @@ Hands-On AI (handsonai.info) — the consolidated site for James Gray's AI cours
 - `docs/business-first-ai-framework/` - Three-phase methodology (Discover, Deconstruct, Build)
 - `docs/use-cases/` - Six use case primitives (Content Creation, Research, Coding, Data Analysis, Ideation & Strategy, Automation)
 - `docs/platforms/` - Platform-specific content (Claude, OpenAI, Gemini, M365 Copilot)
+- `docs/use-the-cookbook/` - Three consumption modes: Ask (MCP Server), Build (Plugins), Learn (Courses)
+- `docs/use-the-cookbook/ask/` - MCP server connection guides
+- `docs/use-the-cookbook/build/` - Plugin marketplace, getting started, plugin detail pages
 - `docs/builder-setup/` - Developer tool installation guides (terminal, Git, editor, Claude Code)
 - `docs/patterns/` - Reusable patterns and best practices
 - `docs/courses/` - Structured course content (builders, leaders)
@@ -121,8 +124,8 @@ The `.claude/` directory is the **development/local** copy (used for repo-local 
 2. Copy into `plugins/<plugin-name>/agents/` (or `skills/`)
 3. Bump `version` in `plugins/<plugin-name>/.claude-plugin/plugin.json` (MINOR for new, PATCH for update)
 4. Bump `version` for that plugin in `.claude-plugin/marketplace.json`
-5. Update the plugin's section on `docs/plugins/index.md` — add the agent/skill to the table with a link to the detail page anchor
-6. Update the plugin's detail page (`docs/plugins/<plugin-name>.md`) — add the agent/skill section following the existing component format
+5. Update the plugin's section on `docs/use-the-cookbook/build/index.md` — add the agent/skill to the table with a link to the detail page anchor
+6. Update the plugin's detail page (`docs/use-the-cookbook/build/<plugin-name>.md`) — add the agent/skill section following the existing component format
 7. Commit and push
 
 ### Creating a new plugin
@@ -141,14 +144,14 @@ The `.claude/` directory is the **development/local** copy (used for repo-local 
    ```
 3. Write `plugin.json` with name, description, version, author, keywords
 4. Add a new entry to `.claude-plugin/marketplace.json`
-5. Add a grid card + collapsible detail section to `docs/plugins/index.md` — include links to the detail page anchors for every agent and skill
-6. Create a detail page at `docs/plugins/<plugin-name>.md` following the template used by existing detail pages (see `docs/plugins/course-examples.md` for reference)
-7. Add the detail page to the `nav:` section in `mkdocs.yml` under Plugins
+5. Add a grid card + collapsible detail section to `docs/use-the-cookbook/build/index.md` — include links to the detail page anchors for every agent and skill
+6. Create a detail page at `docs/use-the-cookbook/build/<plugin-name>.md` following the template used by existing detail pages (see `docs/use-the-cookbook/build/business-first-ai.md` for reference)
+7. Add the detail page to the `nav:` section in `mkdocs.yml` under "Use the Cookbook > Build (Plugins)"
 8. Commit and push
 
 ### Catalog page linking convention
 
-Every agent and skill name in the `docs/plugins/index.md` tables **must** link to the corresponding section on the plugin's detail page:
+Every agent and skill name in the `docs/use-the-cookbook/build/index.md` tables **must** link to the corresponding section on the plugin's detail page:
 
 - **Agents** → link to the detail page anchor: `[`agent-name`](<plugin-name>.md#<agent-name>)`
 - **Skills** → link to the detail page anchor: `[`skill-name`](<plugin-name>.md#<skill-name>)`

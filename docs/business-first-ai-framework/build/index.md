@@ -131,7 +131,7 @@ Many workflows stay at the prompt-plus-context level permanently — pasted into
 
 As you build, two background practices keep your work organized and recoverable:
 
-**Register building blocks in your AI Registry.** Each time you create a skill, prompt, or agent, register it in your [AI Registry](../../plugins/ai-registry.md) Notion database — name, type, description, and which workflow it belongs to. If you registered the workflow during Deconstruct, these building blocks link back to it. This gives you a searchable inventory of everything you've built, and makes it easy for your team to discover and reuse building blocks across workflows.
+**Register building blocks in your AI Registry.** Each time you create a skill, prompt, or agent, register it in your [AI Registry](../../use-the-cookbook/build/ai-registry.md) Notion database — name, type, description, and which workflow it belongs to. If you registered the workflow during Deconstruct, these building blocks link back to it. This gives you a searchable inventory of everything you've built, and makes it easy for your team to discover and reuse building blocks across workflows.
 
 **Commit source files to GitHub.** The `.md` files for your skills, agents, and prompts are source code — they should live in version control, not just on your local machine. After creating or updating a building block, commit it to your GitHub repository. This gives you a history of changes, makes it easy to share with collaborators, and protects against losing work.
 
@@ -213,4 +213,4 @@ These are the working building blocks included across all three examples. Each o
 - [AI Use Cases](../../use-cases/index.md) — browse use cases by type (content creation, research, coding, data analysis, ideation, automation)
 - [Discover AI Workflow Opportunities](../discover.md) — discover which of your workflows are candidates for AI
 - [Deconstruct Workflows](../deconstruct/index.md) — break down workflows into structured definitions
-- [Plugin Marketplace](../../plugins/index.md) — browse all available plugins
+- [Plugin Marketplace](../../use-the-cookbook/build/index.md) — browse all available plugins

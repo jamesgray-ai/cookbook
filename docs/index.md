@@ -57,13 +57,13 @@ Master AI. Master yourself. Build what matters. That's what [Graymatter](https:/
 
     [:octicons-arrow-right-24: Set up your stack](builder-setup/index.md)
 
--   :material-puzzle-outline:{ .lg .middle } **Plugins**
+-   :material-chef-hat:{ .lg .middle } **Use the Cookbook**
 
     ---
 
-    Pre-built Claude Code agents and skills you can install in one command
+    Ask the cookbook for instant answers, install pre-built plugins, or join a live cohort course
 
-    [:octicons-arrow-right-24: Browse plugins](plugins/)
+    [:octicons-arrow-right-24: Get started](use-the-cookbook/)
 
 -   :material-school:{ .lg .middle } **Courses**
 
@@ -94,7 +94,7 @@ See [What People Built](what-people-built.md) with the cookbook.
 | Set up Git and GitHub | [Git Installation](builder-setup/git-install.md) |
 | Learn the seven AI building blocks | [Agentic Building Blocks](agentic-building-blocks/) |
 | Explore AI use cases by type | [Use Case Primitives](use-cases/) |
-| Install Claude Code plugins | [Plugin Marketplace](plugins/) |
+| Install Claude Code plugins | [Plugin Marketplace](use-the-cookbook/build/) |
 | Take a structured course | [Courses](courses/) |
 | Read the latest blog posts | [Blog](blog/index.md) |
 | See recent updates | [What's New](whats-new.md) |
