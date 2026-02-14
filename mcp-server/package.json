@@ -1,0 +1,21 @@
+{
+  "name": "handsonai-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the Hands-on AI Cookbook",
+  "type": "module",
+  "scripts": {
+    "build:index": "tsx scripts/build-index.ts",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "wrangler deploy --dry-run --outdir=dist"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/node": "^22.10.0",
+    "glob": "^11.0.1",
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.0.0"
+  }
+}

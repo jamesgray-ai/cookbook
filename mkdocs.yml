@@ -320,6 +320,7 @@ nav:
     - Claude for Builders:
       - Overview: courses/builders/index.md
       - Syllabus: courses/builders/syllabus.md
+  - MCP Server: mcp-server.md
   - What People Built: what-people-built.md
 
 
