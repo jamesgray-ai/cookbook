@@ -29,7 +29,7 @@ const MAX_BODY_SIZE = 1_000_000; // 1 MB
 const CORS_HEADERS: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, GET, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Headers": "Content-Type, Mcp-Session-Id",
 };
 
 function jsonResponse(body: unknown, status = 200): Response {
@@ -141,6 +141,11 @@ export default {
 
       // MCP endpoint
       if (url.pathname === "/mcp") {
+        // Session cleanup — stateless server, just acknowledge
+        if (request.method === "DELETE") {
+          return new Response(null, { status: 200, headers: CORS_HEADERS });
+        }
+
         if (request.method !== "POST") {
           return new Response("Method not allowed. Use POST.", {
             status: 405,
