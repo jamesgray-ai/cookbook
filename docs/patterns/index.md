@@ -29,7 +29,7 @@ Reusable patterns and best practices for AI/ML development.
 
 ### Prompting Patterns
 
-Patterns for structuring and optimizing prompts.
+Patterns for structuring and optimizing prompts. See the [Prompt Engineering](../agentic-building-blocks/prompts/prompt-engineering/index.md) section for 14 detailed technique guides covering zero-shot, few-shot, chain-of-thought, and more.
 
 ### Agent Patterns
 

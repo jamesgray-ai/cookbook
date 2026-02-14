@@ -182,6 +182,20 @@ nav:
       - Overview: agentic-building-blocks/prompts/index.md
       - Prompt Engineering:
         - Overview: agentic-building-blocks/prompts/prompt-engineering/index.md
+        - Zero-Shot Prompting: agentic-building-blocks/prompts/prompt-engineering/zero-shot-prompting.md
+        - Few-Shot Learning: agentic-building-blocks/prompts/prompt-engineering/few-shot-learning.md
+        - Chain-of-Thought: agentic-building-blocks/prompts/prompt-engineering/chain-of-thought.md
+        - Direct Instruction: agentic-building-blocks/prompts/prompt-engineering/direct-instruction.md
+        - Contextual Prompting: agentic-building-blocks/prompts/prompt-engineering/contextual-prompting.md
+        - Role Prompting: agentic-building-blocks/prompts/prompt-engineering/role-prompting.md
+        - Output Formatting: agentic-building-blocks/prompts/prompt-engineering/output-formatting.md
+        - Multi-Turn Conversation: agentic-building-blocks/prompts/prompt-engineering/multi-turn-conversation.md
+        - Self-Consistency and Reflection: agentic-building-blocks/prompts/prompt-engineering/self-consistency-and-reflection.md
+        - Emotional Prompting: agentic-building-blocks/prompts/prompt-engineering/emotional-prompting.md
+        - Reframing Prompts: agentic-building-blocks/prompts/prompt-engineering/reframing-prompts.md
+        - Style Unbundling: agentic-building-blocks/prompts/prompt-engineering/style-unbundling.md
+        - Summarization and Distillation: agentic-building-blocks/prompts/prompt-engineering/summarization-and-distillation.md
+        - Real-World Constraints: agentic-building-blocks/prompts/prompt-engineering/real-world-constraints.md
         - Resources: agentic-building-blocks/prompts/prompt-engineering/resources.md
       - Questions:
         - What is a system prompt?: agentic-building-blocks/prompts/questions/what-is-a-system-prompt.md
