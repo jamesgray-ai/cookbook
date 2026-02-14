@@ -1,11 +1,15 @@
 ---
-title: Plugin Marketplace
+title: Hands-on AI Marketplace
 description: Pre-built Claude Code plugins with agents and skills you can install in one command
 ---
 
-# Plugin Marketplace
+# Hands-on AI Marketplace
 
-## Why Plugins?
+The Hands-on AI Marketplace is a collection of ready-to-use plugins for [Claude Code](../../builder-setup/claude-code-install.md). Each plugin gives Claude specialized knowledge — things like how to write a LinkedIn post, how to research a company before a meeting, or how to document a business workflow. Install a plugin with a single command and Claude gains that expertise across every conversation.
+
+**What's inside:** The marketplace currently includes two plugins with a combined **8 agents**, **10 skills**, and **3 reusable prompts** — all focused on real business tasks. Browse the available plugins below, or start with the [Getting Started guide](getting-started.md) for a step-by-step walkthrough.
+
+## What Are Plugins?
 
 Out of the box, Claude is a generalist. It can write, research, and analyze — but it doesn't know your standards, your workflows, or your preferred formats. Every time you start a new conversation, you'd need to re-explain how you want things done.
 
@@ -23,7 +27,16 @@ The plugins in this marketplace currently focus on **agents** and **skills**. Fo
 
 **The result:** Instead of writing long prompts to explain what you want, you describe your goal in plain language and Claude applies the right expertise automatically.
 
-New to plugins? Start with the [Getting Started guide](getting-started.md) for a step-by-step walkthrough, or browse the available plugins below.
+## Transparency & Security
+
+Plugins are plain-text Markdown files — there's no compiled code or hidden logic. Every agent and skill in this marketplace is fully readable, so you can review exactly what instructions Claude receives before you install anything.
+
+**Review the source:** All plugin files are open source in the [handsonai GitHub repository](https://github.com/jamesgray-ai/handsonai/tree/main/plugins). Each plugin's detail page (linked below) includes the full list of agents and skills with descriptions of what they do.
+
+!!! warning "Anthropic's guidance on third-party plugins"
+    Anthropic recommends reviewing any plugin before installing it. From the official [plugin documentation](https://code.claude.com/docs/en/discover-plugins): *"Make sure you trust a plugin before installing it. Anthropic does not control what MCP servers, files, or other software are included in plugins and cannot verify that they work as intended."*
+
+    The Hands-on AI plugins contain only Markdown instruction files — no MCP servers, no executable code, and no external network calls. You can verify this yourself by browsing the [plugin source](https://github.com/jamesgray-ai/handsonai/tree/main/plugins).
 
 ## Add This Marketplace
 
