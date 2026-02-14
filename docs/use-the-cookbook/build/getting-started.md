@@ -11,7 +11,7 @@ Not sure what plugins are? Read the [Plugin Marketplace overview](index.md#why-p
 
 ## Prerequisites
 
-- **Claude Code** installed and working ([Installation Guide](../builder-setup/claude-code-install.md))
+- **Claude Code** installed and working ([Installation Guide](../../builder-setup/claude-code-install.md))
 - An active **Claude Pro, Max, Team, or Enterprise** subscription (plugins are not available on the free plan)
 
 ## Step 1: Add the Marketplace
@@ -90,7 +90,7 @@ To enable auto-updates for the Hands-on AI marketplace:
 3. Choose **handsonai** from the list
 4. Select **Enable auto-update**
 
-![Plugin manager showing the Marketplaces tab with the handsonai marketplace selected and the auto-update option highlighted](../assets/images/plugin-auto-update.png)
+![Plugin manager showing the Marketplaces tab with the handsonai marketplace selected and the auto-update option highlighted](../../assets/images/plugin-auto-update.png)
 
 Once enabled, Claude Code refreshes the marketplace and updates installed plugins each time it starts. If any plugins were updated, you'll see a notification suggesting you restart Claude Code.
 
@@ -137,7 +137,7 @@ Check the plugin name is spelled correctly and includes the `@handsonai` suffix:
 
 ### "Permission denied" or authentication errors
 
-The marketplace is public. If you see authentication errors, check your GitHub CLI configuration ([GitHub Setup guide](../builder-setup/github-setup.md)).
+The marketplace is public. If you see authentication errors, check your GitHub CLI configuration ([GitHub Setup guide](../../builder-setup/github-setup.md)).
 
 Run this in your **terminal** (not inside Claude Code):
 

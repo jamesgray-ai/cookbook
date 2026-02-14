@@ -152,7 +152,7 @@ There are two ways to run the Design phase, depending on which tools you use:
 
 ### Option B: Claude skill
 
-Use the `building-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It reads the Workflow Definition, runs the Design analysis, and saves the AI Building Block Spec automatically.
+Use the `building-workflows` skill from the [Business-First AI plugin](../../use-the-cookbook/build/business-first-ai.md). It reads the Workflow Definition, runs the Design analysis, and saves the AI Building Block Spec automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```
@@ -160,7 +160,7 @@ Use the `building-workflows` skill from the [Business-First AI plugin](../../plu
     Recommend an execution pattern and map building blocks.
     ```
     The AI Building Block Spec is saved to `outputs/[workflow-name]-building-block-spec.md`.
-- **Claude.ai** — zip the `building-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with: "Design my AI workflow from this Workflow Definition." Upload or paste your Workflow Definition when prompted. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
+- **Claude.ai** — zip the `building-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with: "Design my AI workflow from this Workflow Definition." Upload or paste your Workflow Definition when prompted. See [Using Skills in Claude.ai](../../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
 
 !!! tip "Design is mostly analytical"
     Unlike the Deconstruct step's extended back-and-forth, the Design phase is shorter. The model does the heavy lifting — recommending an execution pattern, classifying steps, mapping building blocks, and identifying skill and agent candidates. Expect 10-15 minutes of light interaction.

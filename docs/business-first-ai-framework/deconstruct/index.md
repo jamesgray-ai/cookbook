@@ -43,7 +43,7 @@ There are two ways to run this: as a **prompt** in any AI tool, or with the **Cl
 
 === "Claude Platform"
 
-    Install the [Business-First AI plugin](../../plugins/business-first-ai.md) and the `workflow-deconstructor` agent orchestrates the full process — running discovery, deconstruction, design, and build in sequence with file-based handoffs between stages.
+    Install the [Business-First AI plugin](../../use-the-cookbook/build/business-first-ai.md) and the `workflow-deconstructor` agent orchestrates the full process — running discovery, deconstruction, design, and build in sequence with file-based handoffs between stages.
 
     **Install the plugin:**
 
@@ -66,9 +66,9 @@ There are two ways to run this: as a **prompt** in any AI tool, or with the **Cl
     |-----------|---------------|-------|
     | **Claude Code** | Run `/plugin install` in the terminal | Full agent + skill support |
     | **Cowork** | Click **+** > **Add plugins...** > upload the plugin ZIP | Same capabilities, visual interface |
-    | **Claude.ai** | Upload skill ZIPs under **Settings > Capabilities > Upload skill** | Skills only — the orchestrator agent doesn't work in Claude.ai, so you run skills individually with manual handoffs ([details](../../plugins/using-plugins.md#using-skills-in-claudeai-web)) |
+    | **Claude.ai** | Upload skill ZIPs under **Settings > Capabilities > Upload skill** | Skills only — the orchestrator agent doesn't work in Claude.ai, so you run skills individually with manual handoffs ([details](../../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web)) |
 
-    For setup details, see [Using Plugins](../../plugins/using-plugins.md).
+    For setup details, see [Using Plugins](../../use-the-cookbook/build/using-plugins.md).
 
 Both options follow the same process and produce the same deliverable.
 
@@ -76,7 +76,7 @@ Both options follow the same process and produce the same deliverable.
     Real workflows produce the best results. The model will surface hidden steps and assumptions you've internalized — that's much harder with hypothetical processes. If you don't have an existing workflow but have a clear problem to solve, that works too — the model will help you design one.
 
 !!! tip "Register your workflow in the AI Registry"
-    If you're using the [AI Registry](../../plugins/ai-registry.md) Notion database, register your workflow as soon as naming is confirmed — the prompt walks you through it. This creates a record of the workflow with its name, description, trigger, outcome, and type. You'll update this entry as you move through Build. Even if you're not using Notion, save the metadata somewhere — it's the first entry in your workflow inventory. See [Builder Stack Setup — Step 6](../../builder-setup/notion-registry-setup.md) if you haven't set up the AI Registry yet.
+    If you're using the [AI Registry](../../use-the-cookbook/build/ai-registry.md) Notion database, register your workflow as soon as naming is confirmed — the prompt walks you through it. This creates a record of the workflow with its name, description, trigger, outcome, and type. You'll update this entry as you move through Build. Even if you're not using Notion, save the metadata somewhere — it's the first entry in your workflow inventory. See [Builder Stack Setup — Step 6](../../builder-setup/notion-registry-setup.md) if you haven't set up the AI Registry yet.
 
 !!! tip "Keep your files together"
     By the end of the full process you'll have several Markdown files: `[name]-definition.md` (from Deconstruct), `[name]-building-block-spec.md` (from Build: Design), and `[name]-prompt.md` (from Build: Construct), plus any skills you built. Keep them in a single folder — they form a complete record of your workflow deconstruction. You can share any of these files with your team for feedback, put them in version control, or hand them to a colleague.

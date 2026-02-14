@@ -123,7 +123,7 @@ This step has three parts:
 /plugin marketplace add jamesgray-ai/handsonai
 ```
 
-See the [Getting Started with Plugins](../plugins/getting-started.md) guide for the full walkthrough.
+See the [Getting Started with Plugins](../use-the-cookbook/build/getting-started.md) guide for the full walkthrough.
 
 **2. Set up the AI Registry.** The AI Registry is a Notion workspace template that gives you a structured system for tracking your workflows, AI building blocks, and connected applications. Once it's connected, Claude can name workflows, write SOPs (Standard Operating Procedures), and register skills directly in Notion.
 
@@ -138,10 +138,10 @@ See the [Getting Started with Plugins](../plugins/getting-started.md) guide for 
 
 The **Business-First AI** plugin is required for a guided experience on the Claude platform using skills — it includes agents and skills for discovering AI opportunities, deconstructing workflows, and building with AI. The **AI Registry** plugin is required for Claude users who want to integrate seamlessly with the Notion registry — it lets Claude name workflows, write SOPs, and register building blocks directly in your workspace.
 
-Browse all available plugins on the [Plugin Marketplace](../plugins/index.md).
+Browse all available plugins on the [Plugin Marketplace](../use-the-cookbook/build/index.md).
 
 !!! info "Using skills in Claude.ai (web)"
-    After installing plugins, agents and skills work automatically in **Claude Code** and **Cowork**. However, if you want to use skills in **Claude.ai** (the web interface), there's an extra step: you need to zip each skill folder and upload it manually through Settings > Capabilities > Upload skill. See the [Using Skills in Claude.ai](../plugins/using-plugins.md#using-skills-in-claudeai-web) guide for step-by-step instructions.
+    After installing plugins, agents and skills work automatically in **Claude Code** and **Cowork**. However, if you want to use skills in **Claude.ai** (the web interface), there's an extra step: you need to zip each skill folder and upload it manually through Settings > Capabilities > Upload skill. See the [Using Skills in Claude.ai](../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web) guide for step-by-step instructions.
 
 **You're done when:** You've completed the parts above that apply to your workflow.
 
@@ -188,7 +188,7 @@ With your builder stack in place, you're ready to start building with AI.
 
     Pre-built Claude Code agents and skills you can install in one command.
 
-    [:octicons-arrow-right-24: Plugin Marketplace](../plugins/index.md)
+    [:octicons-arrow-right-24: Plugin Marketplace](../use-the-cookbook/build/index.md)
 
 -   :material-school:{ .lg .middle } **Take a Course**
 

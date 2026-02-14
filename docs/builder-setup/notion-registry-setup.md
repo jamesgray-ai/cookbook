@@ -21,7 +21,7 @@ howto_steps:
 
 The AI Registry is a Notion workspace template that gives you a structured system for tracking your business processes, workflows, AI building blocks, and connected applications. It serves as the central hub for your AI operations — a single place to document what you're building, how it works, and what tools are involved.
 
-This registry is also the foundation for the [AI Registry plugin](../plugins/index.md#ai-registry), a set of Claude Code skills that can read from and write to your registry automatically. Once your registry is set up and connected, Claude can name workflows, write SOPs (Standard Operating Procedures), register skills, and keep everything in sync — anywhere on the Claude platform.
+This registry is also the foundation for the [AI Registry plugin](../use-the-cookbook/build/index.md#ai-registry), a set of Claude Code skills that can read from and write to your registry automatically. Once your registry is set up and connected, Claude can name workflows, write SOPs (Standard Operating Procedures), register skills, and keep everything in sync — anywhere on the Claude platform.
 
 !!! note "Platform support"
     The AI Registry plugin is powered by Claude Agent skills, which are currently only supported on the **Claude** platform. Agent skills are an open standard, and many companies are already working to adopt them — as support broadens, the same skills will work across tools. The Notion connector ([Step 7](#step-7-connect-your-ai-tools)) works on both Claude and ChatGPT for basic read/write access.
@@ -142,7 +142,7 @@ The plugin includes five skills that automate common registry tasks:
 4. **Register** — Ask Claude to register any skills you've built in the AI Building Blocks database
 5. **Sync** — Ask Claude to push skills to GitHub with version tracking
 
-See the [AI Registry plugin page](../plugins/index.md#ai-registry) for full details and usage examples.
+See the [AI Registry plugin page](../use-the-cookbook/build/index.md#ai-registry) for full details and usage examples.
 
 ## Troubleshooting
 
@@ -171,6 +171,6 @@ See the [AI Registry plugin page](../plugins/index.md#ai-registry) for full deta
 - **Document existing workflows** — Capture what you're already doing before adding AI
 - **Find AI opportunities** — Use the [Discover AI Workflow Opportunities](../business-first-ai-framework/discover.md) guide to identify where AI can add value
 - **Deconstruct workflows** — Break workflows into AI building blocks with the [Deconstruct Workflows](../business-first-ai-framework/deconstruct/index.md) guide
-- **Install the plugin** — Set up the [AI Registry plugin](../plugins/index.md#ai-registry) to automate registry updates
+- **Install the plugin** — Set up the [AI Registry plugin](../use-the-cookbook/build/index.md#ai-registry) to automate registry updates
 - **Explore other setup guides** — Continue with [Claude Code Installation](claude-code-install.md) if you haven't already
 

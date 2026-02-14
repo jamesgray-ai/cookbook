@@ -114,4 +114,4 @@ Primitives help you browse use cases by category. Building blocks help you assem
 - [Discover Workflows](../business-first-ai-framework/discover.md) — structured audit to surface workflow candidates
 - [Agentic Building Blocks](../agentic-building-blocks/index.md) — the seven components for implementing AI workflows
 - [Build Workflows](../business-first-ai-framework/build/index.md) — worked examples across the autonomy spectrum
-- [Plugin Marketplace](../plugins/index.md) — pre-built agents and skills you can install
+- [Plugin Marketplace](../use-the-cookbook/build/index.md) — pre-built agents and skills you can install

@@ -44,7 +44,7 @@ There are two ways to run this: as a **prompt** in any AI tool, or with the **Cl
 
 === "Claude Platform"
 
-    Install the [Business-First AI plugin](../plugins/business-first-ai.md) and the `discovering-workflows` skill runs automatically when you describe what you need.
+    Install the [Business-First AI plugin](../use-the-cookbook/build/business-first-ai.md) and the `discovering-workflows` skill runs automatically when you describe what you need.
 
     **Install the plugin:**
 
@@ -67,9 +67,9 @@ There are two ways to run this: as a **prompt** in any AI tool, or with the **Cl
     |-----------|---------------|-------|
     | **Claude Code** | Run `/plugin install` in the terminal | Full skill support |
     | **Cowork** | Click **+** > **Add plugins...** > upload the plugin ZIP | Same capabilities, visual interface |
-    | **Claude.ai** | Upload the skill ZIP under **Settings > Capabilities > Upload skill** | Requires Claude Code installed first to access skill files ([details](../plugins/using-plugins.md#using-skills-in-claudeai-web)) |
+    | **Claude.ai** | Upload the skill ZIP under **Settings > Capabilities > Upload skill** | Requires Claude Code installed first to access skill files ([details](../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web)) |
 
-    For setup details, see [Using Plugins](../plugins/using-plugins.md).
+    For setup details, see [Using Plugins](../use-the-cookbook/build/using-plugins.md).
 
 Both options follow the same process and produce the same structured report.
 

@@ -41,7 +41,7 @@ For the full details on how marketplaces and plugin installation work, see the o
 
 ## :material-rocket-launch: Business-First AI
 
-The [Business-First AI Framework](../business-first-ai-framework/index.md) as executable Claude Code skills. Discover AI workflow opportunities (Step 1), deconstruct workflows into AI building blocks (Step 2), and build working AI workflows (Step 3).
+The [Business-First AI Framework](../../business-first-ai-framework/index.md) as executable Claude Code skills. Discover AI workflow opportunities (Step 1), deconstruct workflows into AI building blocks (Step 2), and build working AI workflows (Step 3).
 
 ```bash
 /plugin install business-first-ai@handsonai
@@ -107,7 +107,7 @@ The [Business-First AI Framework](../business-first-ai-framework/index.md) as ex
 Document, name, register, and sync AI operational workflows and skills.
 
 !!! note
-    This plugin requires a Notion account and the [Notion MCP connector](../builder-setup/notion-registry-setup.md). Without it, Claude can follow the naming and writing conventions but cannot save entries to Notion.
+    This plugin requires a Notion account and the [Notion MCP connector](../../builder-setup/notion-registry-setup.md). Without it, Claude can follow the naming and writing conventions but cannot save entries to Notion.
 
 ```bash
 /plugin install ai-registry@handsonai

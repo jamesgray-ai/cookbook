@@ -40,7 +40,7 @@ There are two ways to run this, depending on which tools you use:
 
 ### Option B: Claude skill
 
-Use the `deconstructing-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). It runs the same deep dive process and saves the Workflow Definition to a file automatically.
+Use the `deconstructing-workflows` skill from the [Business-First AI plugin](../../use-the-cookbook/build/business-first-ai.md). It runs the same deep dive process and saves the Workflow Definition to a file automatically.
 
 - **Claude Code or Cowork** — install the plugin (`/plugin install business-first-ai@handsonai`) and start with:
     ```
@@ -48,7 +48,7 @@ Use the `deconstructing-workflows` skill from the [Business-First AI plugin](../
     Help me build a Workflow Definition.
     ```
     The Workflow Definition is saved to `outputs/[workflow-name]-definition.md`.
-- **Claude.ai** — zip the `deconstructing-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with the same prompt above. See [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
+- **Claude.ai** — zip the `deconstructing-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill**, then start a new chat with the same prompt above. See [Using Skills in Claude.ai](../../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions.
 
 !!! tip "Budget ~15-25 minutes for this conversation"
     This step covers the most interactive part of the process. The model will ask about your scenario, help you refine your steps, then systematically probe each step for sub-steps, decisions, data flows, context needs, and failure modes. The depth here directly determines the quality of everything that follows.

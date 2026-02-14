@@ -28,7 +28,7 @@ The audit uses a three-step process: scan what AI already knows about your work,
 **Two ways to run Step 1:**
 
 - **Any AI tool** — Copy the [Discover AI Workflow Opportunities](discover.md) prompt into Claude, ChatGPT, Gemini, or M365 Copilot
-- **Claude platform** — Use the `discovering-workflows` skill from the [Business-First AI plugin](../plugins/business-first-ai.md) in Claude Code, Claude.ai, or Cowork ([setup guide](../plugins/using-plugins.md))
+- **Claude platform** — Use the `discovering-workflows` skill from the [Business-First AI plugin](../use-the-cookbook/build/business-first-ai.md) in Claude Code, Claude.ai, or Cowork ([setup guide](../use-the-cookbook/build/using-plugins.md))
 
 ---
 
@@ -51,7 +51,7 @@ The deliverable is a **Workflow Definition** — a structured breakdown of your 
 **Two ways to run Step 2:**
 
 - **Any AI tool** — Copy the [Deconstruct Workflows](deconstruct/index.md) prompt into Claude, ChatGPT, Gemini, or M365 Copilot
-- **Claude platform** — Use the `workflow-deconstructor` agent or individual skills from the [Business-First AI plugin](../plugins/business-first-ai.md) in Claude Code, Claude.ai, or Cowork ([setup guide](../plugins/using-plugins.md))
+- **Claude platform** — Use the `workflow-deconstructor` agent or individual skills from the [Business-First AI plugin](../use-the-cookbook/build/business-first-ai.md) in Claude Code, Claude.ai, or Cowork ([setup guide](../use-the-cookbook/build/using-plugins.md))
 
 ---
 
@@ -150,7 +150,7 @@ Every AI workflow falls somewhere on this spectrum. The right pattern depends on
 
 ## Tools
 
-For Claude platform users (Claude Code, Claude.ai, or Cowork), the [Business-First AI plugin](../plugins/business-first-ai.md) implements all three steps as executable skills you can run interactively:
+For Claude platform users (Claude Code, Claude.ai, or Cowork), the [Business-First AI plugin](../use-the-cookbook/build/business-first-ai.md) implements all three steps as executable skills you can run interactively:
 
 ```bash
 /plugin install business-first-ai@handsonai

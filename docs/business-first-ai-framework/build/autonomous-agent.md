@@ -166,5 +166,5 @@ To adapt: identify the distinct stages of your workflow and the specialist exper
 - [Automation Use Cases](../../use-cases/automation.md) — turning multi-agent pipelines into scheduled operations
 - [Discover AI Workflow Opportunities](../discover.md) — discover which workflows are candidates for autonomous agents
 - [Deconstruct Workflows](../deconstruct/index.md) — break down workflows into agent-ready steps
-- [Plugin Marketplace](../../plugins/index.md) — browse all agents and skills used in this pipeline
+- [Plugin Marketplace](../../use-the-cookbook/build/index.md) — browse all agents and skills used in this pipeline
 - [Claude Code Subagents Documentation](https://code.claude.com/docs/en/sub-agents) — official guide to creating and using subagents in Claude Code

@@ -53,7 +53,7 @@ The [Autonomous Agent](autonomous-agent.md) worked example shows a multi-agent p
 3. **Write the agent's instructions** — Describe the agent's role, what it knows, and what it does. Think of it as writing a job description: "You are a researcher who finds case studies from business publications. You search for companies with quantified outcomes and produce structured briefs." Your Building Block Spec's Action, Decision Points, and Context Needed columns give you most of this.
 4. **Define human review gates** — Where should the agent pause for your approval?
 5. **Test with a real scenario** — Run the agent on actual inputs and evaluate the output
-6. **Register and commit** — Add the agent to your [AI Registry](../../plugins/ai-registry.md) Notion database and commit the agent `.md` file to your GitHub repository
+6. **Register and commit** — Add the agent to your [AI Registry](../../use-the-cookbook/build/ai-registry.md) Notion database and commit the agent `.md` file to your GitHub repository
 
 
 ## Agent Anatomy

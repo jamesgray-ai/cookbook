@@ -42,7 +42,7 @@ There are two ways to generate your prompt, depending on which tools you use:
 
 ### Option B: Claude skill (`building-workflows`)
 
-Use the `building-workflows` skill from the [Business-First AI plugin](../../plugins/business-first-ai.md). You still need to provide your AI Building Block Spec — the skill guides the conversation but doesn't have your file until you upload it.
+Use the `building-workflows` skill from the [Business-First AI plugin](../../use-the-cookbook/build/business-first-ai.md). You still need to provide your AI Building Block Spec — the skill guides the conversation but doesn't have your file until you upload it.
 
 === "Claude Code or Cowork"
 
@@ -59,7 +59,7 @@ Use the `building-workflows` skill from the [Business-First AI plugin](../../plu
 
 === "Claude.ai"
 
-    1. **Install the skill** — zip the `building-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill** (see [Using Skills in Claude.ai](../../plugins/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions)
+    1. **Install the skill** — zip the `building-workflows` skill folder and upload it via **Settings > Capabilities > Upload skill** (see [Using Skills in Claude.ai](../../use-the-cookbook/build/using-plugins.md#using-skills-in-claudeai-web) for detailed instructions)
     2. **Start a new chat** and say: "Generate a Baseline Workflow Prompt from this AI Building Block Spec."
     3. **Upload or paste your AI Building Block Spec file** (`[workflow-name]-building-block-spec.md`) when prompted
     4. **If you built skills**, list them when Claude asks — it generates a prompt that references your skills instead of spelling out those steps
@@ -70,7 +70,7 @@ Use the `building-workflows` skill from the [Business-First AI plugin](../../plu
     The heavy analytical work is done. The model reads your AI Building Block Spec and produces a structured prompt with minimal interaction. Expect 5-10 minutes.
 
 !!! tip "Register and commit"
-    After generating your Baseline Workflow Prompt, register it in your [AI Registry](../../plugins/ai-registry.md) Notion database and commit the `[name]-prompt.md` file to your GitHub repository. This applies to all building blocks you create — prompts, skills, and agents.
+    After generating your Baseline Workflow Prompt, register it in your [AI Registry](../../use-the-cookbook/build/ai-registry.md) Notion database and commit the `[name]-prompt.md` file to your GitHub repository. This applies to all building blocks you create — prompts, skills, and agents.
 
 ## The Prompt
 
