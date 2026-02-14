@@ -153,6 +153,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - About: about.md
   - Use the Cookbook:
     - Overview: use-the-cookbook/index.md
     - Ask (MCP Server): use-the-cookbook/ask/index.md
