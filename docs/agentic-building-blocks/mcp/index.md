@@ -20,9 +20,6 @@ Without MCP, the AI is limited to what's in the conversation. With MCP, the AI c
 - **Enables read and write operations** — the AI can both retrieve information and take actions
 - **Composable** — multiple MCP connectors can be active simultaneously, giving the AI access to multiple external systems
 
-!!! note "MCP is not Claude-only"
-    While Anthropic created the MCP standard, it's an open protocol. OpenAI, Google, and Microsoft are adopting or building compatible approaches. The concept — giving AI standardized access to external tools — exists on every platform, even when the implementation differs.
-
 ## When to Use MCP
 
 Use MCP when:

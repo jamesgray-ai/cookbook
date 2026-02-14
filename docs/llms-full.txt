@@ -6,7 +6,7 @@
 
 ## Homepage
 - URL: https://handsonai.info/
-- Summary: Central hub for the Hands-on AI Cookbook. Browse the Business-First AI Framework, six Agentic Building Blocks (Prompts, Context, Projects, Skills, Agents, MCP), six Use Case primitives, platform guides (Claude, ChatGPT, Gemini, Copilot), plugins, builder setup guides, patterns, and structured courses. Includes quick-start links for common tasks like installing Claude Code, setting up Git, and scheduling AI agents.
+- Summary: Central hub for the Hands-on AI Cookbook. Browse the Business-First AI Framework, seven Agentic Building Blocks (Model, Prompts, Context, Projects, Skills, Agents, MCP), six Use Case primitives, platform guides (Claude, ChatGPT, Gemini, Copilot), plugins, builder setup guides, patterns, and structured courses. Includes quick-start links for common tasks like installing Claude Code, setting up Git, and scheduling AI agents.
 
 ---
 
@@ -64,17 +64,81 @@
 - URL: https://handsonai.info/agentic-building-blocks/
 - Summary: The seven building blocks for AI-powered workflows, arranged along an autonomy spectrum from simple to complex: Model, Prompts, Context, Projects, Skills, Agents, and MCP (Model Context Protocol).
 
+### Model
+- URL: https://handsonai.info/agentic-building-blocks/models/
+- Summary: The AI engine that processes inputs and generates outputs, powering everything the other building blocks do. Covers model selection, capabilities, and how the model layer underpins all agentic workflows.
+
 ### Prompts
 - URL: https://handsonai.info/agentic-building-blocks/prompts/
 - Summary: The foundational building block. Covers prompt design, structured prompting, and techniques that work across all AI platforms.
 
 #### Prompt Engineering
 - URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/
-- Summary: Techniques for effective prompting — system prompts, structured prompting, iterative refinement, and platform-specific considerations.
+- Summary: A practical guide to 14 prompt engineering techniques — patterns you can apply immediately to get better results from any AI platform.
+
+##### Chain-of-Thought Prompting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/chain-of-thought/
+- Summary: How to improve LLM reasoning by asking the model to show its work step by step before answering.
+
+##### Contextual Prompting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/contextual-prompting/
+- Summary: How to provide relevant background information in your prompt so the model gives specific, tailored responses instead of generic advice.
+
+##### Direct Instruction
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/direct-instruction/
+- Summary: How to write clear, explicit commands that tell the model exactly what to do, minimizing ambiguity and guesswork.
+
+##### Emotional Prompting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/emotional-prompting/
+- Summary: Add motivational or stakes-based language to prompts to encourage the model to produce more thorough and engaged responses.
+
+##### Few-Shot Learning
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/few-shot-learning/
+- Summary: How to teach an LLM new patterns by providing a few examples directly in your prompt.
+
+##### Multi-Turn Conversation
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/multi-turn-conversation/
+- Summary: Use iterative back-and-forth exchanges to progressively build, refine, and improve model output through dialogue.
+
+##### Output Formatting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/output-formatting/
+- Summary: Tell the model exactly how to structure its response — tables, JSON, templates, or any format you define.
+
+##### Real-World Constraints
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/real-world-constraints/
+- Summary: Embed practical business constraints like budget, timeline, and team size into prompts to get actionable recommendations instead of ideal-world advice.
+
+##### Reframing Prompts
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/reframing-prompts/
+- Summary: Change how you phrase a question to activate different reasoning patterns and get fundamentally better AI responses.
+
+##### Role Prompting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/role-prompting/
+- Summary: Assign the model a specific identity, expertise, or perspective to shape its vocabulary, reasoning, and level of detail.
+
+##### Self-Consistency and Reflection
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/self-consistency-and-reflection/
+- Summary: Ask the model to evaluate, critique, and improve its own output or approach a problem from multiple angles to increase reliability.
+
+##### Style Unbundling
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/style-unbundling/
+- Summary: Break down a writing style into individual components like tone, sentence length, and vocabulary to reproduce it precisely.
+
+##### Summarization and Distillation
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/summarization-and-distillation/
+- Summary: Techniques for compressing, restructuring, or extracting essential information from longer content using AI prompts.
+
+##### Zero-Shot Prompting
+- URL: https://handsonai.info/agentic-building-blocks/prompts/prompt-engineering/zero-shot-prompting/
+- Summary: How to instruct an LLM with no examples, relying on its training to interpret and complete your task.
 
 ### Context
 - URL: https://handsonai.info/agentic-building-blocks/context/
 - Summary: How to provide AI with the right background information — documents, data, conversation history, and persistent context files (CLAUDE.md, custom instructions).
+
+#### Context Graphs
+- URL: https://handsonai.info/agentic-building-blocks/context/context-graphs/
+- Summary: Structured systems that capture reasoning, decisions, and relational context for agentic AI workflows.
 
 ### Projects
 - URL: https://handsonai.info/agentic-building-blocks/projects/
@@ -88,6 +152,10 @@
 - URL: https://handsonai.info/agentic-building-blocks/skills/
 - Summary: Reusable, step-by-step workflows that teach AI specific tasks — from content creation to data analysis to operational processes.
 
+#### Questions
+- What is the difference between a skill and an agent in Claude Code?: https://handsonai.info/agentic-building-blocks/skills/questions/what-is-the-difference-between-a-skill-and-an-agent-in-claude-code/
+- Do plugin skills conflict with custom skills?: https://handsonai.info/agentic-building-blocks/skills/questions/do-plugin-skills-conflict-with-custom-skills/
+
 ### Agents
 - URL: https://handsonai.info/agentic-building-blocks/agents/
 - Summary: Autonomous AI systems that combine multiple building blocks to execute complex, multi-step workflows with minimal human intervention.
@@ -95,6 +163,38 @@
 #### Agent Resources
 - URL: https://handsonai.info/agentic-building-blocks/agents/resources/
 - Summary: Curated resources for building and deploying AI agents — frameworks, tutorials, and reference implementations.
+
+#### Agent Capability Patterns
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/
+- Summary: Seven architectural patterns that make AI agents effective — from self-reflection to multi-agent collaboration, plus safety and control mechanisms.
+
+##### Planning
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/planning/
+- Summary: How AI agents break complex goals into a sequence of steps, deciding what to do and in what order before taking action.
+
+##### Reflection
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/reflection/
+- Summary: How AI agents improve their output by reviewing, critiquing, and revising their own work before delivering a final result.
+
+##### Tool Use
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/tool-use/
+- Summary: How AI agents extend their capabilities by calling external tools, APIs, and data sources to interact with the real world.
+
+##### Memory
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/memory/
+- Summary: How AI agents store and retrieve information across interactions, enabling them to learn from experience and maintain context over time.
+
+##### Multi-Agent Collaboration
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/multi-agent-collaboration/
+- Summary: How multiple specialized AI agents work together to solve problems that are too complex for a single agent.
+
+##### Human-in-the-Loop
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/human-in-the-loop/
+- Summary: How human checkpoints at key decision points keep AI agents aligned, accountable, and safe for high-stakes tasks.
+
+##### Guardrails
+- URL: https://handsonai.info/agentic-building-blocks/agents/capability-patterns/guardrails/
+- Summary: How automated rules and constraints keep AI agents safe, on-topic, and within policy — without requiring human intervention at every step.
 
 ### MCP (Model Context Protocol)
 - URL: https://handsonai.info/agentic-building-blocks/mcp/
@@ -115,25 +215,49 @@
 - URL: https://handsonai.info/use-cases/content-creation/
 - Summary: Using AI for writing, editing, repurposing, and producing content across formats — articles, social posts, emails, presentations, and multimedia.
 
+#### Content Creation Resources
+- URL: https://handsonai.info/use-cases/content-creation-resources/
+- Summary: Curated resources for AI-assisted content creation — reports, guides, and references.
+
 ### Research
 - URL: https://handsonai.info/use-cases/research/
 - Summary: Using AI for information gathering, synthesis, competitive analysis, market research, and knowledge management.
+
+#### Research Resources
+- URL: https://handsonai.info/use-cases/research-resources/
+- Summary: Curated resources for AI-assisted research — reports, guides, and references.
 
 ### Coding
 - URL: https://handsonai.info/use-cases/coding/
 - Summary: Using AI for software development — code generation, debugging, refactoring, documentation, and development workflow automation.
 
+#### Coding Resources
+- URL: https://handsonai.info/use-cases/coding-resources/
+- Summary: Curated resources for AI-assisted coding — reports, guides, and references.
+
 ### Data Analysis
 - URL: https://handsonai.info/use-cases/data-analysis/
 - Summary: Using AI for data exploration, visualization, reporting, and extracting insights from structured and unstructured data.
+
+#### Data Analysis Resources
+- URL: https://handsonai.info/use-cases/data-analysis-resources/
+- Summary: Curated resources for AI-assisted data analysis — reports, guides, and references.
 
 ### Ideation & Strategy
 - URL: https://handsonai.info/use-cases/ideation-and-strategy/
 - Summary: Using AI for brainstorming, strategic planning, scenario analysis, decision support, and creative problem-solving.
 
+#### Ideation & Strategy Resources
+- URL: https://handsonai.info/use-cases/ideation-and-strategy-resources/
+- Summary: Curated resources for AI-assisted ideation and strategy — reports, guides, and references.
+
 ### Automation
 - URL: https://handsonai.info/use-cases/automation/
 - Summary: Using AI for operational automation — scheduling, monitoring, integration, and end-to-end workflow execution with minimal human intervention.
+
+#### Automation Resources
+- URL: https://handsonai.info/use-cases/automation-resources/
+- Summary: Curated resources for AI-assisted automation — reports, guides, and references.
 
 ---
 
@@ -244,6 +368,50 @@
 ## Patterns
 - URL: https://handsonai.info/patterns/
 - Summary: Reusable AI implementation patterns and best practices. Common approaches for structuring AI workflows and outputs.
+
+### Workflow Architecture Patterns
+- URL: https://handsonai.info/patterns/workflow-architecture/
+- Summary: Seven architectural patterns for AI workflows — from augmented LLMs to autonomous agents — with a selection framework for choosing the right pattern.
+
+#### Augmented LLM
+- URL: https://handsonai.info/patterns/workflow-architecture/augmented-llm/
+- Summary: The foundational AI workflow pattern — an LLM enhanced with retrieval, tools, and memory to overcome its inherent limitations.
+
+#### Prompt Chaining
+- URL: https://handsonai.info/patterns/workflow-architecture/prompt-chaining/
+- Summary: Break complex tasks into sequential steps with validation gates between each step for structured, reliable AI workflows.
+
+#### Routing
+- URL: https://handsonai.info/patterns/workflow-architecture/routing/
+- Summary: Classify input and direct it to specialized follow-up processes for optimized handling of diverse task types.
+
+#### Parallelization
+- URL: https://handsonai.info/patterns/workflow-architecture/parallelization/
+- Summary: Run subtasks simultaneously and aggregate results for faster, more reliable AI workflows.
+
+#### Orchestrator-Workers
+- URL: https://handsonai.info/patterns/workflow-architecture/orchestrator-workers/
+- Summary: A central orchestrator dynamically breaks down tasks and delegates to specialized workers for flexible handling of complex, unpredictable problems.
+
+#### Evaluator-Optimizer
+- URL: https://handsonai.info/patterns/workflow-architecture/evaluator-optimizer/
+- Summary: Generate output, evaluate it against criteria, and refine iteratively through a feedback loop until quality standards are met.
+
+#### Autonomous Agents
+- URL: https://handsonai.info/patterns/workflow-architecture/autonomous-agents/
+- Summary: LLMs with tools, memory, and planning that independently execute multi-step tasks through a think-act-observe loop.
+
+---
+
+## AI Engineering
+
+### Overview
+- URL: https://handsonai.info/ai-engineering/
+- Summary: The emerging discipline of designing, building, and optimizing AI systems — from context engineering to evaluation and beyond.
+
+### Context Engineering
+- URL: https://handsonai.info/ai-engineering/context-engineering/
+- Summary: The practice of designing and optimizing the entire context window — system prompts, instructions, tools, memory, and state — for AI systems.
 
 ---
 
