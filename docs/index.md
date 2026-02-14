@@ -101,12 +101,6 @@ See [What People Built](what-people-built.md) with the cookbook.
 
 ## About
 
-I'm [James Gray](https://jamesgray.ai). I teach hands-on AI courses on [Maven](https://maven.com/james-gray) and write about applied AI at [Graymatter](https://graymatter.jamesgray.ai).
-
-This is a living resource — new guides, tools, and answers are added regularly.
-
-[LinkedIn](https://www.linkedin.com/in/jamesgray/) · [Substack](https://graymatter.jamesgray.ai) · [Website](https://jamesgray.ai) · [GitHub](https://github.com/jamesgray-ai/handsonai)
-
-### Contributing
+I'm James Gray — [read more about me and the story behind this cookbook](about.md).
 
 This is an open-source project. See [Contributing Guidelines](CONTRIBUTING.md) to add content or suggest improvements.
