@@ -120,7 +120,7 @@ redesign, waiting on API credentials from the vendor, and next week we start loa
 - [Few-Shot Learning](few-shot-learning.md) — show format by example
 - [Summarization and Distillation](summarization-and-distillation.md) — formatting is especially important for summaries
 - [Prompt Engineering Overview](index.md)
-- [Data Analysis use case](../../../use-cases/data-analysis.md) — structured output is critical for data workflows
+- [Data Analysis use case](../../../use-cases/data-analysis/) — structured output is critical for data workflows
 
 ## Further Reading
 

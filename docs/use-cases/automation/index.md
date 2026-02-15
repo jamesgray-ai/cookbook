@@ -13,7 +13,7 @@ This is the highest-autonomy primitive. Automation typically builds on the other
 
 Automation delivers the largest time savings because it eliminates recurring manual work entirely. But it also requires the most upfront investment in configuration, testing, and monitoring — you're trusting AI to act independently, so the instructions, guardrails, and error handling need to be robust.
 
-*Automation is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../agentic-building-blocks/index.md).*
+*Automation is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../../agentic-building-blocks/index.md).*
 
 ## Key Characteristics
 
@@ -94,9 +94,9 @@ Automation delivers the largest time savings because it eliminates recurring man
 ## Related
 
 - [AI Use Cases Overview](index.md) — all six primitives at a glance
-- [Agents](../agentic-building-blocks/agents/index.md) — the building block that powers most automation
-- [MCP](../agentic-building-blocks/mcp/index.md) — connecting automated workflows to external systems
-- [Skills](../agentic-building-blocks/skills/index.md) — reusable routines that agents invoke during automation
-- [Scheduling Subagents](../platforms/claude/subagents/scheduling-subagents.md) — how to schedule automated agents on Claude
-- [Build Workflows](../business-first-ai-framework/build/index.md) — worked examples including autonomous agent workflows
-- [Automation Resources](automation-resources.md) — curated reports, guides, and references
+- [Agents](../../agentic-building-blocks/agents/index.md) — the building block that powers most automation
+- [MCP](../../agentic-building-blocks/mcp/index.md) — connecting automated workflows to external systems
+- [Skills](../../agentic-building-blocks/skills/index.md) — reusable routines that agents invoke during automation
+- [Scheduling Subagents](../../platforms/claude/subagents/scheduling-subagents.md) — how to schedule automated agents on Claude
+- [Build Workflows](../../business-first-ai-framework/build/index.md) — worked examples including autonomous agent workflows
+- [Automation Resources](resources.md) — curated reports, guides, and references

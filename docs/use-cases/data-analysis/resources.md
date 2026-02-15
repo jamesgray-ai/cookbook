@@ -5,7 +5,7 @@ description: Curated resources for AI-assisted data analysis — reports, guides
 
 # Data Analysis Resources
 
-Curated external resources for the [Data Analysis](data-analysis.md) use case.
+Curated external resources for the [Data Analysis](index.md) use case.
 
 | Resource | Source | Notes |
 |----------|--------|-------|

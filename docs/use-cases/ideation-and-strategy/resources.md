@@ -5,7 +5,7 @@ description: Curated resources for AI-assisted ideation and strategy — reports
 
 # Ideation & Strategy Resources
 
-Curated external resources for the [Ideation & Strategy](ideation-and-strategy.md) use case.
+Curated external resources for the [Ideation & Strategy](index.md) use case.
 
 | Resource | Source | Notes |
 |----------|--------|-------|

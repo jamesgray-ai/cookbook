@@ -18,5 +18,5 @@ Curated reports and guides from leading AI organizations. Each resource includes
 These resources informed key sections of the cookbook:
 
 - **OpenAI Use Cases Report** — the foundation for the [six use case primitives](../use-cases/index.md) used throughout the cookbook
-- **Anthropic Coding Trends** — context for the [Coding](../use-cases/coding.md) use case and [Agents](../agentic-building-blocks/agents/index.md) building block
+- **Anthropic Coding Trends** — context for the [Coding](../use-cases/coding/) use case and [Agents](../agentic-building-blocks/agents/index.md) building block
 - **Anthropic Skills Guide** — the authoritative reference for the [Skills](../agentic-building-blocks/skills/index.md) building block and [Build (Plugins)](../use-the-cookbook/build/index.md) section

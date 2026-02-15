@@ -115,7 +115,7 @@ For each, identify their top concern, likely position, and what data they'd want
 - [Emotional Prompting](emotional-prompting.md) — add stakes and motivation to encourage thoroughness
 - [Reframing Prompts](reframing-prompts.md) — restructure a problem to get a better response
 - [Prompt Engineering Overview](index.md)
-- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy.md) — role prompting is especially effective for strategic analysis
+- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy/) — role prompting is especially effective for strategic analysis
 
 ## Further Reading
 

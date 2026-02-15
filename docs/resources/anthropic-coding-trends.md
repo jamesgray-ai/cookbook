@@ -22,7 +22,7 @@ This report captures the shift from AI as a coding assistant to AI as a collabor
 
 ## How the Cookbook Uses This
 
-This report provides context for the [Coding](../use-cases/coding.md) use case primitive and the [Agents](../agentic-building-blocks/agents/index.md) building block. The multi-agent and orchestrator-workers trends connect directly to the cookbook's [workflow architecture patterns](../patterns/workflow-architecture/index.md), particularly [Orchestrator-Workers](../patterns/workflow-architecture/orchestrator-workers.md) and [Autonomous Agents](../patterns/workflow-architecture/autonomous-agents.md).
+This report provides context for the [Coding](../use-cases/coding/) use case primitive and the [Agents](../agentic-building-blocks/agents/index.md) building block. The multi-agent and orchestrator-workers trends connect directly to the cookbook's [workflow architecture patterns](../patterns/workflow-architecture/index.md), particularly [Orchestrator-Workers](../patterns/workflow-architecture/orchestrator-workers.md) and [Autonomous Agents](../patterns/workflow-architecture/autonomous-agents.md).
 
 ## Access
 

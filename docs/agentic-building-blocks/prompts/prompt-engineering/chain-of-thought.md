@@ -134,7 +134,7 @@ How many desks does the office need? Show your work.
 - [Self-Consistency and Reflection](self-consistency-and-reflection.md) — sample multiple reasoning paths for higher accuracy
 - [Direct Instruction](direct-instruction.md) — combine with CoT by explicitly specifying the reasoning steps
 - [Prompt Engineering Overview](index.md)
-- [Research use case](../../../use-cases/research.md)
+- [Research use case](../../../use-cases/research/)
 
 ## Further Reading
 

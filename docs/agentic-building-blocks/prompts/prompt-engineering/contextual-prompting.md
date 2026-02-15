@@ -133,7 +133,7 @@ Task: Analyze the likely causes of the churn increase and suggest
 - [Role Prompting](role-prompting.md) — set the model's perspective as a form of context
 - [Direct Instruction](direct-instruction.md) — combine clear commands with rich context for the best results
 - [Prompt Engineering Overview](index.md)
-- [Research use case](../../../use-cases/research.md)
+- [Research use case](../../../use-cases/research/)
 
 ## Further Reading
 

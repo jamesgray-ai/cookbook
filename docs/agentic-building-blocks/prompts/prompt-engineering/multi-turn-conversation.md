@@ -134,7 +134,7 @@ model with feature flags? How would that change our testing strategy?"
 - [Self-Consistency and Reflection](self-consistency-and-reflection.md) — have the model critique and revise its own output
 - [Reframing Prompts](reframing-prompts.md) — restructure a problem mid-conversation to get a better angle
 - [Prompt Engineering Overview](index.md)
-- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy.md) — multi-turn conversation is the natural mode for strategic exploration
+- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy/) — multi-turn conversation is the natural mode for strategic exploration
 
 ## Further Reading
 

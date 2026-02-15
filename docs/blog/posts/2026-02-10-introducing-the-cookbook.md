@@ -45,7 +45,7 @@ You don't need to be technical to use any of this. The framework works on paper,
 
 ### Layer 2: Use Cases — Where AI Creates Value
 
-The cookbook includes [six use case primitives](../../use-cases/index.md) — [Content Creation](../../use-cases/content-creation.md), [Research](../../use-cases/research.md), [Coding](../../use-cases/coding.md), [Data Analysis](../../use-cases/data-analysis.md), [Ideation & Strategy](../../use-cases/ideation-and-strategy.md), and [Automation](../../use-cases/automation.md) — adapted from OpenAI's analysis of 600+ enterprise AI deployments. These primitives describe *what type of work* AI actually does in the real world. They give you a classification system so you can look at any workflow and immediately know which category it falls into and which building blocks to reach for.
+The cookbook includes [six use case primitives](../../use-cases/index.md) — [Content Creation](../../use-cases/content-creation/), [Research](../../use-cases/research/), [Coding](../../use-cases/coding/), [Data Analysis](../../use-cases/data-analysis/), [Ideation & Strategy](../../use-cases/ideation-and-strategy/), and [Automation](../../use-cases/automation/) — adapted from OpenAI's analysis of 600+ enterprise AI deployments. These primitives describe *what type of work* AI actually does in the real world. They give you a classification system so you can look at any workflow and immediately know which category it falls into and which building blocks to reach for.
 
 ### Layer 3: The Building Blocks
 

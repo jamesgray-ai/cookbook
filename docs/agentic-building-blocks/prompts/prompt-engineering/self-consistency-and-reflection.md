@@ -146,7 +146,7 @@ Do all three approaches give the same answer? If not, explain the discrepancy.
 - [Multi-Turn Conversation](multi-turn-conversation.md) — use follow-up turns for human-guided reflection
 - [Reframing Prompts](reframing-prompts.md) — restructure the problem to get a different angle
 - [Prompt Engineering Overview](index.md)
-- [Research use case](../../../use-cases/research.md) — self-consistency is especially valuable for research tasks where accuracy matters
+- [Research use case](../../../use-cases/research/) — self-consistency is especially valuable for research tasks where accuracy matters
 
 ## Further Reading
 

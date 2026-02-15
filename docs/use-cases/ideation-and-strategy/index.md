@@ -13,7 +13,7 @@ This primitive covers any workflow where the primary output is a set of ideas, a
 
 Unlike the other primitives where AI executes work, ideation and strategy is about augmenting your thinking. The AI brings breadth (more options than you'd generate alone), structure (frameworks and evaluation criteria), and perspective (challenging assumptions you didn't realize you were making).
 
-*Ideation & Strategy is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../agentic-building-blocks/index.md).*
+*Ideation & Strategy is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../../agentic-building-blocks/index.md).*
 
 ## Key Characteristics
 
@@ -34,9 +34,9 @@ Unlike the other primitives where AI executes work, ideation and strategy is abo
 
 **NOT the right primitive when:**
 
-- You need to find facts or gather information (that's [Research](research.md))
-- The deliverable is a finished document for an audience (that's [Content Creation](content-creation.md))
-- You're analyzing numerical data to find patterns (that's [Data Analysis](data-analysis.md))
+- You need to find facts or gather information (that's [Research](../research/))
+- The deliverable is a finished document for an audience (that's [Content Creation](../content-creation/))
+- You're analyzing numerical data to find patterns (that's [Data Analysis](../data-analysis/))
 
 ## Department Examples
 
@@ -94,8 +94,8 @@ Unlike the other primitives where AI executes work, ideation and strategy is abo
 ## Related
 
 - [AI Use Cases Overview](index.md) — all six primitives at a glance
-- [Projects](../agentic-building-blocks/projects/index.md) — persistent workspaces for ongoing strategic work
-- [Context](../agentic-building-blocks/context/index.md) — providing goals, constraints, and history
-- [Prompts](../agentic-building-blocks/prompts/index.md) — crafting effective brainstorming and evaluation prompts
-- [Discover Workflows](../business-first-ai-framework/discover.md) — using ideation to find AI opportunities
-- [Ideation & Strategy Resources](ideation-and-strategy-resources.md) — curated reports, guides, and references
+- [Projects](../../agentic-building-blocks/projects/index.md) — persistent workspaces for ongoing strategic work
+- [Context](../../agentic-building-blocks/context/index.md) — providing goals, constraints, and history
+- [Prompts](../../agentic-building-blocks/prompts/index.md) — crafting effective brainstorming and evaluation prompts
+- [Discover Workflows](../../business-first-ai-framework/discover.md) — using ideation to find AI opportunities
+- [Ideation & Strategy Resources](resources.md) — curated reports, guides, and references
