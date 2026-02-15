@@ -173,7 +173,7 @@ Output:
 - [Chain-of-Thought](chain-of-thought.md) — add reasoning steps to your examples for complex tasks
 - [Output Formatting](output-formatting.md) — other ways to control the shape of model output
 - [Prompt Engineering Overview](index.md)
-- [Data Analysis use case](../../../use-cases/data-analysis.md)
+- [Data Analysis use case](../../../use-cases/data-analysis/)
 
 ## Further Reading
 

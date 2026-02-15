@@ -13,7 +13,7 @@ A marketing manager writing an Excel formula, a data analyst creating a SQL quer
 
 Coding is the primitive where AI agents are most mature. Modern AI coding agents can plan an approach, write code, run tests, debug failures, and iterate — handling multi-file changes across entire projects with minimal human guidance.
 
-*Coding is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../agentic-building-blocks/index.md).*
+*Coding is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../../agentic-building-blocks/index.md).*
 
 ## Key Characteristics
 
@@ -34,9 +34,9 @@ Coding is the primitive where AI agents are most mature. Modern AI coding agents
 
 **NOT the right primitive when:**
 
-- The main output is a written document (that's [Content Creation](content-creation.md))
-- You're analyzing data and the insight is the deliverable, not the analysis code (that's [Data Analysis](data-analysis.md))
-- You're creating a pipeline that runs autonomously (that's [Automation](automation.md) — though coding may be a step within it)
+- The main output is a written document (that's [Content Creation](../content-creation/))
+- You're analyzing data and the insight is the deliverable, not the analysis code (that's [Data Analysis](../data-analysis/))
+- You're creating a pipeline that runs autonomously (that's [Automation](../automation/) — though coding may be a step within it)
 
 ## Department Examples
 
@@ -89,13 +89,13 @@ Coding is the primitive where AI agents are most mature. Modern AI coding agents
 
 **Providing requirements without examples.** "Build a script that processes our invoices" is vague. "Build a script that reads CSV files with columns [date, vendor, amount, category], groups by category, and outputs a summary with totals — here's a sample file" produces working code on the first try.
 
-**Confusing coding with data analysis.** If the goal is the insight (what are our spending trends?), the primitive is [Data Analysis](data-analysis.md). If the goal is the tool (build me a script that analyzes spending), the primitive is Coding. The distinction matters because it changes how you evaluate the output.
+**Confusing coding with data analysis.** If the goal is the insight (what are our spending trends?), the primitive is [Data Analysis](../data-analysis/). If the goal is the tool (build me a script that analyzes spending), the primitive is Coding. The distinction matters because it changes how you evaluate the output.
 
 ## Related
 
 - [AI Use Cases Overview](index.md) — all six primitives at a glance
-- [Agents](../agentic-building-blocks/agents/index.md) — autonomous coding agents that plan, write, test, and iterate
-- [Context](../agentic-building-blocks/context/index.md) — providing codebases, documentation, and examples
-- [Data Analysis](data-analysis.md) — when the insight is the goal, not the code
-- [Automation](automation.md) — when code runs as part of an unattended pipeline
-- [Coding Resources](coding-resources.md) — curated reports, guides, and references
+- [Agents](../../agentic-building-blocks/agents/index.md) — autonomous coding agents that plan, write, test, and iterate
+- [Context](../../agentic-building-blocks/context/index.md) — providing codebases, documentation, and examples
+- [Data Analysis](../data-analysis/) — when the insight is the goal, not the code
+- [Automation](../automation/) — when code runs as part of an unattended pipeline
+- [Coding Resources](resources.md) — curated reports, guides, and references

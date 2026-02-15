@@ -113,7 +113,7 @@ in the afternoon. How many are left? Let's think step by step.
 - [Direct Instruction](direct-instruction.md) — make your zero-shot prompts more explicit with imperative commands
 - [Chain-of-Thought](chain-of-thought.md) — add step-by-step reasoning for complex problems
 - [Prompt Engineering Overview](index.md)
-- [Content Creation use case](../../../use-cases/content-creation.md)
+- [Content Creation use case](../../../use-cases/content-creation/)
 
 ## Further Reading
 

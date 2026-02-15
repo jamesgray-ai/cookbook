@@ -13,7 +13,7 @@ This primitive covers any workflow where the primary output is an insight derive
 
 Data analysis is often the highest-value primitive for teams that have data but lack the time or technical skills to extract meaning from it. AI dramatically lowers the barrier to working with data, letting anyone ask questions of their datasets in plain language.
 
-*Data Analysis is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../agentic-building-blocks/index.md).*
+*Data Analysis is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../../agentic-building-blocks/index.md).*
 
 ## Key Characteristics
 
@@ -34,9 +34,9 @@ Data analysis is often the highest-value primitive for teams that have data but 
 
 **NOT the right primitive when:**
 
-- The main output is code or a reusable tool for analyzing data (that's [Coding](coding.md))
-- You're gathering qualitative information from documents and sources (that's [Research](research.md))
-- You're running a data pipeline on a schedule without human involvement (that's [Automation](automation.md))
+- The main output is code or a reusable tool for analyzing data (that's [Coding](../coding/))
+- You're gathering qualitative information from documents and sources (that's [Research](../research/))
+- You're running a data pipeline on a schedule without human involvement (that's [Automation](../automation/))
 
 ## Department Examples
 
@@ -94,8 +94,8 @@ Data analysis is often the highest-value primitive for teams that have data but 
 ## Related
 
 - [AI Use Cases Overview](index.md) — all six primitives at a glance
-- [Context](../agentic-building-blocks/context/index.md) — providing datasets and domain knowledge
-- [Skills](../agentic-building-blocks/skills/index.md) — packaging analysis workflows for repeatable use
-- [Coding](coding.md) — when the goal is the analysis tool itself, not the insight
-- [Automation](automation.md) — running analysis workflows on a schedule
-- [Data Analysis Resources](data-analysis-resources.md) — curated reports, guides, and references
+- [Context](../../agentic-building-blocks/context/index.md) — providing datasets and domain knowledge
+- [Skills](../../agentic-building-blocks/skills/index.md) — packaging analysis workflows for repeatable use
+- [Coding](../coding/) — when the goal is the analysis tool itself, not the insight
+- [Automation](../automation/) — running analysis workflows on a schedule
+- [Data Analysis Resources](resources.md) — curated reports, guides, and references

@@ -134,7 +134,7 @@ Label each version clearly.
 - [Direct Instruction](direct-instruction.md) — clear instructions improve summary quality
 - [Chain-of-Thought](chain-of-thought.md) — reasoning through what matters before summarizing
 - [Prompt Engineering Overview](index.md)
-- [Research use case](../../../use-cases/research.md) — summarization is a core research workflow
+- [Research use case](../../../use-cases/research/) — summarization is a core research workflow
 
 ## Further Reading
 

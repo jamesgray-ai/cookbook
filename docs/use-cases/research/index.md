@@ -13,7 +13,7 @@ This primitive covers any workflow where the primary output is structured knowle
 
 Research becomes particularly powerful when paired with MCP connections to your actual data sources — the AI can pull from your CRM, project management tools, internal wikis, and external databases rather than relying solely on web search or uploaded documents.
 
-*Research is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../agentic-building-blocks/index.md).*
+*Research is one of six use case primitives identified in OpenAI's [Identifying and Scaling AI Use Cases](../../resources/openai-use-cases-report.md) guide. The examples here are adapted to be platform-agnostic and mapped to [Agentic Building Blocks](../../agentic-building-blocks/index.md).*
 
 ## Key Characteristics
 
@@ -34,9 +34,9 @@ Research becomes particularly powerful when paired with MCP connections to your 
 
 **NOT the right primitive when:**
 
-- The main output is a written piece for an audience (that's [Content Creation](content-creation.md))
-- You're exploring ideas and strategies rather than gathering facts (that's [Ideation & Strategy](ideation-and-strategy.md))
-- You're analyzing structured numerical data (that's [Data Analysis](data-analysis.md))
+- The main output is a written piece for an audience (that's [Content Creation](../content-creation/))
+- You're exploring ideas and strategies rather than gathering facts (that's [Ideation & Strategy](../ideation-and-strategy/))
+- You're analyzing structured numerical data (that's [Data Analysis](../data-analysis/))
 
 ## Department Examples
 
@@ -94,8 +94,8 @@ Research becomes particularly powerful when paired with MCP connections to your 
 ## Related
 
 - [AI Use Cases Overview](index.md) — all six primitives at a glance
-- [Agents](../agentic-building-blocks/agents/index.md) — autonomous AI that can plan and execute multi-step research
-- [MCP](../agentic-building-blocks/mcp/index.md) — connecting AI to external data sources for live research
-- [Context](../agentic-building-blocks/context/index.md) — providing source documents and background knowledge
-- [Automation](automation.md) — running research workflows on a schedule
-- [Research Resources](research-resources.md) — curated reports, guides, and references
+- [Agents](../../agentic-building-blocks/agents/index.md) — autonomous AI that can plan and execute multi-step research
+- [MCP](../../agentic-building-blocks/mcp/index.md) — connecting AI to external data sources for live research
+- [Context](../../agentic-building-blocks/context/index.md) — providing source documents and background knowledge
+- [Automation](../automation/) — running research workflows on a schedule
+- [Research Resources](resources.md) — curated reports, guides, and references

@@ -5,7 +5,7 @@ description: Curated resources for AI-assisted research — reports, guides, and
 
 # Research Resources
 
-Curated external resources for the [Research](research.md) use case.
+Curated external resources for the [Research](index.md) use case.
 
 | Resource | Source | Notes |
 |----------|--------|-------|

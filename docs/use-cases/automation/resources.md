@@ -5,7 +5,7 @@ description: Curated resources for AI-assisted automation — reports, guides, a
 
 # Automation Resources
 
-Curated external resources for the [Automation](automation.md) use case.
+Curated external resources for the [Automation](index.md) use case.
 
 | Resource | Source | Notes |
 |----------|--------|-------|

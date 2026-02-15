@@ -126,7 +126,7 @@ using the same style attributes.
 - [Role Prompting](role-prompting.md) — roles implicitly bundle style attributes; unbundling makes them explicit
 - [Few-Shot Learning](few-shot-learning.md) — show the desired style by example instead of describing it
 - [Prompt Engineering Overview](index.md)
-- [Content Creation use case](../../../use-cases/content-creation.md) — style unbundling is essential for professional content workflows
+- [Content Creation use case](../../../use-cases/content-creation/) — style unbundling is essential for professional content workflows
 
 ## Further Reading
 

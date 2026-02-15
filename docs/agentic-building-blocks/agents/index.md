@@ -37,6 +37,6 @@ For guidance on deciding *whether* your workflow needs an agent, see [Build Work
 
 - [Agentic Building Blocks](../index.md)
 - [AI Use Cases](../../use-cases/index.md) — what teams build with agents, organized by six primitives
-- [Automation Use Cases](../../use-cases/automation.md) — the highest-autonomy use cases powered by agents
+- [Automation Use Cases](../../use-cases/automation/) — the highest-autonomy use cases powered by agents
 - [Workflow Architecture Patterns](../../patterns/workflow-architecture/index.md) — seven patterns from augmented LLMs to autonomous agents
 - [Patterns](../../patterns/index.md)

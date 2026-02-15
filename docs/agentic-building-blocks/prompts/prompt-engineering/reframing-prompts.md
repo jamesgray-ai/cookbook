@@ -109,7 +109,7 @@ burning anyone out?
 - [Multi-Turn Conversation](multi-turn-conversation.md) — iterative refinement across turns
 - [Self-Consistency and Reflection](self-consistency-and-reflection.md) — related approach for evaluating multiple framings
 - [Prompt Engineering Overview](index.md)
-- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy.md) — reframing is especially powerful for brainstorming and strategic exploration
+- [Ideation and Strategy use case](../../../use-cases/ideation-and-strategy/) — reframing is especially powerful for brainstorming and strategic exploration
 
 ## Further Reading
 

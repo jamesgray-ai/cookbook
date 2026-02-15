@@ -150,6 +150,13 @@ plugins:
         mcp-server.md: use-the-cookbook/ask/index.md
         # What's New → Changelog
         whats-new.md: blog/index.md
+        # Use Cases resources → subdirectories (main pages keep same URL)
+        use-cases/content-creation-resources.md: use-cases/content-creation/resources.md
+        use-cases/research-resources.md: use-cases/research/resources.md
+        use-cases/coding-resources.md: use-cases/coding/resources.md
+        use-cases/data-analysis-resources.md: use-cases/data-analysis/resources.md
+        use-cases/ideation-and-strategy-resources.md: use-cases/ideation-and-strategy/resources.md
+        use-cases/automation-resources.md: use-cases/automation/resources.md
 
 markdown_extensions:
   - admonition
@@ -271,18 +278,24 @@ nav:
     - MCP: agentic-building-blocks/mcp/index.md
   - Use Cases:
     - Overview: use-cases/index.md
-    - Content Creation: use-cases/content-creation.md
-    - Content Creation Resources: use-cases/content-creation-resources.md
-    - Research: use-cases/research.md
-    - Research Resources: use-cases/research-resources.md
-    - Coding: use-cases/coding.md
-    - Coding Resources: use-cases/coding-resources.md
-    - Data Analysis: use-cases/data-analysis.md
-    - Data Analysis Resources: use-cases/data-analysis-resources.md
-    - Ideation & Strategy: use-cases/ideation-and-strategy.md
-    - Ideation & Strategy Resources: use-cases/ideation-and-strategy-resources.md
-    - Automation: use-cases/automation.md
-    - Automation Resources: use-cases/automation-resources.md
+    - Content Creation:
+      - use-cases/content-creation/index.md
+      - Resources: use-cases/content-creation/resources.md
+    - Research:
+      - use-cases/research/index.md
+      - Resources: use-cases/research/resources.md
+    - Coding:
+      - use-cases/coding/index.md
+      - Resources: use-cases/coding/resources.md
+    - Data Analysis:
+      - use-cases/data-analysis/index.md
+      - Resources: use-cases/data-analysis/resources.md
+    - Ideation & Strategy:
+      - use-cases/ideation-and-strategy/index.md
+      - Resources: use-cases/ideation-and-strategy/resources.md
+    - Automation:
+      - use-cases/automation/index.md
+      - Resources: use-cases/automation/resources.md
   - Platforms:
     - Overview: platforms/index.md
     - Claude:

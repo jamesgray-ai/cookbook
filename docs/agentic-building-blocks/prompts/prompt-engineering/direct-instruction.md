@@ -110,7 +110,7 @@ and operational complexity. Respond in a two-column table.
 - [Output Formatting](output-formatting.md) — specify exactly how the model should structure its response
 - [Contextual Prompting](contextual-prompting.md) — combine with context for domain-specific direct instructions
 - [Prompt Engineering Overview](index.md)
-- [Content Creation use case](../../../use-cases/content-creation.md)
+- [Content Creation use case](../../../use-cases/content-creation/)
 
 ## Further Reading
 

@@ -115,7 +115,7 @@ brackets, part-time vs. full-time distinctions.
 - [Direct Instruction](direct-instruction.md) — be explicit about what thoroughness means for your task
 - [Contextual Prompting](contextual-prompting.md) — provide background that naturally conveys importance
 - [Prompt Engineering Overview](index.md)
-- [Content Creation use case](../../../use-cases/content-creation.md) — emotional prompting is particularly effective for creative and communication tasks
+- [Content Creation use case](../../../use-cases/content-creation/) — emotional prompting is particularly effective for creative and communication tasks
 
 ## Further Reading
 

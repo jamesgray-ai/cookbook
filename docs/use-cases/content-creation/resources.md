@@ -5,7 +5,7 @@ description: Curated resources for AI-assisted content creation — reports, gui
 
 # Content Creation Resources
 
-Curated external resources for the [Content Creation](content-creation.md) use case.
+Curated external resources for the [Content Creation](index.md) use case.
 
 | Resource | Source | Notes |
 |----------|--------|-------|

@@ -59,4 +59,4 @@ No single pattern makes this workflow possible. Their combination is what turns 
 - [Agents Resources](../resources.md) — Recommended reading on agents
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — Anthropic's guide to agent architecture
 - [Prompt Engineering](../../prompts/prompt-engineering/index.md) — Techniques for the prompts that drive agent behavior
-- [Automation Use Cases](../../../use-cases/automation.md) — Real-world applications of agentic systems
+- [Automation Use Cases](../../../use-cases/automation/) — Real-world applications of agentic systems
