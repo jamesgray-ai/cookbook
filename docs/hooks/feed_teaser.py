@@ -63,8 +63,14 @@ def on_page_markdown(markdown, page, config, files):
     for category, items in grouped.items():
         cat_escaped = html.escape(category)
 
-        # Folder header
-        section = f'<h3 class="feed-teaser__heading">{cat_escaped}</h3>\n'
+        # Folder header with "View all" link
+        section = (
+            f'<div style="display: flex; align-items: baseline; justify-content: space-between;">'
+            f'<h3 class="feed-teaser__heading">{cat_escaped}</h3>'
+            f'<a href="/feed/?category={cat_escaped}" '
+            f'style="font-size: 0.82em; opacity: 0.6; white-space: nowrap;">View all &rarr;</a>'
+            f'</div>\n'
+        )
         section += '<div class="feed-teaser__row">\n'
 
         for item in items:

@@ -143,7 +143,13 @@
       .then(function (data) {
         var allItems = data.items || [];
         var categories = data.categories || [];
-        var activeFilter = "All";
+        // Read ?category= from URL to pre-select a filter
+        var params = new URLSearchParams(window.location.search);
+        var paramCategory = params.get("category");
+        var activeFilter =
+          paramCategory && categories.indexOf(paramCategory) !== -1
+            ? paramCategory
+            : "All";
 
         function render() {
           var filtered =
